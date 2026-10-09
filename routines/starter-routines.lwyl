@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Push Day",
+      "notes": "Chest, shoulders and triceps",
+      "exercises": [
+        {
+          "name": "Barbell Bench Press",
+          "muscleGroup": "Chest",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 80,
+              "restSeconds": 120
+            },
+            {
+              "reps": 8,
+              "weight": 82.5,
+              "restSeconds": 120
+            },
+            {
+              "reps": 6,
+              "weight": 85,
+              "restSeconds": 150
+            }
+          ]
+        },
+        {
+          "name": "Barbell Overhead Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 45
+          }
+        },
+        {
+          "name": "Cable Lateral Raise",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Cable Tricep Pushdown",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 25
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pull Day",
+      "notes": "Back and biceps",
+      "exercises": [
+        {
+          "name": "Pull-Up",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 8
+          }
+        },
+        {
+          "name": "Bent-Over Barbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 60
+          }
+        },
+        {
+          "name": "Cable Face Pull",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 15
+          }
+        },
+        {
+          "name": "Dumbbell Bicep Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 12
+          }
+        }
+      ]
+    },
+    {
+      "name": "Legs & Core",
+      "exercises": [
+        {
+          "name": "Barbell Back Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 6,
+            "weight": 100,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Romanian Deadlift",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 80
+          }
+        },
+        {
+          "name": "Walking Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 16
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Easy Run",
+      "notes": "Conversational pace, then stretch",
+      "exercises": [
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "km": 5
+            }
+          ]
+        },
+        {
+          "name": "Doorway Chest Stretch",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 2,
+            "seconds": 30
+          }
+        }
+      ]
+    }
+  ]
+}

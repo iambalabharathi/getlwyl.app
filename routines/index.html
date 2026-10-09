@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Routines &amp; Plans — LWYL</title>
+  <meta name="description" content="Download ready-made LWYL routines, a 2-week training plan, or make your own plan with ChatGPT or Claude and open it in LWYL.">
+  <link rel="icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/styles.css?v=10">
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="/"><img src="/assets/apple-touch-icon.png" alt="">LWYL</a>
+    <nav><a href="/routines/">Routines</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav>
+  </header>
+
+  <main class="wrap narrow page">
+    <h1>Routines &amp; Plans</h1>
+    <p class="updated">Ready-made routines, a 2-week plan, or your own plan made with AI — open any of them in LWYL.</p>
+
+    <h2>Download</h2>
+    <div class="downloads">
+      <a class="download" href="/routines/starter-routines.lwyl" download>
+        <span class="dl-title">Starter routines</span>
+        <span class="dl-text">Push Day, Pull Day, Legs &amp; Core and Easy Run — ready to start any day.</span>
+        <span class="dl-file">starter-routines.lwyl</span>
+      </a>
+      <button class="download" type="button" id="plan-download">
+        <span class="dl-title">2-week plan</span>
+        <span class="dl-text">The same four routines, scheduled from next Monday, with reminders on workout days.</span>
+        <span class="dl-file" id="plan-dates">LWYL-2-week-plan.lwyl</span>
+      </button>
+    </div>
+    <p class="muted small">On iPhone, tap a file, then open it in LWYL. LWYL shows a preview first — nothing is added until you tap Import. Routines with a name you already have are added as a copy, like “Push Day (2)”.</p>
+
+    <h2>Make a plan with AI</h2>
+    <p>Ask ChatGPT, Claude or any AI assistant for a plan that fits you, then open it in LWYL.</p>
+    <ol class="steps">
+      <li>Copy the prompt below and fill in the parts in [brackets].</li>
+      <li>Paste it into the AI and send.</li>
+      <li>Save its answer as a file called <code>plan.lwyl</code> (ask the AI to “give it to me as a file”, or paste it into a note and share it as a file).</li>
+      <li>Open the file on your iPhone and choose LWYL.</li>
+    </ol>
+    <div class="prompt">
+      <button type="button" class="copy" id="copy-prompt">Copy</button>
+      <pre id="prompt-text">Create a workout plan for the LWYL app as one JSON file (I'll save it as plan.lwyl).
+
+About me:
+- Goal: [build strength / lose fat / run a 10K …]
+- Days per week: [3]
+- Equipment: [full gym / dumbbells and a bench / bodyweight only]
+- Experience: [beginner / intermediate / advanced]
+- Start date: [YYYY-MM-DD], plan length: [4 weeks]
+
+Use exactly this format:
+{
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Push Day",
+      "notes": "optional",
+      "schedule": ["YYYY-MM-DD", "YYYY-MM-DDTHH:MM", { "date": "YYYY-MM-DD", "time": "HH:MM", "note": "Deload" }],
+      "exercises": [
+        { "name": "Barbell Bench Press", "muscleGroup": "Chest",
+          "sets": [ { "reps": 8, "weight": 60, "restSeconds": 120 } ] },
+        { "name": "Cable Lateral Raise", "muscleGroup": "Shoulders",
+          "sets": { "count": 3, "reps": 12, "weight": 10 } },
+        { "name": "Plank", "muscleGroup": "Core", "sets": { "count": 3, "seconds": 45 } },
+        { "name": "Running", "muscleGroup": "Other", "sets": [ { "km": 5 } ] }
+      ]
+    }
+  ]
+}
+
+Rules:
+- One entry in "templates" per different workout; list every day it's planned on in its "schedule".
+- muscleGroup is one of: Chest, Back, Legs, Shoulders, Arms, Core, Other.
+- Use common exercise names (e.g. "Romanian Deadlift", "Pull-Up", "Dumbbell Bicep Curl").
+- Weights in kg. Timed sets use "seconds", distance uses "km".
+- Reply with only the JSON, no explanation.</pre>
+    </div>
+
+    <h2>The format</h2>
+    <p>A routines file is plain JSON saved as <code>.lwyl</code> (or <code>.json</code>, imported from Routines › Import). One file can hold many routines.</p>
+    <details>
+      <summary>Routines and exercises</summary>
+      <p>Each routine in <code>templates</code> has a <code>name</code>, optional <code>notes</code> and its <code>exercises</code>. Exercise names are matched to LWYL’s library of 600+ exercises; anything else is added to your own exercises under its <code>muscleGroup</code> (Chest, Back, Legs, Shoulders, Arms, Core, Other).</p>
+    </details>
+    <details>
+      <summary>Sets</summary>
+      <p>Either a list — <code>[{ "reps": 8, "weight": 80 }, …]</code> — or a short form — <code>{ "count": 3, "reps": 12, "weight": 10 }</code>. Timed sets use <code>seconds</code>, distance uses <code>km</code>. <code>restSeconds</code> is optional; without it, LWYL uses your Rest Timer settings.</p>
+    </details>
+    <details>
+      <summary>Schedule</summary>
+      <p><code>schedule</code> lists the days a routine is planned for: <code>"2026-10-19"</code>, <code>"2026-10-19T07:30"</code>, or <code>{ "date": "…", "time": "18:00", "note": "Heavy" }</code>. Dates are local. With a time, LWYL reminds you an hour before; without, at your morning reminder time. Past dates are skipped.</p>
+    </details>
+    <details>
+      <summary>Units and names</summary>
+      <p><code>unit</code> is <code>"kg"</code> or <code>"lb"</code> for the whole file. Importing never overwrites: a routine whose name you already have is added as “Name (2)”.</p>
+    </details>
+    <p class="muted small">For developers and coach apps: <a href="/routines/lwyl-routines.schema.json">JSON Schema</a>.</p>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Skywarel</span>
+      <span><a href="/routines/">Routines</a><a href="/support/">Support</a><a href="/privacy/">Privacy Policy</a></span>
+    </div>
+  </footer>
+
+  <script src="/routines/routines.js"></script>
+  <script>
+    // The 2-week plan: same routines, dated from next Monday at download time,
+    // so the dates are never in the past.
+    (function () {
+      function nextMonday() {
+        var d = new Date(); d.setHours(0, 0, 0, 0);
+        var add = (8 - d.getDay()) % 7 || 7;
+        d.setDate(d.getDate() + add); return d;
+      }
+      function day(base, offset) {
+        var d = new Date(base); d.setDate(d.getDate() + offset);
+        return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+      }
+      var monday = nextMonday();
+      var plan = {
+        'Push Day': [day(monday, 0) + 'T07:30', day(monday, 7) + 'T07:30'],
+        'Pull Day': [day(monday, 2) + 'T07:30', day(monday, 9) + 'T07:30'],
+        'Legs & Core': [{ date: day(monday, 4), time: '18:00', note: 'Heavy' },
+                        { date: day(monday, 11), time: '18:00', note: 'Deload' }],
+        'Easy Run': [day(monday, 5), day(monday, 12)]
+      };
+      var label = document.getElementById('plan-dates');
+      label.textContent = 'From Monday ' + monday.toLocaleDateString(undefined, { day: 'numeric', month: 'short' }) + ' · LWYL-2-week-plan.lwyl';
+
+      document.getElementById('plan-download').addEventListener('click', function () {
+        var templates = window.LWYL_ROUTINES.map(function (r) {
+          var copy = JSON.parse(JSON.stringify(r));
+          copy.schedule = plan[r.name];
+          return copy;
+        });
+        var file = new Blob([JSON.stringify({ version: 1, unit: 'kg', templates: templates }, null, 2)],
+                            { type: 'application/vnd.lwyl.workout+json' });
+        var a = document.createElement('a');
+        a.href = URL.createObjectURL(file);
+        a.download = 'LWYL-2-week-plan.lwyl';
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+      });
+
+      var copy = document.getElementById('copy-prompt');
+      copy.addEventListener('click', function () {
+        navigator.clipboard.writeText(document.getElementById('prompt-text').textContent).then(function () {
+          copy.textContent = 'Copied';
+          setTimeout(function () { copy.textContent = 'Copy'; }, 1600);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -24,3 +24,12 @@ RedirectMatch 404 /README\.md$
   ExpiresByType text/css "access plus 7 days"
   ExpiresByType text/html "access plus 0 seconds"
 </IfModule>
+
+# Routines files open in LWYL (the type the app registers for .lwyl)
+AddType application/vnd.lwyl.workout+json .lwyl
+<IfModule mod_headers.c>
+  <FilesMatch "\.lwyl$">
+    Header set Content-Disposition "attachment"
+  </FilesMatch>
+</IfModule>
+AddType application/schema+json .schema.json

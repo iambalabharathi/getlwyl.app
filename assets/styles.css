@@ -129,3 +129,25 @@ details p { margin: 10px 0 0; color: var(--ink-2); }
   .shots { grid-auto-columns: 46%; gap: 12px; margin-top: 12px; }
   .shot figcaption { font-size: 14px; margin-top: 8px; }
 }
+
+/* Routines page */
+.small { font-size: 14px; }
+code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--tile); padding: 1px 6px; border-radius: 6px; }
+.downloads { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 16px 0 10px; }
+.download { appearance: none; border: 0; text-align: left; cursor: pointer; font: inherit; color: var(--ink);
+            display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 20px;
+            background: var(--tile); text-decoration: none; transition: transform 0.15s; }
+.download:hover { transform: translateY(-1px); }
+.dl-title { font: 500 21px var(--serif); }
+.dl-text { font-size: 15px; color: var(--ink-2); }
+.dl-file { font-size: 13px; font-weight: 600; margin-top: 6px; }
+.dl-file::before { content: "↓ "; }
+.steps { padding-left: 22px; }
+.steps li { margin: 6px 0; }
+.prompt { position: relative; background: var(--tile); border-radius: 18px; margin: 16px 0; }
+.prompt pre { margin: 0; padding: 20px; padding-top: 52px; overflow-x: auto; white-space: pre-wrap;
+              font: 13px/1.5 ui-monospace, "SF Mono", Menlo, monospace; color: var(--ink); }
+.copy { position: absolute; top: 12px; right: 12px; appearance: none; border: 0; cursor: pointer;
+        background: var(--ink); color: var(--bg); font: 600 14px var(--sans); padding: 7px 14px; border-radius: 999px; }
+.more { text-align: center; margin-top: 28px; }
+.more a { font-weight: 600; }

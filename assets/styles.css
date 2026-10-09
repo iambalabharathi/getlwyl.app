@@ -55,7 +55,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01e
 .badge { display: inline-block; margin-top: 28px; padding: 12px 22px; border-radius: 999px; background: var(--ink); color: var(--bg); font: 600 15px var(--sans); text-decoration: none; }
 
 /* Screenshots come framed (Bezel, transparent PNG → WebP): no extra border. */
-.shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin: 20px 0 0; }
+.shots { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin: 20px -40px 0; }
 .shot { display: grid; margin: 0; }
 .shot img { grid-area: 1 / 1; display: block; width: 100%; height: auto; transition: opacity 0.3s ease; }
 /* Which set shows: the toggle's choice, else the visitor's own setting. */
@@ -75,8 +75,8 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01e
                        width: 44px; height: 32px; border-radius: 9px; cursor: pointer;
                        display: grid; place-items: center; transition: background 0.2s, color 0.2s; }
 .shots-toggle button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
-@media (max-width: 760px) {
-  .shots { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 64%; overflow-x: auto;
+@media (max-width: 1000px) {
+  .shots { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: min(64%, 300px); overflow-x: auto;
            scroll-snap-type: x mandatory; padding-bottom: 8px; margin-left: -16px; margin-right: -16px;
            padding-left: 16px; padding-right: 16px; scrollbar-width: none; }
   .shots::-webkit-scrollbar { display: none; }

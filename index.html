@@ -10,7 +10,7 @@
   <meta property="og:image" content="https://getlwyl.app/assets/icon-256.png">
   <link rel="icon" href="/assets/apple-touch-icon.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/styles.css?v=3">
+  <link rel="stylesheet" href="/assets/styles.css?v=4">
 </head>
 <body>
   <header class="wrap top">
@@ -27,24 +27,50 @@
       <span class="badge">Coming soon to the App Store</span>
     </section>
 
-    <section class="shots" id="screens" aria-label="Screenshots">
-      <picture>
-        <source srcset="/assets/shot-home-dark.webp" media="(prefers-color-scheme: dark)">
-        <img src="/assets/shot-home-light.webp" alt="Home: workouts this week and the next scheduled routine" loading="lazy" width="700" height="1451">
-      </picture>
-      <picture>
-        <source srcset="/assets/shot-workouts-dark.webp" media="(prefers-color-scheme: dark)">
-        <img src="/assets/shot-workouts-light.webp" alt="Workouts: scheduled and past workouts with photos" loading="lazy" width="700" height="1451">
-      </picture>
-      <picture>
-        <source srcset="/assets/shot-routines-dark.webp" media="(prefers-color-scheme: dark)">
-        <img src="/assets/shot-routines-light.webp" alt="Routines: saved workouts with their exercises" loading="lazy" width="700" height="1451">
-      </picture>
-      <picture>
-        <source srcset="/assets/shot-metrics-dark.webp" media="(prefers-color-scheme: dark)">
-        <img src="/assets/shot-metrics-light.webp" alt="Metrics: weight and body fat trends" loading="lazy" width="700" height="1451">
-      </picture>
+    <div class="shots-toggle" id="screens" role="group" aria-label="Screenshot appearance" hidden>
+      <button type="button" data-mode="light" aria-label="Light screenshots"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></g></svg></button>
+      <button type="button" data-mode="dark" aria-label="Dark screenshots"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z" fill="currentColor"/></svg></button>
+    </div>
+
+    <section class="shots" data-mode="auto" aria-label="Screenshots">
+      <figure class="shot">
+        <img class="light" src="/assets/shot-home-light.webp" alt="Home: workouts this week and the next scheduled routine" loading="lazy" width="700" height="1451">
+        <img class="dark" src="/assets/shot-home-dark.webp" alt="" loading="lazy" width="700" height="1451">
+      </figure>
+      <figure class="shot">
+        <img class="light" src="/assets/shot-workouts-light.webp" alt="Workouts: scheduled and past workouts with photos" loading="lazy" width="700" height="1451">
+        <img class="dark" src="/assets/shot-workouts-dark.webp" alt="" loading="lazy" width="700" height="1451">
+      </figure>
+      <figure class="shot">
+        <img class="light" src="/assets/shot-routines-light.webp" alt="Routines: saved workouts with their exercises" loading="lazy" width="700" height="1451">
+        <img class="dark" src="/assets/shot-routines-dark.webp" alt="" loading="lazy" width="700" height="1451">
+      </figure>
+      <figure class="shot">
+        <img class="light" src="/assets/shot-metrics-light.webp" alt="Metrics: weight and body fat trends" loading="lazy" width="700" height="1451">
+        <img class="dark" src="/assets/shot-metrics-dark.webp" alt="" loading="lazy" width="700" height="1451">
+      </figure>
     </section>
+
+    <script>
+      // Light / dark screenshots, starting from the visitor's own setting.
+      (function () {
+        var toggle = document.querySelector('.shots-toggle');
+        var shots = document.querySelector('.shots');
+        var system = window.matchMedia('(prefers-color-scheme: dark)');
+        function show(mode) {
+          shots.dataset.mode = mode;
+          toggle.querySelectorAll('button').forEach(function (b) {
+            b.setAttribute('aria-pressed', b.dataset.mode === mode ? 'true' : 'false');
+          });
+        }
+        toggle.addEventListener('click', function (e) {
+          var b = e.target.closest('button');
+          if (b) show(b.dataset.mode);
+        });
+        show(system.matches ? 'dark' : 'light');
+        toggle.hidden = false;
+      })();
+    </script>
 
     <section class="features">
       <div class="feature"><h3>Fast logging</h3><p>Weight and reps, time or distance — each exercise logs the way it's done, with rest timers between sets.</p></div>

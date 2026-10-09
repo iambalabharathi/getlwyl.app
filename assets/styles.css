@@ -55,14 +55,32 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01e
 .badge { display: inline-block; margin-top: 28px; padding: 12px 22px; border-radius: 999px; background: var(--ink); color: var(--bg); font: 600 15px var(--sans); text-decoration: none; }
 
 /* Screenshots come framed (Bezel, transparent PNG → WebP): no extra border. */
-.shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin: 56px 0 0; }
-.shots picture, .shots img { display: block; width: 100%; height: auto; }
+.shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin: 20px 0 0; }
+.shot { display: grid; margin: 0; }
+.shot img { grid-area: 1 / 1; display: block; width: 100%; height: auto; transition: opacity 0.3s ease; }
+/* Which set shows: the toggle's choice, else the visitor's own setting. */
+.shot .dark, .shots[data-mode="light"] .shot .dark { opacity: 0; }
+.shot .light, .shots[data-mode="dark"] .shot .dark { opacity: 1; }
+.shots[data-mode="dark"] .shot .light { opacity: 0; }
+@media (prefers-color-scheme: dark) {
+  .shots[data-mode="auto"] .shot .dark { opacity: 1; }
+  .shots[data-mode="auto"] .shot .light { opacity: 0; }
+}
+
+/* Light / dark switch above the screenshots, like the app's toggles. */
+.shots-toggle { display: flex; width: max-content; margin: 48px auto 0; padding: 3px; gap: 2px;
+                background: var(--tile); border-radius: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+.shots-toggle[hidden] { display: none; }
+.shots-toggle button { appearance: none; border: 0; background: transparent; color: var(--ink-2);
+                       width: 44px; height: 32px; border-radius: 9px; cursor: pointer;
+                       display: grid; place-items: center; transition: background 0.2s, color 0.2s; }
+.shots-toggle button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
 @media (max-width: 760px) {
   .shots { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 64%; overflow-x: auto;
            scroll-snap-type: x mandatory; padding-bottom: 8px; margin-left: -16px; margin-right: -16px;
            padding-left: 16px; padding-right: 16px; scrollbar-width: none; }
   .shots::-webkit-scrollbar { display: none; }
-  .shots picture { scroll-snap-align: center; }
+  .shot { scroll-snap-align: center; }
 }
 
 .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 64px; }

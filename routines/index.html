@@ -59,7 +59,7 @@ Use exactly this format:
     {
       "name": "Push Day",
       "notes": "optional",
-      "schedule": ["YYYY-MM-DD", "YYYY-MM-DDTHH:MM", { "date": "YYYY-MM-DD", "time": "HH:MM", "note": "Deload" }],
+      "schedule": ["YYYY-MM-DD", { "date": "YYYY-MM-DD", "note": "Deload" }],
       "exercises": [
         { "name": "Barbell Bench Press", "muscleGroup": "Chest",
           "sets": [ { "reps": 8, "weight": 60, "restSeconds": 120 } ] },
@@ -73,7 +73,7 @@ Use exactly this format:
 }
 
 Rules:
-- One entry in "templates" per different workout; list every day it's planned on in its "schedule".
+- One entry in "templates" per different workout; list every day it's planned on in its "schedule" (dates only, no times).
 - muscleGroup is one of: Chest, Back, Legs, Shoulders, Arms, Core, Other.
 - Use common exercise names (e.g. "Romanian Deadlift", "Pull-Up", "Dumbbell Bicep Curl").
 - Weights in kg. Timed sets use "seconds", distance uses "km".
@@ -92,7 +92,7 @@ Rules:
     </details>
     <details>
       <summary>Schedule</summary>
-      <p><code>schedule</code> lists the days a routine is planned for: <code>"2026-10-19"</code>, <code>"2026-10-19T07:30"</code>, or <code>{ "date": "…", "time": "18:00", "note": "Heavy" }</code>. Dates are local. With a time, LWYL reminds you an hour before; without, at your morning reminder time. Past dates are skipped.</p>
+      <p><code>schedule</code> lists the days a routine is planned for: <code>"2026-10-19"</code>, or <code>{ "date": "…", "note": "Heavy" }</code> to add a note. Dates are local and day only; LWYL reminds you at your morning reminder time. Past dates are skipped.</p>
     </details>
     <details>
       <summary>Units and names</summary>
@@ -124,10 +124,10 @@ Rules:
       }
       var monday = nextMonday();
       var plan = {
-        'Push Day': [day(monday, 0) + 'T07:30', day(monday, 7) + 'T07:30'],
-        'Pull Day': [day(monday, 2) + 'T07:30', day(monday, 9) + 'T07:30'],
-        'Legs & Core': [{ date: day(monday, 4), time: '18:00', note: 'Heavy' },
-                        { date: day(monday, 11), time: '18:00', note: 'Deload' }],
+        'Push Day': [day(monday, 0), day(monday, 7)],
+        'Pull Day': [day(monday, 2), day(monday, 9)],
+        'Legs & Core': [{ date: day(monday, 4), note: 'Heavy' },
+                        { date: day(monday, 11), note: 'Deload' }],
         'Easy Run': [day(monday, 5), day(monday, 12)]
       };
       var label = document.getElementById('plan-dates');

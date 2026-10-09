@@ -52,7 +52,15 @@ footer a:hover { color: var(--ink); }
 h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01em; }
 .hero h1 { font-size: clamp(44px, 9vw, 72px); line-height: 1.02; margin: 0; }
 .hero p.lead { font-size: 19px; color: var(--ink-2); max-width: 520px; margin: 18px auto 0; }
-.badge { display: inline-block; margin-top: 28px; padding: 12px 22px; border-radius: 999px; background: var(--ink); color: var(--bg); font: 600 15px var(--sans); text-decoration: none; }
+/* App Store badge: Apple's artwork as is — black on light, white on dark. */
+.store { display: inline-block; margin-top: 28px; line-height: 0; }
+.store img { height: 50px; width: auto; }
+.store .on-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  .store .on-light { display: none; }
+  .store .on-dark { display: inline; }
+}
+.soon { margin: 10px 0 0; font-size: 13px; color: var(--ink-2); }
 
 /* Screenshots come framed (Bezel, transparent PNG → WebP): no extra border. */
 .shots { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin: 20px -40px 0; }

@@ -57,6 +57,9 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01e
 /* Screenshots come framed (Bezel, transparent PNG → WebP): no extra border. */
 .shots { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin: 20px -40px 0; }
 .shot { display: grid; margin: 0; }
+/* The App Store headline under each phone. */
+.shot figcaption { grid-row: 2; font: 500 17px/1.3 var(--serif); text-align: center; color: var(--ink);
+                   margin-top: 12px; padding: 0 6px; }
 .shot img { grid-area: 1 / 1; display: block; width: 100%; height: auto; transition: opacity 0.3s ease; }
 /* Which set shows: the toggle's choice, else the visitor's own setting. */
 .shot .dark, .shots[data-mode="light"] .shot .dark { opacity: 0; }

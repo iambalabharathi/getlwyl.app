@@ -53,7 +53,8 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01e
 .hero h1 { font-size: clamp(44px, 9vw, 72px); line-height: 1.02; margin: 0; }
 .hero p.lead { font-size: 19px; color: var(--ink-2); max-width: 520px; margin: 18px auto 0; }
 /* App Store badge: Apple's artwork as is — black on light, white on dark. */
-.store { display: inline-block; margin-top: 28px; line-height: 0; }
+.get { text-align: center; margin-top: 40px; }
+.store { display: inline-block; line-height: 0; }
 .store img { height: 50px; width: auto; }
 .store .on-dark { display: none; }
 @media (prefers-color-scheme: dark) {
@@ -79,7 +80,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01e
 }
 
 /* Light / dark switch above the screenshots, like the app's toggles. */
-.shots-toggle { display: flex; width: max-content; margin: 48px auto 0; padding: 3px; gap: 2px;
+.shots-toggle { display: flex; width: max-content; margin: 40px 0 0 auto; padding: 3px; gap: 2px;
                 background: var(--tile); border-radius: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
 .shots-toggle[hidden] { display: none; }
 .shots-toggle button { appearance: none; border: 0; background: transparent; color: var(--ink-2);
@@ -115,3 +116,16 @@ details summary::-webkit-details-marker { display: none; }
 details summary::after { content: "+"; float: right; color: var(--ink-2); font-weight: 400; }
 details[open] summary::after { content: "–"; }
 details p { margin: 10px 0 0; color: var(--ink-2); }
+
+/* Phones: a tighter hero so the screenshots start on the first screen. */
+@media (max-width: 640px) {
+  .top { padding-top: 12px; padding-bottom: 12px; }
+  .hero { padding-top: 16px; }
+  .hero .icon { width: 64px; height: 64px; border-radius: 15px; margin-bottom: 12px; }
+  .hero h1 { font-size: 40px; }
+  .hero p.lead { font-size: 16px; line-height: 1.45; margin-top: 10px; }
+  .shots-toggle { margin-top: 18px; }
+  /* Two phones side by side, the third peeking in: whole phones on the first screen. */
+  .shots { grid-auto-columns: 46%; gap: 12px; margin-top: 12px; }
+  .shot figcaption { font-size: 14px; margin-top: 8px; }
+}

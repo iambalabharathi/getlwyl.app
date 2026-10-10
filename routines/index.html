@@ -6,7 +6,7 @@
   <title>Routines &amp; Plans — LWYL</title>
   <meta name="description" content="Search 40 ready-made training programs for the gym, home and running, download one and open it in LWYL — or make your own plan with ChatGPT or Claude.">
   <link rel="icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/styles.css?v=13">
+  <link rel="stylesheet" href="/assets/styles.css?v=14">
 </head>
 <body>
   <header class="wrap top">
@@ -15,7 +15,7 @@
   </header>
 
   <main class="wrap narrow page">
-    <section class="hero">
+    <section class="search-hero">
       <h1>Routines &amp; Plans</h1>
       <p class="updated">40 ready-made programs for the gym, home and running. Download one and it opens in LWYL, planned from next Monday.</p>
 
@@ -38,13 +38,12 @@
         <button type="button" data-key="equipment" data-value="bodyweight">No equipment</button>
       </div>
 
-      <a class="browse" id="browse" href="#results">Browse all 40 programs ↓</a>
+      <div class="browse-row">
+        <a class="browse" id="browse" href="#programs">Browse all 40 programs ↓</a>
+        <button type="button" class="clear" id="clear" hidden>Clear</button>
+        <span class="sr-only" id="result-count" aria-live="polite"></span>
+      </div>
     </section>
-
-    <div class="results-bar" id="results">
-      <span class="result-count" id="result-count" aria-live="polite"></span>
-      <button type="button" class="clear" id="clear" hidden>Clear</button>
-    </div>
     <div class="programs" id="programs"><p class="muted small">Loading…</p></div>
     <p class="muted small">On iPhone, tap Download, then tap the file in your browser’s downloads or in the Files app and it opens in LWYL. You see a preview first — nothing is added until you tap Import, and routines with a name you already have are added as a copy, like “Push Day (2)”.</p>
 
@@ -128,6 +127,6 @@ Rules:
     </div>
   </footer>
 
-  <script src="/routines/gallery.js?v=3"></script>
+  <script src="/routines/gallery.js?v=4"></script>
 </body>
 </html>

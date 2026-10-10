@@ -157,10 +157,9 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
 .page h2.section-break { margin-top: 64px; }
 .page > h3 { font-size: 20px; margin: 28px 0 6px; }
 
-.hero { min-height: calc(100svh - 230px); display: flex; flex-direction: column; justify-content: center; align-items: center;
-        text-align: center; padding: 24px 0 32px; }
-.hero h1 { margin-top: 0; }
-.hero .updated { max-width: 520px; margin-bottom: 28px; }
+.search-hero { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 12vh 0 0; }
+.search-hero h1 { margin-top: 0; }
+.search-hero .updated { max-width: 520px; margin-bottom: 28px; }
 
 .search { position: relative; width: 100%; text-align: left; }
 .search-field { position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; min-height: 58px;
@@ -195,15 +194,14 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
 .quick-picks button { appearance: none; border: 0; cursor: pointer; font: 500 14px var(--sans); color: var(--ink);
                       background: var(--tile); height: 34px; padding: 0 14px; border-radius: 999px; }
 .quick-picks button[hidden] { display: none; }
-.browse { margin-top: 36px; font: 600 15px var(--sans); color: var(--ink-2); text-decoration: none; }
+.browse-row { display: flex; align-items: center; gap: 14px; margin: 28px 0 14px; }
+.browse { margin: 0; font: 600 15px var(--sans); color: var(--ink-2); text-decoration: none; }
 .browse:hover { color: var(--ink); }
 
-.results-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; scroll-margin-top: 16px; }
-.result-count { font-size: 14px; color: var(--ink-2); }
 .clear { appearance: none; border: 0; background: none; cursor: pointer; font: 600 14px var(--sans); color: var(--ink);
          text-decoration: underline; text-underline-offset: 3px; padding: 0 2px; }
 
-.programs { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin: 14px 0 10px; }
+.programs { scroll-margin-top: 16px; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin: 14px 0 10px; }
 .program { background: var(--tile); border-radius: 20px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px;
            cursor: pointer; transition: transform 0.15s ease; }
 .program:hover { transform: translateY(-2px); }

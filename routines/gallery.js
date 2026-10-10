@@ -342,7 +342,7 @@
       : (shown.length === programs.length ? 'Browse all ' : 'See ') + plural(shown.length, 'program', 'programs') + ' ↓';
     renderChips();
     if (!shown.length) {
-      list.appendChild(el('p', 'muted small', 'No programs match — try fewer words or clear the filters.'));
+      list.appendChild(el('p', 'muted small', 'Try fewer words, or clear the filters.'));
       return;
     }
     shown.forEach(function (p) {

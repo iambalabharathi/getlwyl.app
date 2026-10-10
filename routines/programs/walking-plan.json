@@ -1,0 +1,430 @@
+{
+  "id": "walking-plan",
+  "title": "Walking Plan",
+  "summary": "For anyone starting to exercise. Brisk walks five days a week, building from 20 to 45 minutes over six weeks.",
+  "goal": "general",
+  "level": "beginner",
+  "equipment": [
+    "bodyweight"
+  ],
+  "weeks": 6,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Walk · 20 min",
+      "weeks": [
+        1
+      ]
+    },
+    {
+      "weekday": 2,
+      "routine": "Walk · 20 min",
+      "weeks": [
+        1
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Walk · 20 min",
+      "weeks": [
+        1
+      ]
+    },
+    {
+      "weekday": 4,
+      "routine": "Walk · 20 min",
+      "weeks": [
+        1
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Walk · 20 min",
+      "weeks": [
+        1
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Walk · 25 min",
+      "weeks": [
+        2
+      ]
+    },
+    {
+      "weekday": 2,
+      "routine": "Walk · 25 min",
+      "weeks": [
+        2
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Walk · 25 min",
+      "weeks": [
+        2
+      ]
+    },
+    {
+      "weekday": 4,
+      "routine": "Walk · 25 min",
+      "weeks": [
+        2
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Walk · 25 min",
+      "weeks": [
+        2
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Walk · 30 min",
+      "weeks": [
+        3
+      ]
+    },
+    {
+      "weekday": 2,
+      "routine": "Walk · 30 min",
+      "weeks": [
+        3
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Walk · 30 min",
+      "weeks": [
+        3
+      ]
+    },
+    {
+      "weekday": 4,
+      "routine": "Walk · 30 min",
+      "weeks": [
+        3
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Walk · 30 min",
+      "weeks": [
+        3
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Walk · 35 min",
+      "weeks": [
+        4
+      ]
+    },
+    {
+      "weekday": 2,
+      "routine": "Walk · 35 min",
+      "weeks": [
+        4
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Walk · 35 min",
+      "weeks": [
+        4
+      ]
+    },
+    {
+      "weekday": 4,
+      "routine": "Walk · 35 min",
+      "weeks": [
+        4
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Walk · 35 min",
+      "weeks": [
+        4
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Walk · 40 min",
+      "weeks": [
+        5
+      ]
+    },
+    {
+      "weekday": 2,
+      "routine": "Walk · 40 min",
+      "weeks": [
+        5
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Walk · 40 min",
+      "weeks": [
+        5
+      ]
+    },
+    {
+      "weekday": 4,
+      "routine": "Walk · 40 min",
+      "weeks": [
+        5
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Walk · 40 min",
+      "weeks": [
+        5
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Walk · 45 min",
+      "weeks": [
+        6
+      ]
+    },
+    {
+      "weekday": 2,
+      "routine": "Walk · 45 min",
+      "weeks": [
+        6
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Walk · 45 min",
+      "weeks": [
+        6
+      ]
+    },
+    {
+      "weekday": 4,
+      "routine": "Walk · 45 min",
+      "weeks": [
+        6
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Walk · 45 min",
+      "weeks": [
+        6
+      ]
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Walk · 20 min",
+      "notes": "Walk at a brisk pace where you can talk but not sing.",
+      "exercises": [
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 1200,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Walk · 25 min",
+      "notes": "Walk at a brisk pace where you can talk but not sing.",
+      "exercises": [
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 1500,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Walk · 30 min",
+      "notes": "Walk at a brisk pace where you can talk but not sing.",
+      "exercises": [
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 1800,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Walk · 35 min",
+      "notes": "Walk at a brisk pace where you can talk but not sing.",
+      "exercises": [
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 2100,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Walk · 40 min",
+      "notes": "Walk at a brisk pace where you can talk but not sing.",
+      "exercises": [
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 2400,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Walk · 45 min",
+      "notes": "Walk at a brisk pace where you can talk but not sing.",
+      "exercises": [
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 2700,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    }
+  ]
+}

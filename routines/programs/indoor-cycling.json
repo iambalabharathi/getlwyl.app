@@ -1,0 +1,346 @@
+{
+  "id": "indoor-cycling",
+  "title": "Indoor Cycling",
+  "summary": "For beginners building fitness on a bike. Each week has a steady ride, a stationary-bike interval session and short air-bike sprints, all gradually getting longer.",
+  "goal": "general",
+  "level": "beginner",
+  "equipment": [
+    "cardio-machine"
+  ],
+  "weeks": 6,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Endurance Ride · Weeks 1–2",
+      "weeks": [
+        1,
+        2
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Bike Intervals · Weeks 1–2",
+      "weeks": [
+        1,
+        2
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Air Bike Sprints · Weeks 1–2",
+      "weeks": [
+        1,
+        2
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Endurance Ride · Weeks 3–4",
+      "weeks": [
+        3,
+        4
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Bike Intervals · Weeks 3–4",
+      "weeks": [
+        3,
+        4
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Air Bike Sprints · Weeks 3–4",
+      "weeks": [
+        3,
+        4
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Endurance Ride · Weeks 5–6",
+      "weeks": [
+        5,
+        6
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Bike Intervals · Weeks 5–6",
+      "weeks": [
+        5,
+        6
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Air Bike Sprints · Weeks 5–6",
+      "weeks": [
+        5,
+        6
+      ]
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Endurance Ride · Weeks 1–2",
+      "notes": "20 min at a steady, comfortable effort.",
+      "exercises": [
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 1200,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bike Intervals · Weeks 1–2",
+      "notes": "5 min easy, 6 × 60 s hard with 60 s easy pedalling, 5 min easy.",
+      "exercises": [
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 6,
+            "seconds": 60,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Air Bike Sprints · Weeks 1–2",
+      "notes": "5 min easy, 6 × 20 s fast on the air bike with 100 s easy, 5 min easy.",
+      "exercises": [
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Air Bike",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 6,
+            "seconds": 20,
+            "restSeconds": 100
+          }
+        },
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Endurance Ride · Weeks 3–4",
+      "notes": "25 min at a steady, comfortable effort.",
+      "exercises": [
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 1500,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bike Intervals · Weeks 3–4",
+      "notes": "5 min easy, 8 × 60 s hard with 60 s easy pedalling, 5 min easy.",
+      "exercises": [
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 8,
+            "seconds": 60,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Air Bike Sprints · Weeks 3–4",
+      "notes": "5 min easy, 8 × 20 s fast on the air bike with 100 s easy, 5 min easy.",
+      "exercises": [
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Air Bike",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 8,
+            "seconds": 20,
+            "restSeconds": 100
+          }
+        },
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Endurance Ride · Weeks 5–6",
+      "notes": "30 min at a steady, comfortable effort.",
+      "exercises": [
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 1800,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bike Intervals · Weeks 5–6",
+      "notes": "5 min easy, 6 × 90 s hard with 60 s easy pedalling, 5 min easy.",
+      "exercises": [
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 6,
+            "seconds": 90,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Air Bike Sprints · Weeks 5–6",
+      "notes": "5 min easy, 8 × 30 s fast on the air bike with 90 s easy, 5 min easy.",
+      "exercises": [
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Air Bike",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 8,
+            "seconds": 30,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

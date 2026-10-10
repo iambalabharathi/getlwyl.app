@@ -1,0 +1,207 @@
+{
+  "id": "kettlebell-conditioning",
+  "title": "Kettlebell Conditioning",
+  "summary": "For intermediate trainees who want to burn fat and build work capacity with a kettlebell. Swing intervals, a kettlebell complex and a circuit, three days a week with short rests.",
+  "goal": "fat-loss",
+  "level": "intermediate",
+  "equipment": [
+    "kettlebell"
+  ],
+  "weeks": 6,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Swing Intervals"
+    },
+    {
+      "weekday": 3,
+      "routine": "Kettlebell Complex"
+    },
+    {
+      "weekday": 5,
+      "routine": "Conditioning Circuit"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Swing Intervals",
+      "exercises": [
+        {
+          "name": "Kettlebell Swing",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 10,
+            "reps": 15,
+            "weight": 16,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Goblet Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 16,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Push-Up",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Mountain Climbers",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 40,
+            "restSeconds": 30
+          }
+        }
+      ]
+    },
+    {
+      "name": "Kettlebell Complex",
+      "exercises": [
+        {
+          "name": "Kettlebell Swing Clean",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 5,
+            "reps": 6,
+            "weight": 12,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "One Arm Kettlebell Push Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 5,
+            "reps": 6,
+            "weight": 12,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Kettlebell Reverse Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 5,
+            "reps": 6,
+            "weight": 12,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "One Arm Kettlebell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 5,
+            "reps": 8,
+            "weight": 12,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Kettlebell Swing",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 5,
+            "reps": 10,
+            "weight": 16,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Burpees",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Conditioning Circuit",
+      "exercises": [
+        {
+          "name": "Kettlebell Swing",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 5,
+            "reps": 20,
+            "weight": 16,
+            "restSeconds": 40
+          }
+        },
+        {
+          "name": "Kettlebell Goblet Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 10,
+            "weight": 12,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Kettlebell Sumo High Pull",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 4,
+            "reps": 12,
+            "weight": 12,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Kettlebell Russian Twist",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 20,
+            "weight": 8,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Jumping Jacks",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 4,
+            "seconds": 45,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 40,
+            "restSeconds": 30
+          }
+        }
+      ]
+    }
+  ]
+}

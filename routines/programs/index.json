@@ -1,0 +1,528 @@
+{
+ "programs": [
+  {
+   "id": "beginner-5x5",
+   "title": "Beginner 5×5",
+   "summary": "A classic barbell strength program for beginners. Squat every session and alternate two workouts of five sets of five, adding a little weight each time.",
+   "goal": "strength",
+   "level": "beginner",
+   "equipment": [
+    "barbell",
+    "pull-up-bar"
+   ],
+   "weeks": 12,
+   "daysPerWeek": 3,
+   "routines": 2
+  },
+  {
+   "id": "push-pull-legs-3-day",
+   "title": "Push Pull Legs 3-Day",
+   "summary": "A beginner-friendly way to start building muscle. One push, one pull and one leg day a week, each with a main lift and a few simple accessories.",
+   "goal": "muscle",
+   "level": "beginner",
+   "equipment": [
+    "gym"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 3,
+   "routines": 3
+  },
+  {
+   "id": "fat-loss-gym-circuits",
+   "title": "Fat Loss Gym Circuits",
+   "summary": "For gym beginners who want to lose fat and build fitness. Two full-body machine and dumbbell circuits plus two cardio sessions a week.",
+   "goal": "fat-loss",
+   "level": "beginner",
+   "equipment": [
+    "gym"
+   ],
+   "weeks": 6,
+   "daysPerWeek": 4,
+   "routines": 4
+  },
+  {
+   "id": "home-dumbbell-fat-loss",
+   "title": "Home Dumbbell Fat Loss",
+   "summary": "For beginners who want to lose fat at home with light dumbbells. Two full-body circuits alternate over four days a week, moving quickly between exercises with short rests.",
+   "goal": "fat-loss",
+   "level": "beginner",
+   "equipment": [
+    "dumbbells"
+   ],
+   "weeks": 6,
+   "daysPerWeek": 4,
+   "routines": 2
+  },
+  {
+   "id": "beginner-full-body-gym",
+   "title": "Beginner Full Body",
+   "summary": "A simple start in the gym for new lifters. Two full-body workouts, alternated three days a week, cover every major muscle with the main barbell lifts and a few machines.",
+   "goal": "general",
+   "level": "beginner",
+   "equipment": [
+    "gym"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 3,
+   "routines": 2
+  },
+  {
+   "id": "bodyweight-beginner",
+   "title": "Bodyweight Basics",
+   "summary": "A first strength programme for complete beginners, using only your body weight. Three short full-body sessions a week build the squat, push, hinge and core basics, then step up to harder variations from week 4.",
+   "goal": "general",
+   "level": "beginner",
+   "equipment": [
+    "bodyweight"
+   ],
+   "weeks": 6,
+   "daysPerWeek": 3,
+   "routines": 4
+  },
+  {
+   "id": "core-strength-beginner",
+   "title": "Core Foundations",
+   "summary": "A gentle start to core training for beginners or anyone returning to exercise. Three short sessions a week teach bracing and control, then build to longer holds from week 4.",
+   "goal": "general",
+   "level": "beginner",
+   "equipment": [
+    "bodyweight"
+   ],
+   "weeks": 6,
+   "daysPerWeek": 3,
+   "routines": 4
+  },
+  {
+   "id": "dumbbell-full-body-beginner",
+   "title": "Dumbbell Full Body for Beginners",
+   "summary": "For newcomers training at home with a pair of dumbbells. Two alternating full-body sessions, three days a week, build basic strength and good movement habits.",
+   "goal": "general",
+   "level": "beginner",
+   "equipment": [
+    "dumbbells"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 3,
+   "routines": 2
+  },
+  {
+   "id": "full-body-2-day",
+   "title": "Full Body 2-Day",
+   "summary": "For beginners with busy weeks. Two full-body gym sessions a week cover all the main movements, so you keep making progress on limited time.",
+   "goal": "general",
+   "level": "beginner",
+   "equipment": [
+    "gym"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 2,
+   "routines": 2
+  },
+  {
+   "id": "indoor-cycling",
+   "title": "Indoor Cycling",
+   "summary": "For beginners building fitness on a bike. Each week has a steady ride, a stationary-bike interval session and short air-bike sprints, all gradually getting longer.",
+   "goal": "general",
+   "level": "beginner",
+   "equipment": [
+    "cardio-machine"
+   ],
+   "weeks": 6,
+   "daysPerWeek": 3,
+   "routines": 9
+  },
+  {
+   "id": "kettlebell-beginner",
+   "title": "Kettlebell Basics",
+   "summary": "For beginners with one kettlebell at home. Two alternating full-body sessions, three days a week, teach the squat, hinge, press and swing while building all-round fitness.",
+   "goal": "general",
+   "level": "beginner",
+   "equipment": [
+    "kettlebell"
+   ],
+   "weeks": 6,
+   "daysPerWeek": 3,
+   "routines": 2
+  },
+  {
+   "id": "resistance-band-full-body",
+   "title": "Resistance Band Full Body",
+   "summary": "A beginner full-body programme you can do at home with a set of resistance bands. Three sessions a week alternate two workouts; use a stronger band or add reps as each gets easier.",
+   "goal": "general",
+   "level": "beginner",
+   "equipment": [
+    "bands"
+   ],
+   "weeks": 6,
+   "daysPerWeek": 3,
+   "routines": 2
+  },
+  {
+   "id": "rowing-machine-plan",
+   "title": "Rowing Machine Plan",
+   "summary": "For beginners who want a low-impact cardio routine on the rower. Two steady rows and one interval session a week, building from 15 to 25 minutes of steady rowing.",
+   "goal": "general",
+   "level": "beginner",
+   "equipment": [
+    "cardio-machine"
+   ],
+   "weeks": 6,
+   "daysPerWeek": 3,
+   "routines": 6
+  },
+  {
+   "id": "walking-plan",
+   "title": "Walking Plan",
+   "summary": "For anyone starting to exercise. Brisk walks five days a week, building from 20 to 45 minutes over six weeks.",
+   "goal": "general",
+   "level": "beginner",
+   "equipment": [
+    "bodyweight"
+   ],
+   "weeks": 6,
+   "daysPerWeek": 5,
+   "routines": 6
+  },
+  {
+   "id": "run-walk-to-5k",
+   "title": "Run/Walk to 5K",
+   "summary": "For complete beginners who want to run 5 km. Three run/walk sessions a week, with the running intervals growing until you can run 25 minutes non-stop.",
+   "goal": "running",
+   "level": "beginner",
+   "equipment": [
+    "bodyweight"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 3,
+   "routines": 4
+  },
+  {
+   "id": "daily-mobility",
+   "title": "Daily Mobility",
+   "summary": "A 15-minute mobility routine for every weekday, suitable for any fitness level. Two routines alternate to loosen hips, spine, hamstrings and shoulders.",
+   "goal": "mobility",
+   "level": "beginner",
+   "equipment": [
+    "bodyweight"
+   ],
+   "weeks": 4,
+   "daysPerWeek": 5,
+   "routines": 2
+  },
+  {
+   "id": "desk-worker-mobility",
+   "title": "Desk Worker Mobility",
+   "summary": "For people who sit most of the day. Three sessions a week open up the hips, upper back, neck and shoulders and strengthen the muscles that support good posture.",
+   "goal": "mobility",
+   "level": "beginner",
+   "equipment": [
+    "bodyweight"
+   ],
+   "weeks": 4,
+   "daysPerWeek": 3,
+   "routines": 2
+  },
+  {
+   "id": "bench-press-focus",
+   "title": "Bench Press Focus",
+   "summary": "For intermediate lifters who want to bring up their bench press. Three bench sessions a week — heavy, volume and paused — with squats, deadlifts and back work to keep the rest of the body strong.",
+   "goal": "strength",
+   "level": "intermediate",
+   "equipment": [
+    "gym"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 3,
+   "routines": 3
+  },
+  {
+   "id": "calisthenics-intermediate",
+   "title": "Intermediate Calisthenics",
+   "summary": "For people who can already do a few pull-ups and solid push-ups. An upper/lower split four days a week builds strength with harder bodyweight variations and a pull-up bar.",
+   "goal": "strength",
+   "level": "intermediate",
+   "equipment": [
+    "bodyweight",
+    "pull-up-bar"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 4,
+   "routines": 4
+  },
+  {
+   "id": "kettlebell-strength",
+   "title": "Kettlebell Strength",
+   "summary": "For intermediate lifters with a pair of kettlebells who want to get stronger. Three heavy sessions a week built around cleans, presses, squats and hinges with low reps and full rest.",
+   "goal": "strength",
+   "level": "intermediate",
+   "equipment": [
+    "kettlebell"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 3,
+   "routines": 3
+  },
+  {
+   "id": "posterior-chain-strength",
+   "title": "Posterior Chain Strength",
+   "summary": "For intermediate lifters who want a stronger deadlift and a sturdier back, glutes and hamstrings. Three days a week built around the deadlift and other hip-hinge lifts, with squats and upper-body work for balance.",
+   "goal": "strength",
+   "level": "intermediate",
+   "equipment": [
+    "gym"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 3,
+   "routines": 3
+  },
+  {
+   "id": "classic-split-5-day",
+   "title": "Classic 5-Day Split",
+   "summary": "A traditional bodybuilding split for lifters with some experience. Chest, back, legs, shoulders and arms each get their own day, with plenty of volume for muscle growth.",
+   "goal": "muscle",
+   "level": "intermediate",
+   "equipment": [
+    "gym"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 5,
+   "routines": 5
+  },
+  {
+   "id": "dumbbell-arms-shoulders",
+   "title": "Dumbbell Arms & Shoulders",
+   "summary": "For intermediate lifters who want bigger arms and shoulders. Two focused dumbbell sessions a week, on Tuesday and Saturday, to add alongside another training plan.",
+   "goal": "muscle",
+   "level": "intermediate",
+   "equipment": [
+    "dumbbells"
+   ],
+   "weeks": 6,
+   "daysPerWeek": 2,
+   "routines": 2
+  },
+  {
+   "id": "dumbbell-glutes-legs",
+   "title": "Dumbbell Glutes & Legs",
+   "summary": "For intermediate lifters who want stronger, more muscular legs and glutes at home. Three dumbbell sessions a week cover hip thrusts and hinges, squats, and single-leg work.",
+   "goal": "muscle",
+   "level": "intermediate",
+   "equipment": [
+    "dumbbells"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 3,
+   "routines": 3
+  },
+  {
+   "id": "dumbbell-push-pull-legs",
+   "title": "Dumbbell Push Pull Legs",
+   "summary": "For intermediate lifters training at home with dumbbells. A classic push, pull and legs split over three days a week to build muscle across the whole body.",
+   "goal": "muscle",
+   "level": "intermediate",
+   "equipment": [
+    "dumbbells"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 3,
+   "routines": 3
+  },
+  {
+   "id": "dumbbell-upper-lower",
+   "title": "Dumbbell Upper / Lower",
+   "summary": "For lifters with some experience and a set of dumbbells at home. Four sessions a week split into upper and lower body days to build muscle with moderate reps.",
+   "goal": "muscle",
+   "level": "intermediate",
+   "equipment": [
+    "dumbbells"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 4,
+   "routines": 4
+  },
+  {
+   "id": "push-pull-legs-6-day",
+   "title": "Push Pull Legs 6-Day",
+   "summary": "A high-volume muscle-building split for experienced lifters. Push, pull and legs each come round twice a week, with a heavier and a lighter version of each day.",
+   "goal": "muscle",
+   "level": "intermediate",
+   "equipment": [
+    "gym"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 6,
+   "routines": 6
+  },
+  {
+   "id": "upper-lower-4-day",
+   "title": "Upper / Lower 4-Day",
+   "summary": "For lifters with some experience who want to build muscle and strength. Each half of the body is trained twice a week: one heavier day and one higher-rep day.",
+   "goal": "muscle",
+   "level": "intermediate",
+   "equipment": [
+    "gym"
+   ],
+   "weeks": 10,
+   "daysPerWeek": 4,
+   "routines": 4
+  },
+  {
+   "id": "hiit-conditioning",
+   "title": "HIIT Conditioning",
+   "summary": "For people with a base of fitness who want short, hard sessions. Three bodyweight interval workouts a week; work periods get longer and rests shorter after week three.",
+   "goal": "fat-loss",
+   "level": "intermediate",
+   "equipment": [
+    "bodyweight"
+   ],
+   "weeks": 6,
+   "daysPerWeek": 3,
+   "routines": 6
+  },
+  {
+   "id": "kettlebell-conditioning",
+   "title": "Kettlebell Conditioning",
+   "summary": "For intermediate trainees who want to burn fat and build work capacity with a kettlebell. Swing intervals, a kettlebell complex and a circuit, three days a week with short rests.",
+   "goal": "fat-loss",
+   "level": "intermediate",
+   "equipment": [
+    "kettlebell"
+   ],
+   "weeks": 6,
+   "daysPerWeek": 3,
+   "routines": 3
+  },
+  {
+   "id": "hotel-room-workout",
+   "title": "Hotel Room Workout",
+   "summary": "No-equipment training for when you're travelling, in the space beside a bed. Three sessions a week cover lower body, upper body and conditioning to keep your fitness ticking over.",
+   "goal": "general",
+   "level": "intermediate",
+   "equipment": [
+    "bodyweight"
+   ],
+   "weeks": 4,
+   "daysPerWeek": 3,
+   "routines": 3
+  },
+  {
+   "id": "hybrid-strength-run",
+   "title": "Hybrid Strength & Run",
+   "summary": "For people who want to get stronger and fitter at the same time. Two full-body barbell sessions and two runs a week: one interval session and one longer easy run.",
+   "goal": "general",
+   "level": "intermediate",
+   "equipment": [
+    "gym"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 4,
+   "routines": 6
+  },
+  {
+   "id": "10k-plan",
+   "title": "10K Plan",
+   "summary": "For runners comfortable with 5 km who want to race 10 km. Four runs a week with alternating intervals and tempo runs, and a Sunday long run that builds to 12 km before race week.",
+   "goal": "running",
+   "level": "intermediate",
+   "equipment": [
+    "bodyweight"
+   ],
+   "weeks": 10,
+   "daysPerWeek": 4,
+   "routines": 10
+  },
+  {
+   "id": "5k-improver",
+   "title": "5K Improver",
+   "summary": "For runners who can already run 5 km and want to get faster. Four runs a week: an easy run, intervals, a tempo run and a longer easy run; skip the easy run on a busy week.",
+   "goal": "running",
+   "level": "intermediate",
+   "equipment": [
+    "bodyweight"
+   ],
+   "weeks": 6,
+   "daysPerWeek": 4,
+   "routines": 7
+  },
+  {
+   "id": "half-marathon-base",
+   "title": "Half Marathon Base",
+   "summary": "For regular runners stepping up to the half marathon. Four runs a week, with a long run that builds gradually from 10 km to 18 km, cutback weeks every fourth week and a race at the end.",
+   "goal": "running",
+   "level": "intermediate",
+   "equipment": [
+    "bodyweight"
+   ],
+   "weeks": 12,
+   "daysPerWeek": 4,
+   "routines": 12
+  },
+  {
+   "id": "yoga-strength-flow",
+   "title": "Yoga Strength Flow",
+   "summary": "For people with some yoga or training experience who want strength and flexibility together. Three sessions a week hold standing, balance and backbend poses for time, with longer holds from week 4.",
+   "goal": "mobility",
+   "level": "intermediate",
+   "equipment": [
+    "bodyweight"
+   ],
+   "weeks": 6,
+   "daysPerWeek": 3,
+   "routines": 6
+  },
+  {
+   "id": "calisthenics-skills",
+   "title": "Calisthenics Skills",
+   "summary": "For advanced trainees chasing the handstand, L-sit, planche and front and back levers. Four days a week pair skill holds with the strength work behind them, with longer holds and harder variations from week 6.",
+   "goal": "strength",
+   "level": "advanced",
+   "equipment": [
+    "bodyweight",
+    "pull-up-bar"
+   ],
+   "weeks": 10,
+   "daysPerWeek": 4,
+   "routines": 8
+  },
+  {
+   "id": "powerbuilding-4-day",
+   "title": "Powerbuilding 4-Day",
+   "summary": "For advanced lifters who want to get stronger and bigger at the same time. Each day opens with heavy, low-rep work on a main lift, followed by moderate-rep accessories for size.",
+   "goal": "strength",
+   "level": "advanced",
+   "equipment": [
+    "gym"
+   ],
+   "weeks": 12,
+   "daysPerWeek": 4,
+   "routines": 4
+  },
+  {
+   "id": "dumbbell-hypertrophy-5-day",
+   "title": "Dumbbell Hypertrophy 5-Day",
+   "summary": "For experienced lifters with a full set of dumbbells who want to maximise muscle growth. An upper/lower block followed by push, pull and legs gives every muscle two hard sessions a week.",
+   "goal": "muscle",
+   "level": "advanced",
+   "equipment": [
+    "dumbbells"
+   ],
+   "weeks": 8,
+   "daysPerWeek": 5,
+   "routines": 5
+  },
+  {
+   "id": "core-advanced",
+   "title": "Advanced Core",
+   "summary": "Demanding core training for experienced trainees with a pull-up bar. Three sessions a week cover anti-extension, rotation and hanging strength with moves such as dragon flags, toes-to-bar and L-sits.",
+   "goal": "general",
+   "level": "advanced",
+   "equipment": [
+    "bodyweight",
+    "pull-up-bar"
+   ],
+   "weeks": 6,
+   "daysPerWeek": 3,
+   "routines": 3
+  }
+ ]
+}

@@ -1,0 +1,186 @@
+{
+  "id": "beginner-5x5",
+  "title": "Beginner 5×5",
+  "summary": "A classic barbell strength program for beginners. Squat every session and alternate two workouts of five sets of five, adding a little weight each time.",
+  "goal": "strength",
+  "level": "beginner",
+  "equipment": [
+    "barbell",
+    "pull-up-bar"
+  ],
+  "weeks": 12,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Workout A",
+      "weeks": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Workout B",
+      "weeks": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Workout A",
+      "weeks": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Workout B",
+      "weeks": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Workout A",
+      "weeks": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Workout B",
+      "weeks": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ]
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Workout A",
+      "exercises": [
+        {
+          "name": "Barbell Back Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 5,
+            "reps": 5,
+            "weight": 20,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Barbell Bench Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 5,
+            "reps": 5,
+            "weight": 20,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Bent-Over Barbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 5,
+            "reps": 5,
+            "weight": 30,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Workout B",
+      "exercises": [
+        {
+          "name": "Barbell Back Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 5,
+            "reps": 5,
+            "weight": 20,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Barbell Overhead Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 5,
+            "reps": 5,
+            "weight": 20,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Barbell Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 1,
+            "reps": 5,
+            "weight": 40,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Chin-Ups",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 5,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Hanging Knee Raise",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 60
+          }
+        }
+      ]
+    }
+  ]
+}

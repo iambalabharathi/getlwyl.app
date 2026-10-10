@@ -1,0 +1,270 @@
+{
+  "id": "dumbbell-upper-lower",
+  "title": "Dumbbell Upper / Lower",
+  "summary": "For lifters with some experience and a set of dumbbells at home. Four sessions a week split into upper and lower body days to build muscle with moderate reps.",
+  "goal": "muscle",
+  "level": "intermediate",
+  "equipment": [
+    "dumbbells"
+  ],
+  "weeks": 8,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Upper A"
+    },
+    {
+      "weekday": 2,
+      "routine": "Lower A"
+    },
+    {
+      "weekday": 4,
+      "routine": "Upper B"
+    },
+    {
+      "weekday": 5,
+      "routine": "Lower B"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Upper A",
+      "exercises": [
+        {
+          "name": "Dumbbell Bench Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "weight": 16,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Bent-Over Dumbbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "weight": 18,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Seated Dumbbell Shoulder Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 12,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Chest-Supported Dumbbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 12,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Dumbbell Bicep Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 8,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dumbbell Skull Crusher",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 8,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Lower A",
+      "exercises": [
+        {
+          "name": "Goblet Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 10,
+            "weight": 20,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dumbbell Romanian Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 10,
+            "weight": 18,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 10,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Dumbbell Calf Raise",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 14,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 40,
+            "restSeconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Upper B",
+      "exercises": [
+        {
+          "name": "Incline Dumbbell Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 4,
+            "reps": 10,
+            "weight": 14,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Single-Arm Dumbbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 10,
+            "weight": 20,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Arnold Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 10,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 6,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Dumbbell Hammer Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Overhead Tricep Extension",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 14,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Lower B",
+      "exercises": [
+        {
+          "name": "Dumbbell Front Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "weight": 16,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dumbbell Hip Thrust",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 10,
+            "weight": 24,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Reverse Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 12,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Single Leg Romanian Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 12,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dead Bug",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 45
+          }
+        }
+      ]
+    }
+  ]
+}

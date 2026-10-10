@@ -1,0 +1,209 @@
+{
+  "id": "core-advanced",
+  "title": "Advanced Core",
+  "summary": "Demanding core training for experienced trainees with a pull-up bar. Three sessions a week cover anti-extension, rotation and hanging strength with moves such as dragon flags, toes-to-bar and L-sits.",
+  "goal": "general",
+  "level": "advanced",
+  "equipment": [
+    "bodyweight",
+    "pull-up-bar"
+  ],
+  "weeks": 6,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Front Line"
+    },
+    {
+      "weekday": 3,
+      "routine": "Rotation & Lateral"
+    },
+    {
+      "weekday": 5,
+      "routine": "Hanging Core"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Front Line",
+      "notes": "Anti-extension strength. Lower dragon flags slowly; use the tuck version if form breaks.",
+      "exercises": [
+        {
+          "name": "Dragon Flag",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 4,
+            "reps": 5,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Hollow Body Hold",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 4,
+            "seconds": 45,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "V Ups",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Jackknife Sit-Up",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Six Inch Hold",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 75,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Rotation & Lateral",
+      "notes": "Side work: reps or holds per side.",
+      "exercises": [
+        {
+          "name": "Supine Windshield Wipers",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 4,
+            "reps": 10,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Side Plank with Leg Lift",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Russian Twist",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 24,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Cross-Body Crunch",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Side Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 45,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Bear Plank Hold",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 45,
+            "restSeconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Hanging Core",
+      "notes": "Strict reps from a dead hang; no swinging.",
+      "exercises": [
+        {
+          "name": "Toes to Bar",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Hanging L-Sit",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 4,
+            "seconds": 20,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Hanging Pike",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Hanging Leg Raise",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "L Sit",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 3,
+            "seconds": 20,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dead Bug",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 45
+          }
+        }
+      ]
+    }
+  ]
+}

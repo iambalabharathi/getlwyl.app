@@ -1,0 +1,153 @@
+{
+  "id": "full-body-2-day",
+  "title": "Full Body 2-Day",
+  "summary": "For beginners with busy weeks. Two full-body gym sessions a week cover all the main movements, so you keep making progress on limited time.",
+  "goal": "general",
+  "level": "beginner",
+  "equipment": [
+    "gym"
+  ],
+  "weeks": 8,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Workout A"
+    },
+    {
+      "weekday": 4,
+      "routine": "Workout B"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Workout A",
+      "exercises": [
+        {
+          "name": "Barbell Back Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 20,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Barbell Bench Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 20,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Lat Pulldown",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 25,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Lying Leg Curl",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "reps": 12,
+            "weight": 15,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 2,
+            "reps": 12,
+            "weight": 4,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Workout B",
+      "exercises": [
+        {
+          "name": "Barbell Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 5,
+            "weight": 40,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Incline Dumbbell Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 10,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Seated Cable Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 25,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Goblet Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 12,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dumbbell Bicep Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 2,
+            "reps": 12,
+            "weight": 6,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Cable Tricep Pushdown",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 2,
+            "reps": 12,
+            "weight": 10,
+            "restSeconds": 60
+          }
+        }
+      ]
+    }
+  ]
+}

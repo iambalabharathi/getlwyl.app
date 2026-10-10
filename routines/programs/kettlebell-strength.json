@@ -1,0 +1,192 @@
+{
+  "id": "kettlebell-strength",
+  "title": "Kettlebell Strength",
+  "summary": "For intermediate lifters with a pair of kettlebells who want to get stronger. Three heavy sessions a week built around cleans, presses, squats and hinges with low reps and full rest.",
+  "goal": "strength",
+  "level": "intermediate",
+  "equipment": [
+    "kettlebell"
+  ],
+  "weeks": 8,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Squat & Press"
+    },
+    {
+      "weekday": 3,
+      "routine": "Hinge & Pull"
+    },
+    {
+      "weekday": 5,
+      "routine": "Full Body Strength"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Squat & Press",
+      "exercises": [
+        {
+          "name": "Double Kettlebell Clean",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 4,
+            "reps": 5,
+            "weight": 16,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Double Kettlebell Overhead Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 5,
+            "reps": 5,
+            "weight": 16,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Goblet Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 5,
+            "reps": 5,
+            "weight": 24,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Double Kettlebell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "weight": 20,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Kettlebell Turkish Get Ups",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 3,
+            "reps": 2,
+            "weight": 12,
+            "restSeconds": 90
+          }
+        }
+      ]
+    },
+    {
+      "name": "Hinge & Pull",
+      "exercises": [
+        {
+          "name": "Kettlebell Swing",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 5,
+            "reps": 10,
+            "weight": 24,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Kettlebell Single Leg Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 6,
+            "weight": 16,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "One Arm Kettlebell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "weight": 24,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "One Arm Kettlebell Floor Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 4,
+            "reps": 6,
+            "weight": 20,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Kettlebell Windmills",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 3,
+            "reps": 5,
+            "weight": 12,
+            "restSeconds": 75
+          }
+        }
+      ]
+    },
+    {
+      "name": "Full Body Strength",
+      "exercises": [
+        {
+          "name": "Double Kettlebell Clean and Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 5,
+            "reps": 5,
+            "weight": 16,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Kettlebell Bulgarian Split Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 6,
+            "weight": 16,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Kettlebell Sumo Deadlift",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "weight": 32,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Double Kettlebell Push Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 5,
+            "weight": 20,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Hollow Body Hold",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 60
+          }
+        }
+      ]
+    }
+  ]
+}

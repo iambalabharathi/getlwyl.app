@@ -1,0 +1,208 @@
+{
+  "id": "posterior-chain-strength",
+  "title": "Posterior Chain Strength",
+  "summary": "For intermediate lifters who want a stronger deadlift and a sturdier back, glutes and hamstrings. Three days a week built around the deadlift and other hip-hinge lifts, with squats and upper-body work for balance.",
+  "goal": "strength",
+  "level": "intermediate",
+  "equipment": [
+    "gym"
+  ],
+  "weeks": 8,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Deadlift Day"
+    },
+    {
+      "weekday": 3,
+      "routine": "Squat Day"
+    },
+    {
+      "weekday": 5,
+      "routine": "Hinge Day"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Deadlift Day",
+      "exercises": [
+        {
+          "name": "Barbell Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 5,
+            "weight": 100,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Barbell Hip Thrust",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 80,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Bent-Over Barbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 50,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Back Extension",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Hanging Leg Raise",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Squat Day",
+      "exercises": [
+        {
+          "name": "Barbell Back Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 6,
+            "weight": 80,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Barbell Bench Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 60,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Good Morning",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 40,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Pull-Up",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Lying Leg Curl",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 30,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 45,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Hinge Day",
+      "exercises": [
+        {
+          "name": "Pause Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 3,
+            "weight": 85,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Romanian Deadlift",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 70,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Barbell Overhead Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 35,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Seated Cable Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 45,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Nordic Hamstring Curl",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 5,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Kettlebell Swing",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 24,
+            "restSeconds": 60
+          }
+        }
+      ]
+    }
+  ]
+}

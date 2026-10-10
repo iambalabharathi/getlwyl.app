@@ -1,0 +1,585 @@
+{
+  "id": "calisthenics-skills",
+  "title": "Calisthenics Skills",
+  "summary": "For advanced trainees chasing the handstand, L-sit, planche and front and back levers. Four days a week pair skill holds with the strength work behind them, with longer holds and harder variations from week 6.",
+  "goal": "strength",
+  "level": "advanced",
+  "equipment": [
+    "bodyweight",
+    "pull-up-bar"
+  ],
+  "weeks": 10,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Handstand & Push 1",
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "weekday": 2,
+      "routine": "Front Lever & Pull 1",
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "weekday": 4,
+      "routine": "L-Sit & Legs 1",
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Back Lever & Pull 1",
+      "weeks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Handstand & Push 2",
+      "weeks": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "weekday": 2,
+      "routine": "Front Lever & Pull 2",
+      "weeks": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "weekday": 4,
+      "routine": "L-Sit & Legs 2",
+      "weeks": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Back Lever & Pull 2",
+      "weeks": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Handstand & Push 1",
+      "notes": "Skill work first, while fresh. Handstands against a wall until you can hold freestanding; planche at your current progression (lean, tuck or advanced tuck).",
+      "exercises": [
+        {
+          "name": "Handstand Hold",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 5,
+            "seconds": 25,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Planche",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 5,
+            "seconds": 10,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Handstand Push Ups",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 4,
+            "reps": 4,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Pseudo Planche Push Ups",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Archer Push Ups",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 6,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Hollow Body Hold",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 40,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Front Lever & Pull 1",
+      "notes": "Front lever at your current progression (tuck, advanced tuck, one leg, straddle). Archer pull-ups: reps per side.",
+      "exercises": [
+        {
+          "name": "Front Lever",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 5,
+            "seconds": 10,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Scapular Pull Ups",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Pull-Up",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Archer Pull Ups",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 3,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Toes to Bar",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dragon Flag",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 5,
+            "restSeconds": 90
+          }
+        }
+      ]
+    },
+    {
+      "name": "L-Sit & Legs 1",
+      "notes": "L-sit on the floor, parallettes or bars; tuck one or both knees if needed. Pistol squats per leg.",
+      "exercises": [
+        {
+          "name": "L Sit",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 5,
+            "seconds": 15,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Hanging L-Sit",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 20,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Pistol Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 5,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Nordic Hamstring Curl",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 4,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "V Ups",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Single Leg Calf Raise",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "restSeconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Back Lever & Pull 1",
+      "notes": "Back lever at your current progression. Build the pulling base for muscle-ups from week 6.",
+      "exercises": [
+        {
+          "name": "Back Lever",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 5,
+            "seconds": 10,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Pull-Up",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 5,
+            "reps": 5,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Chin-Ups",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Commando Pull-Up",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 6,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Hanging Leg Raise",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Pike Push Ups",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 90
+          }
+        }
+      ]
+    },
+    {
+      "name": "Handstand & Push 2",
+      "notes": "Skill work first, while fresh. Handstands against a wall until you can hold freestanding; planche at your current progression (lean, tuck or advanced tuck).",
+      "exercises": [
+        {
+          "name": "Handstand Hold",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 5,
+            "seconds": 30,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Planche",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 5,
+            "seconds": 15,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Handstand Push Ups",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 4,
+            "reps": 6,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Pseudo Planche Push Ups",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Archer Push Ups",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 6,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Hollow Body Hold",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 45,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Front Lever & Pull 2",
+      "notes": "Front lever at your current progression (tuck, advanced tuck, one leg, straddle). Archer pull-ups: reps per side.",
+      "exercises": [
+        {
+          "name": "Front Lever",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 5,
+            "seconds": 15,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Scapular Pull Ups",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Pull-Up",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 10,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Archer Pull Ups",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 5,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Toes to Bar",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dragon Flag",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 5,
+            "restSeconds": 90
+          }
+        }
+      ]
+    },
+    {
+      "name": "L-Sit & Legs 2",
+      "notes": "L-sit on the floor, parallettes or bars; tuck one or both knees if needed. Pistol squats per leg.",
+      "exercises": [
+        {
+          "name": "L Sit",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 5,
+            "seconds": 20,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Hanging L-Sit",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 25,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Pistol Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 7,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Nordic Hamstring Curl",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 6,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "V Ups",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Single Leg Calf Raise",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "restSeconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Back Lever & Pull 2",
+      "notes": "Back lever at your current progression. Muscle-ups: clean singles or doubles, no kipping.",
+      "exercises": [
+        {
+          "name": "Back Lever",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 5,
+            "seconds": 15,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Muscle Ups",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 5,
+            "reps": 2,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Chin-Ups",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 10,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Commando Pull-Up",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 6,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Hanging Leg Raise",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Pike Push Ups",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 90
+          }
+        }
+      ]
+    }
+  ]
+}

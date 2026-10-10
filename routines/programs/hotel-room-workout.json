@@ -1,0 +1,235 @@
+{
+  "id": "hotel-room-workout",
+  "title": "Hotel Room Workout",
+  "summary": "No-equipment training for when you're travelling, in the space beside a bed. Three sessions a week cover lower body, upper body and conditioning to keep your fitness ticking over.",
+  "goal": "general",
+  "level": "intermediate",
+  "equipment": [
+    "bodyweight"
+  ],
+  "weeks": 4,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Lower Body"
+    },
+    {
+      "weekday": 3,
+      "routine": "Upper Body"
+    },
+    {
+      "weekday": 5,
+      "routine": "Conditioning"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Lower Body",
+      "notes": "Use the bed or a chair for split squats; reps per leg.",
+      "exercises": [
+        {
+          "name": "Bulgarian Split Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Jump Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Single Leg Glute Bridge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Reverse Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Wall Sit",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "seconds": 45,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Single Leg Calf Raise",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Side Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Upper Body",
+      "notes": "Dips off a sturdy chair or the bed edge; feet on the bed for decline push-ups.",
+      "exercises": [
+        {
+          "name": "Push-Up",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 4,
+            "reps": 15,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Bench Dips",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Pike Push Ups",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Decline Push-Up",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Diamond Push Ups",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Superman",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 45,
+            "restSeconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Conditioning",
+      "notes": "Work hard during each interval and keep rests short. Plyo lunges: reps per leg.",
+      "exercises": [
+        {
+          "name": "Burpees",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 4,
+            "seconds": 40,
+            "restSeconds": 40
+          }
+        },
+        {
+          "name": "Mountain Climbers",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 4,
+            "seconds": 30,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Plyo Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Spiderman Push-Up",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "High Knees",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 4,
+            "seconds": 30,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Bear Crawl",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Bicycle Crunch",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 20,
+            "restSeconds": 30
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,500 @@
+{
+  "id": "yoga-strength-flow",
+  "title": "Yoga Strength Flow",
+  "summary": "For people with some yoga or training experience who want strength and flexibility together. Three sessions a week hold standing, balance and backbend poses for time, with longer holds from week 4.",
+  "goal": "mobility",
+  "level": "intermediate",
+  "equipment": [
+    "bodyweight"
+  ],
+  "weeks": 6,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Standing Strength 1",
+      "weeks": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Balance & Core 1",
+      "weeks": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Hips & Backbends 1",
+      "weeks": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Standing Strength 2",
+      "weeks": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Balance & Core 2",
+      "weeks": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Hips & Backbends 2",
+      "weeks": [
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Standing Strength 1",
+      "notes": "Hold each pose with steady breathing. Two-set poses: one set per side.",
+      "exercises": [
+        {
+          "name": "Chair Pose",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Warrior I",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Warrior II",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Extended Side Angle Pose",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Crescent Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Triangle Pose",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Downward-Facing Dog",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Garland Pose",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 1,
+            "seconds": 60,
+            "restSeconds": 15
+          }
+        }
+      ]
+    },
+    {
+      "name": "Balance & Core 1",
+      "notes": "Use a wall for balance poses if needed. Two-set poses: one set per side.",
+      "exercises": [
+        {
+          "name": "Tree Pose",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Warrior III",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Half Moon Pose",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Boat Pose",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Dolphin Pose",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Side Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "High Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 30
+          }
+        }
+      ]
+    },
+    {
+      "name": "Hips & Backbends 1",
+      "notes": "Warm up well before backbends; come out slowly. Two-set poses: one set per side.",
+      "exercises": [
+        {
+          "name": "Low Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Revolved Chair Pose",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Locust Pose",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Bow Pose",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Camel Pose",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Pigeon Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Corpse Pose",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 1,
+            "seconds": 120
+          }
+        }
+      ]
+    },
+    {
+      "name": "Standing Strength 2",
+      "notes": "Hold each pose with steady breathing. Two-set poses: one set per side.",
+      "exercises": [
+        {
+          "name": "Chair Pose",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "seconds": 45,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Warrior I",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Warrior II",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Extended Side Angle Pose",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Crescent Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Triangle Pose",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Downward-Facing Dog",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 2,
+            "seconds": 60,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Garland Pose",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 1,
+            "seconds": 60,
+            "restSeconds": 15
+          }
+        }
+      ]
+    },
+    {
+      "name": "Balance & Core 2",
+      "notes": "Use a wall for balance poses if needed. Two-set poses: one set per side.",
+      "exercises": [
+        {
+          "name": "Tree Pose",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Warrior III",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Half Moon Pose",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Boat Pose",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 45,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Dolphin Pose",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "seconds": 45,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Side Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Crow Pose",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "seconds": 27,
+            "restSeconds": 30
+          }
+        }
+      ]
+    },
+    {
+      "name": "Hips & Backbends 2",
+      "notes": "Warm up well before backbends; come out slowly. Two-set poses: one set per side.",
+      "exercises": [
+        {
+          "name": "Low Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Revolved Chair Pose",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Locust Pose",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "seconds": 45,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Bow Pose",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Camel Pose",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Pigeon Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 60,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Corpse Pose",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 1,
+            "seconds": 120
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "id": "beginner-full-body-gym",
+  "title": "Beginner Full Body",
+  "summary": "A simple start in the gym for new lifters. Two full-body workouts, alternated three days a week, cover every major muscle with the main barbell lifts and a few machines.",
+  "goal": "general",
+  "level": "beginner",
+  "equipment": [
+    "gym"
+  ],
+  "weeks": 8,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Workout A",
+      "weeks": [
+        1,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Workout B",
+      "weeks": [
+        1,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Workout A",
+      "weeks": [
+        1,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Workout B",
+      "weeks": [
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Workout A",
+      "weeks": [
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Workout B",
+      "weeks": [
+        2,
+        4,
+        6,
+        8
+      ]
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Workout A",
+      "exercises": [
+        {
+          "name": "Barbell Back Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 20,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Barbell Bench Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 20,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Lat Pulldown",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 25,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dumbbell Romanian Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 10,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 2,
+            "reps": 12,
+            "weight": 4,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Workout B",
+      "exercises": [
+        {
+          "name": "Barbell Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 5,
+            "weight": 40,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Barbell Overhead Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 20,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Seated Cable Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 25,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Leg Press",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 40,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dumbbell Bicep Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 2,
+            "reps": 12,
+            "weight": 6,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Cable Tricep Pushdown",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 2,
+            "reps": 12,
+            "weight": 10,
+            "restSeconds": 60
+          }
+        }
+      ]
+    }
+  ]
+}

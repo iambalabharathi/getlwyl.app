@@ -151,3 +151,20 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
         background: var(--ink); color: var(--bg); font: 600 14px var(--sans); padding: 7px 14px; border-radius: 999px; }
 .more { text-align: center; margin-top: 28px; }
 .more a { font-weight: 600; }
+
+/* Program library */
+.filters { margin: 16px 0 6px; display: grid; gap: 8px; }
+.filter-row { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.filter-row::-webkit-scrollbar { display: none; }
+.chip { appearance: none; border: 0; cursor: pointer; white-space: nowrap; font: 500 14px var(--sans);
+        color: var(--ink); background: var(--tile); height: 34px; padding: 0 14px; border-radius: 10px; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.programs { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin: 14px 0 10px; }
+.program { background: var(--tile); border-radius: 20px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px; }
+.program-eyebrow { margin: 0; font: 600 11px var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
+.program-title { margin: 0; font: 500 21px var(--serif); }
+.program-summary { margin: 0; font-size: 15px; color: var(--ink-2); flex: 1; }
+.program-meta { margin: 4px 0 8px; font-size: 13px; color: var(--ink-2); }
+.program-download { appearance: none; border: 0; cursor: pointer; align-self: flex-start; font: 600 14px var(--sans);
+                    color: var(--bg); background: var(--ink); height: 36px; padding: 0 18px; border-radius: 999px; }
+.program-download:disabled { opacity: 0.5; }

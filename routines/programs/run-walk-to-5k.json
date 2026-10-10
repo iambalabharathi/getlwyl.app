@@ -1,0 +1,376 @@
+{
+  "id": "run-walk-to-5k",
+  "title": "Run/Walk to 5K",
+  "summary": "For complete beginners who want to run 5 km. Three run/walk sessions a week, with the running intervals growing until you can run 25 minutes non-stop.",
+  "goal": "running",
+  "level": "beginner",
+  "equipment": [
+    "bodyweight"
+  ],
+  "weeks": 8,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Weeks 1–2 · Run/Walk",
+      "weeks": [
+        1,
+        2
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Weeks 1–2 · Run/Walk",
+      "weeks": [
+        1,
+        2
+      ]
+    },
+    {
+      "weekday": 6,
+      "routine": "Weeks 1–2 · Run/Walk",
+      "weeks": [
+        1,
+        2
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Weeks 3–4 · Run/Walk",
+      "weeks": [
+        3,
+        4
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Weeks 3–4 · Run/Walk",
+      "weeks": [
+        3,
+        4
+      ]
+    },
+    {
+      "weekday": 6,
+      "routine": "Weeks 3–4 · Run/Walk",
+      "weeks": [
+        3,
+        4
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Weeks 5–6 · Run/Walk",
+      "weeks": [
+        5,
+        6
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Weeks 5–6 · Run/Walk",
+      "weeks": [
+        5,
+        6
+      ]
+    },
+    {
+      "weekday": 6,
+      "routine": "Weeks 5–6 · Run/Walk",
+      "weeks": [
+        5,
+        6
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Weeks 7–8 · Continuous Run",
+      "weeks": [
+        7,
+        8
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Weeks 7–8 · Continuous Run",
+      "weeks": [
+        7,
+        8
+      ]
+    },
+    {
+      "weekday": 6,
+      "routine": "Weeks 7–8 · Continuous Run",
+      "weeks": [
+        7,
+        8
+      ]
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Weeks 1–2 · Run/Walk",
+      "notes": "8 × (run 1 min, walk 90 s).",
+      "exercises": [
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 60,
+              "restSeconds": 90
+            },
+            {
+              "seconds": 60,
+              "restSeconds": 90
+            },
+            {
+              "seconds": 60,
+              "restSeconds": 90
+            },
+            {
+              "seconds": 60,
+              "restSeconds": 90
+            },
+            {
+              "seconds": 60,
+              "restSeconds": 90
+            },
+            {
+              "seconds": 60,
+              "restSeconds": 90
+            },
+            {
+              "seconds": 60,
+              "restSeconds": 90
+            },
+            {
+              "seconds": 60,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 390,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Weeks 3–4 · Run/Walk",
+      "notes": "5 × (run 3 min, walk 90 s).",
+      "exercises": [
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 180,
+              "restSeconds": 90
+            },
+            {
+              "seconds": 180,
+              "restSeconds": 90
+            },
+            {
+              "seconds": 180,
+              "restSeconds": 90
+            },
+            {
+              "seconds": 180,
+              "restSeconds": 90
+            },
+            {
+              "seconds": 180,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 390,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Weeks 5–6 · Run/Walk",
+      "notes": "2 × (run 10 min, walk 2 min).",
+      "exercises": [
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 600,
+              "restSeconds": 120
+            },
+            {
+              "seconds": 600,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 420,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Weeks 7–8 · Continuous Run",
+      "notes": "Run 25 minutes without walking, at an easy, conversational pace.",
+      "exercises": [
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 1500,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    }
+  ]
+}

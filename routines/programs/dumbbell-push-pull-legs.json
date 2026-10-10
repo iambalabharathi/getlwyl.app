@@ -1,0 +1,222 @@
+{
+  "id": "dumbbell-push-pull-legs",
+  "title": "Dumbbell Push Pull Legs",
+  "summary": "For intermediate lifters training at home with dumbbells. A classic push, pull and legs split over three days a week to build muscle across the whole body.",
+  "goal": "muscle",
+  "level": "intermediate",
+  "equipment": [
+    "dumbbells"
+  ],
+  "weeks": 8,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Push"
+    },
+    {
+      "weekday": 3,
+      "routine": "Pull"
+    },
+    {
+      "weekday": 5,
+      "routine": "Legs"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Push",
+      "exercises": [
+        {
+          "name": "Dumbbell Bench Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "weight": 18,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Seated Dumbbell Shoulder Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 12,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Incline Dumbbell Fly",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 8,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 6,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Overhead Tricep Extension",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 14,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dumbbell Tricep Kickback",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 2,
+            "reps": 15,
+            "weight": 5,
+            "restSeconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pull",
+      "exercises": [
+        {
+          "name": "Bent-Over Dumbbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "weight": 20,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Single-Arm Dumbbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 20,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Dumbbell Pullover",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 14,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dumbbell Reverse Fly",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 5,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Dumbbell Bicep Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dumbbell Hammer Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 2,
+            "reps": 12,
+            "weight": 10,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Legs",
+      "exercises": [
+        {
+          "name": "Goblet Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 10,
+            "weight": 22,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dumbbell Romanian Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 10,
+            "weight": 20,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Walking Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 10,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Dumbbell Hip Thrust",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 24,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Dumbbell Calf Raise",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 16,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Hollow Body Hold",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 45
+          }
+        }
+      ]
+    }
+  ]
+}

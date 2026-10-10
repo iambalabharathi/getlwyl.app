@@ -1,0 +1,608 @@
+{
+  "id": "half-marathon-base",
+  "title": "Half Marathon Base",
+  "summary": "For regular runners stepping up to the half marathon. Four runs a week, with a long run that builds gradually from 10 km to 18 km, cutback weeks every fourth week and a race at the end.",
+  "goal": "running",
+  "level": "intermediate",
+  "equipment": [
+    "bodyweight"
+  ],
+  "weeks": 12,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Easy Run"
+    },
+    {
+      "weekday": 3,
+      "routine": "Intervals",
+      "weeks": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Tempo Run",
+      "weeks": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Easy Run"
+    },
+    {
+      "weekday": 7,
+      "routine": "Long Run · 10 km",
+      "weeks": [
+        1,
+        4
+      ]
+    },
+    {
+      "weekday": 7,
+      "routine": "Long Run · 11 km",
+      "weeks": [
+        2
+      ]
+    },
+    {
+      "weekday": 7,
+      "routine": "Long Run · 12 km",
+      "weeks": [
+        3,
+        8
+      ]
+    },
+    {
+      "weekday": 7,
+      "routine": "Long Run · 13 km",
+      "weeks": [
+        5
+      ]
+    },
+    {
+      "weekday": 7,
+      "routine": "Long Run · 14 km",
+      "weeks": [
+        6,
+        11
+      ]
+    },
+    {
+      "weekday": 7,
+      "routine": "Long Run · 15 km",
+      "weeks": [
+        7
+      ]
+    },
+    {
+      "weekday": 7,
+      "routine": "Long Run · 16 km",
+      "weeks": [
+        9
+      ]
+    },
+    {
+      "weekday": 7,
+      "routine": "Long Run · 18 km",
+      "weeks": [
+        10
+      ]
+    },
+    {
+      "weekday": 7,
+      "routine": "Half Marathon",
+      "weeks": [
+        12
+      ]
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Easy Run",
+      "notes": "Conversational pace.",
+      "exercises": [
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "km": 7
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Intervals",
+      "notes": "Warm up with 10 min easy running; 6-min reps at 10K effort with 90 s walking recovery.",
+      "exercises": [
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 600,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 360,
+              "restSeconds": 90
+            },
+            {
+              "seconds": 360,
+              "restSeconds": 90
+            },
+            {
+              "seconds": 360,
+              "restSeconds": 90
+            },
+            {
+              "seconds": 360,
+              "restSeconds": 90
+            },
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tempo Run",
+      "notes": "10 min easy, 25 min comfortably hard, 5 min easy.",
+      "exercises": [
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 600,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 1500,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Long Run · 10 km",
+      "notes": "Easy, steady pace; walk breaks are fine.",
+      "exercises": [
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "km": 10
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Long Run · 11 km",
+      "notes": "Easy, steady pace; walk breaks are fine.",
+      "exercises": [
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "km": 11
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Long Run · 12 km",
+      "notes": "Easy, steady pace; walk breaks are fine.",
+      "exercises": [
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "km": 12
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Long Run · 13 km",
+      "notes": "Easy, steady pace; walk breaks are fine.",
+      "exercises": [
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "km": 13
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Long Run · 14 km",
+      "notes": "Easy, steady pace; walk breaks are fine.",
+      "exercises": [
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "km": 14
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Long Run · 15 km",
+      "notes": "Easy, steady pace; walk breaks are fine.",
+      "exercises": [
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "km": 15
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Long Run · 16 km",
+      "notes": "Easy, steady pace; walk breaks are fine.",
+      "exercises": [
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "km": 16
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Long Run · 18 km",
+      "notes": "Easy, steady pace; walk breaks are fine.",
+      "exercises": [
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "km": 18
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Half Marathon",
+      "notes": "Race or time trial: warm up well, start steady and finish strong.",
+      "exercises": [
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 600,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Running",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "km": 21.1
+            }
+          ]
+        },
+        {
+          "name": "Walking",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    }
+  ]
+}

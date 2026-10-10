@@ -1,0 +1,164 @@
+{
+  "id": "dumbbell-arms-shoulders",
+  "title": "Dumbbell Arms & Shoulders",
+  "summary": "For intermediate lifters who want bigger arms and shoulders. Two focused dumbbell sessions a week, on Tuesday and Saturday, to add alongside another training plan.",
+  "goal": "muscle",
+  "level": "intermediate",
+  "equipment": [
+    "dumbbells"
+  ],
+  "weeks": 6,
+  "pattern": [
+    {
+      "weekday": 2,
+      "routine": "Arms & Shoulders A"
+    },
+    {
+      "weekday": 6,
+      "routine": "Arms & Shoulders B"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Arms & Shoulders A",
+      "exercises": [
+        {
+          "name": "Seated Dumbbell Shoulder Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 4,
+            "reps": 10,
+            "weight": 14,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 4,
+            "reps": 15,
+            "weight": 6,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Dumbbell Bicep Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Overhead Tricep Extension",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 14,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dumbbell Hammer Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dumbbell Tricep Kickback",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 6,
+            "restSeconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arms & Shoulders B",
+      "exercises": [
+        {
+          "name": "Arnold Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 12,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dumbbell Reverse Fly",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 5,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Side-Lying Lateral Raise",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 4,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Close-Grip Dumbbell Bench Press",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 14,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Incline Dumbbell Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 8,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dumbbell Skull Crusher",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Concentration Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 2,
+            "reps": 12,
+            "weight": 8,
+            "restSeconds": 45
+          }
+        }
+      ]
+    }
+  ]
+}

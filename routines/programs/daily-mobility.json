@@ -1,0 +1,252 @@
+{
+  "id": "daily-mobility",
+  "title": "Daily Mobility",
+  "summary": "A 15-minute mobility routine for every weekday, suitable for any fitness level. Two routines alternate to loosen hips, spine, hamstrings and shoulders.",
+  "goal": "mobility",
+  "level": "beginner",
+  "equipment": [
+    "bodyweight"
+  ],
+  "weeks": 4,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Mobility A",
+      "weeks": [
+        1,
+        3
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Mobility B",
+      "weeks": [
+        2,
+        4
+      ]
+    },
+    {
+      "weekday": 2,
+      "routine": "Mobility B",
+      "weeks": [
+        1,
+        3
+      ]
+    },
+    {
+      "weekday": 2,
+      "routine": "Mobility A",
+      "weeks": [
+        2,
+        4
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Mobility A",
+      "weeks": [
+        1,
+        3
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Mobility B",
+      "weeks": [
+        2,
+        4
+      ]
+    },
+    {
+      "weekday": 4,
+      "routine": "Mobility B",
+      "weeks": [
+        1,
+        3
+      ]
+    },
+    {
+      "weekday": 4,
+      "routine": "Mobility A",
+      "weeks": [
+        2,
+        4
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Mobility A",
+      "weeks": [
+        1,
+        3
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Mobility B",
+      "weeks": [
+        2,
+        4
+      ]
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Mobility A",
+      "notes": "About 15 minutes. Two-set stretches: one set per side. Breathe slowly and never force a range.",
+      "exercises": [
+        {
+          "name": "Cat-Cow",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 1,
+            "seconds": 60,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Low Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Pigeon Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Thread the Needle",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Deep Squat Hold",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Seated Forward Fold",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 1,
+            "seconds": 60,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Supine Spinal Twist",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Child's Pose",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 1,
+            "seconds": 60,
+            "restSeconds": 15
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mobility B",
+      "notes": "About 15 minutes. Two-set stretches: one set per side.",
+      "exercises": [
+        {
+          "name": "Downward-Facing Dog",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Kneeling Hip Flexor Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Lizard Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Front-to-Back Leg Swing",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Cross-Body Shoulder Stretch",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Thread the Needle Flow",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 1,
+            "seconds": 60,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Butterfly Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 1,
+            "seconds": 60,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Happy Baby Pose",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 1,
+            "seconds": 60,
+            "restSeconds": 15
+          }
+        }
+      ]
+    }
+  ]
+}

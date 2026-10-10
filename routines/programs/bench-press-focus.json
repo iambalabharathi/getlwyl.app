@@ -1,0 +1,211 @@
+{
+  "id": "bench-press-focus",
+  "title": "Bench Press Focus",
+  "summary": "For intermediate lifters who want to bring up their bench press. Three bench sessions a week — heavy, volume and paused — with squats, deadlifts and back work to keep the rest of the body strong.",
+  "goal": "strength",
+  "level": "intermediate",
+  "equipment": [
+    "gym"
+  ],
+  "weeks": 8,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Heavy Bench"
+    },
+    {
+      "weekday": 3,
+      "routine": "Volume Bench"
+    },
+    {
+      "weekday": 5,
+      "routine": "Paused Bench"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Heavy Bench",
+      "exercises": [
+        {
+          "name": "Barbell Bench Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 5,
+            "reps": 3,
+            "weight": 75,
+            "restSeconds": 210
+          }
+        },
+        {
+          "name": "Barbell Back Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 5,
+            "weight": 80,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Bent-Over Barbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 6,
+            "weight": 60,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Cable Tricep Pushdown",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 25,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Cable Face Pull",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 15,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Volume Bench",
+      "exercises": [
+        {
+          "name": "Barbell Bench Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "weight": 60,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Barbell Overhead Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 35,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Romanian Deadlift",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 60,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Pull-Up",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Incline Dumbbell Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 20,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Skull Crusher",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 20,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Paused Bench",
+      "exercises": [
+        {
+          "name": "Paused Bench Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 4,
+            "reps": 4,
+            "weight": 65,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Close-Grip Bench Press",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 6,
+            "weight": 60,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Barbell Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 5,
+            "weight": 100,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Lat Pulldown",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 45,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Chest Dips",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Rear Delt Fly",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 6,
+            "restSeconds": 60
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "id": "fat-loss-gym-circuits",
+  "title": "Fat Loss Gym Circuits",
+  "summary": "For gym beginners who want to lose fat and build fitness. Two full-body machine and dumbbell circuits plus two cardio sessions a week.",
+  "goal": "fat-loss",
+  "level": "beginner",
+  "equipment": [
+    "gym"
+  ],
+  "weeks": 6,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Circuit A"
+    },
+    {
+      "weekday": 2,
+      "routine": "Incline Walk"
+    },
+    {
+      "weekday": 4,
+      "routine": "Circuit B"
+    },
+    {
+      "weekday": 6,
+      "routine": "Bike Intervals"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Circuit A",
+      "notes": "Move between exercises with short rests. Finish with 5 × 30 s hard on the bike, 60 s easy.",
+      "exercises": [
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Goblet Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 30,
+            "weight": 12
+          }
+        },
+        {
+          "name": "Machine Chest Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 30,
+            "weight": 25
+          }
+        },
+        {
+          "name": "Seated Cable Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 30,
+            "weight": 30
+          }
+        },
+        {
+          "name": "Dumbbell Romanian Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 30,
+            "weight": 10
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 5,
+            "seconds": 30,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Incline Walk",
+      "notes": "Steady pace on a moderate incline; you should be breathing harder but able to talk.",
+      "exercises": [
+        {
+          "name": "Incline Treadmill Walk",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 1800,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Standing Calf Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        },
+        {
+          "name": "Standing Quad Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Circuit B",
+      "notes": "Move between exercises with short rests. Finish with 5 × 30 s hard on the rower, 60 s easy.",
+      "exercises": [
+        {
+          "name": "Elliptical Trainer",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Leg Press",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 30,
+            "weight": 60
+          }
+        },
+        {
+          "name": "Lat Pulldown",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 30,
+            "weight": 30
+          }
+        },
+        {
+          "name": "Dumbbell Shoulder Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 30,
+            "weight": 6
+          }
+        },
+        {
+          "name": "Step Ups",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Dead Bug",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 5,
+            "seconds": 30,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bike Intervals",
+      "notes": "5 min easy, 8 × 30 s hard with 90 s easy pedalling, 5 min easy.",
+      "exercises": [
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 8,
+            "seconds": 30,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Stationary Bike",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

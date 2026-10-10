@@ -1,0 +1,301 @@
+{
+  "id": "powerbuilding-4-day",
+  "title": "Powerbuilding 4-Day",
+  "summary": "For advanced lifters who want to get stronger and bigger at the same time. Each day opens with heavy, low-rep work on a main lift, followed by moderate-rep accessories for size.",
+  "goal": "strength",
+  "level": "advanced",
+  "equipment": [
+    "gym"
+  ],
+  "weeks": 12,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Squat Day"
+    },
+    {
+      "weekday": 2,
+      "routine": "Bench Day"
+    },
+    {
+      "weekday": 4,
+      "routine": "Deadlift Day"
+    },
+    {
+      "weekday": 5,
+      "routine": "Press Day"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Squat Day",
+      "exercises": [
+        {
+          "name": "Barbell Back Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 5,
+            "reps": 3,
+            "weight": 120,
+            "restSeconds": 240
+          }
+        },
+        {
+          "name": "Pause Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 5,
+            "weight": 90,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Romanian Deadlift",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 90,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Leg Press",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 160,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Lying Leg Curl",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 40,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Hanging Leg Raise",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bench Day",
+      "exercises": [
+        {
+          "name": "Barbell Bench Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 5,
+            "reps": 3,
+            "weight": 90,
+            "restSeconds": 210
+          }
+        },
+        {
+          "name": "Close-Grip Bench Press",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 6,
+            "weight": 75,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Weighted Pull-Up",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 6,
+            "weight": 10,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Incline Dumbbell Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 28,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 4,
+            "reps": 15,
+            "weight": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Cable Tricep Pushdown",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 30,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Deadlift Day",
+      "exercises": [
+        {
+          "name": "Barbell Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 5,
+            "reps": 3,
+            "weight": 150,
+            "restSeconds": 240
+          }
+        },
+        {
+          "name": "Front Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 6,
+            "weight": 80,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Barbell Hip Thrust",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 120,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Bent-Over Barbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "weight": 70,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Standing Calf Raise",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 12,
+            "weight": 60,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Cable Crunch",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 40,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Press Day",
+      "exercises": [
+        {
+          "name": "Barbell Overhead Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 4,
+            "reps": 5,
+            "weight": 55,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Paused Bench Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 4,
+            "reps": 5,
+            "weight": 80,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Pendlay Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 6,
+            "weight": 75,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Lat Pulldown",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 60,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Cable Face Pull",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 20,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Barbell Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 30,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "EZ-Bar Lying Triceps Extension",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 30,
+            "restSeconds": 60
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "id": "core-strength-beginner",
+  "title": "Core Foundations",
+  "summary": "A gentle start to core training for beginners or anyone returning to exercise. Three short sessions a week teach bracing and control, then build to longer holds from week 4.",
+  "goal": "general",
+  "level": "beginner",
+  "equipment": [
+    "bodyweight"
+  ],
+  "weeks": 6,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Core A",
+      "weeks": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Core B",
+      "weeks": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Core A",
+      "weeks": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Core A+",
+      "weeks": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Core B+",
+      "weeks": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Core A+",
+      "weeks": [
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Core A",
+      "notes": "Weeks 1–3. Keep your lower back steady and breathe throughout.",
+      "exercises": [
+        {
+          "name": "Dead Bug",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Bird-Dog",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Glute Bridge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 20,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Side Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 2,
+            "seconds": 15,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Reverse Crunches",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 2,
+            "reps": 10,
+            "restSeconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Core B",
+      "notes": "Weeks 1–3.",
+      "exercises": [
+        {
+          "name": "Crunches",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Heel Touches",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 16,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Superman",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Dead Bug Hold",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 20,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Bear Plank Hold",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 15,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Flutter Kicks",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 2,
+            "reps": 16,
+            "restSeconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Core A+",
+      "notes": "Weeks 4–6. Longer holds; single-leg bridges per leg.",
+      "exercises": [
+        {
+          "name": "Dead Bug",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Bird-Dog",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Single Leg Glute Bridge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 40,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Side Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 25,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Lying Leg Raise",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Core B+",
+      "notes": "Weeks 4–6.",
+      "exercises": [
+        {
+          "name": "Bicycle Crunch",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 16,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Russian Twist",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 16,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Superman",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Hollow Body Hold",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 20,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Bear Plank Hold",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Plank Knee Tuck",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 45
+          }
+        }
+      ]
+    }
+  ]
+}

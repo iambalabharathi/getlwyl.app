@@ -1,0 +1,273 @@
+{
+  "id": "calisthenics-intermediate",
+  "title": "Intermediate Calisthenics",
+  "summary": "For people who can already do a few pull-ups and solid push-ups. An upper/lower split four days a week builds strength with harder bodyweight variations and a pull-up bar.",
+  "goal": "strength",
+  "level": "intermediate",
+  "equipment": [
+    "bodyweight",
+    "pull-up-bar"
+  ],
+  "weeks": 8,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Upper A"
+    },
+    {
+      "weekday": 2,
+      "routine": "Lower A"
+    },
+    {
+      "weekday": 4,
+      "routine": "Upper B"
+    },
+    {
+      "weekday": 5,
+      "routine": "Lower B"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Upper A",
+      "notes": "Pull and push strength. Add a rep per set when you hit every target with good form.",
+      "exercises": [
+        {
+          "name": "Pull-Up",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 6,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Decline Push-Up",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 4,
+            "reps": 10,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Chin-Ups",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Pike Push Ups",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Hanging Knee Raise",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Hollow Body Hold",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Lower A",
+      "notes": "Bulgarian split squats with the rear foot on a bench or chair; reps per leg.",
+      "exercises": [
+        {
+          "name": "Bulgarian Split Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 10,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Jump Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Single Leg Glute Bridge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Cossack Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Single Leg Calf Raise",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Side Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Upper B",
+      "notes": "Archer push-ups: reps per side.",
+      "exercises": [
+        {
+          "name": "Chin-Ups",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 6,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Archer Push Ups",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 6,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Wide Grip Pull Ups",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 6,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Diamond Push Ups",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Hanging Leg Raise",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dead Hang",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Lower B",
+      "notes": "Anchor your feet under something solid for Nordic curls and lower as slowly as you can.",
+      "exercises": [
+        {
+          "name": "Reverse Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 12,
+            "restSeconds": 75
+          }
+        },
+        {
+          "name": "Nordic Hamstring Curl",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 5,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Step Ups",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Wall Sit",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "seconds": 45,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Lying Leg Raise",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "restSeconds": 45
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 60,
+            "restSeconds": 45
+          }
+        }
+      ]
+    }
+  ]
+}

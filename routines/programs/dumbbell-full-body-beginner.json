@@ -1,0 +1,202 @@
+{
+  "id": "dumbbell-full-body-beginner",
+  "title": "Dumbbell Full Body for Beginners",
+  "summary": "For newcomers training at home with a pair of dumbbells. Two alternating full-body sessions, three days a week, build basic strength and good movement habits.",
+  "goal": "general",
+  "level": "beginner",
+  "equipment": [
+    "dumbbells"
+  ],
+  "weeks": 8,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Full Body A",
+      "weeks": [
+        1,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Full Body B",
+      "weeks": [
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Full Body B",
+      "weeks": [
+        1,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Full Body A",
+      "weeks": [
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Full Body A",
+      "weeks": [
+        1,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Full Body B",
+      "weeks": [
+        2,
+        4,
+        6,
+        8
+      ]
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Full Body A",
+      "exercises": [
+        {
+          "name": "Goblet Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 8,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dumbbell Floor Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 6,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Bent-Over Dumbbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 8,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dumbbell Shoulder Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 2,
+            "reps": 10,
+            "weight": 5,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Glute Bridge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "reps": 12,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Full Body B",
+      "exercises": [
+        {
+          "name": "Dumbbell Romanian Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 8,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Reverse Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "reps": 8,
+            "weight": 5,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Incline Push-Up",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Single-Arm Dumbbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 8,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 2,
+            "reps": 12,
+            "weight": 3,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dead Bug",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 2,
+            "reps": 10,
+            "restSeconds": 45
+          }
+        }
+      ]
+    }
+  ]
+}

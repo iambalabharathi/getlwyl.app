@@ -1,0 +1,436 @@
+{
+  "id": "push-pull-legs-6-day",
+  "title": "Push Pull Legs 6-Day",
+  "summary": "A high-volume muscle-building split for experienced lifters. Push, pull and legs each come round twice a week, with a heavier and a lighter version of each day.",
+  "goal": "muscle",
+  "level": "intermediate",
+  "equipment": [
+    "gym"
+  ],
+  "weeks": 8,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Push A"
+    },
+    {
+      "weekday": 2,
+      "routine": "Pull A"
+    },
+    {
+      "weekday": 3,
+      "routine": "Legs A"
+    },
+    {
+      "weekday": 4,
+      "routine": "Push B"
+    },
+    {
+      "weekday": 5,
+      "routine": "Pull B"
+    },
+    {
+      "weekday": 6,
+      "routine": "Legs B"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Push A",
+      "exercises": [
+        {
+          "name": "Barbell Bench Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "weight": 60,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Barbell Overhead Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 35,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Incline Dumbbell Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 20,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 8,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Cable Tricep Pushdown",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 25,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Overhead Tricep Extension",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 20,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pull A",
+      "exercises": [
+        {
+          "name": "Barbell Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 5,
+            "weight": 90,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Pull-Up",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Seated Cable Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 45,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Cable Face Pull",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 15,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Barbell Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 20,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dumbbell Hammer Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 12,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Legs A",
+      "exercises": [
+        {
+          "name": "Barbell Back Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 6,
+            "weight": 70,
+            "restSeconds": 180
+          }
+        },
+        {
+          "name": "Romanian Deadlift",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 60,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Leg Press",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 100,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Lying Leg Curl",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 30,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Standing Calf Raise",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 12,
+            "weight": 40,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 45,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Push B",
+      "exercises": [
+        {
+          "name": "Incline Barbell Bench Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "weight": 50,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Seated Dumbbell Shoulder Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 16,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Chest Dips",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Cable Fly",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 12,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Cable Lateral Raise",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 5,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Skull Crusher",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 20,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pull B",
+      "exercises": [
+        {
+          "name": "Bent-Over Barbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "weight": 50,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Lat Pulldown",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 45,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Chest-Supported Dumbbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 20,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Rear Delt Fly",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 6,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Incline Dumbbell Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Preacher Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 20,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Legs B",
+      "exercises": [
+        {
+          "name": "Front Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 8,
+            "weight": 50,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Barbell Hip Thrust",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 60,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 12,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Leg Extension",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 35,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Seated Leg Curl",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 30,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Seated Calf Raise",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 4,
+            "reps": 15,
+            "weight": 30,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Hanging Leg Raise",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 60
+          }
+        }
+      ]
+    }
+  ]
+}

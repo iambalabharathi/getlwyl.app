@@ -1,0 +1,391 @@
+{
+  "id": "rowing-machine-plan",
+  "title": "Rowing Machine Plan",
+  "summary": "For beginners who want a low-impact cardio routine on the rower. Two steady rows and one interval session a week, building from 15 to 25 minutes of steady rowing.",
+  "goal": "general",
+  "level": "beginner",
+  "equipment": [
+    "cardio-machine"
+  ],
+  "weeks": 6,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Steady Row · Weeks 1–2",
+      "weeks": [
+        1,
+        2
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Row Intervals · Weeks 1–2",
+      "weeks": [
+        1,
+        2
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Steady Row · Weeks 1–2",
+      "weeks": [
+        1,
+        2
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Steady Row · Weeks 3–4",
+      "weeks": [
+        3,
+        4
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Row Intervals · Weeks 3–4",
+      "weeks": [
+        3,
+        4
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Steady Row · Weeks 3–4",
+      "weeks": [
+        3,
+        4
+      ]
+    },
+    {
+      "weekday": 1,
+      "routine": "Steady Row · Weeks 5–6",
+      "weeks": [
+        5,
+        6
+      ]
+    },
+    {
+      "weekday": 3,
+      "routine": "Row Intervals · Weeks 5–6",
+      "weeks": [
+        5,
+        6
+      ]
+    },
+    {
+      "weekday": 5,
+      "routine": "Steady Row · Weeks 5–6",
+      "weeks": [
+        5,
+        6
+      ]
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Steady Row · Weeks 1–2",
+      "notes": "5 min easy, then 15 min at a steady pace you could hold a conversation at.",
+      "exercises": [
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 900,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Child's Pose",
+          "muscleGroup": "Back",
+          "sets": [
+            {
+              "seconds": 45,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Seated Forward Fold",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 45,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Row Intervals · Weeks 1–2",
+      "notes": "5 min easy, then 6 × 60 s hard with 60 s easy paddling, then 5 min easy.",
+      "exercises": [
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 6,
+            "seconds": 60,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Child's Pose",
+          "muscleGroup": "Back",
+          "sets": [
+            {
+              "seconds": 45,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Seated Forward Fold",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 45,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Steady Row · Weeks 3–4",
+      "notes": "5 min easy, then 20 min at a steady pace you could hold a conversation at.",
+      "exercises": [
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 1200,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Child's Pose",
+          "muscleGroup": "Back",
+          "sets": [
+            {
+              "seconds": 45,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Seated Forward Fold",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 45,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Row Intervals · Weeks 3–4",
+      "notes": "5 min easy, then 8 × 60 s hard with 60 s easy paddling, then 5 min easy.",
+      "exercises": [
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 8,
+            "seconds": 60,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Child's Pose",
+          "muscleGroup": "Back",
+          "sets": [
+            {
+              "seconds": 45,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Seated Forward Fold",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 45,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Steady Row · Weeks 5–6",
+      "notes": "5 min easy, then 25 min at a steady pace you could hold a conversation at.",
+      "exercises": [
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 1500,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Child's Pose",
+          "muscleGroup": "Back",
+          "sets": [
+            {
+              "seconds": 45,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Seated Forward Fold",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 45,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Row Intervals · Weeks 5–6",
+      "notes": "5 min easy, then 5 × 120 s hard with 60 s easy paddling, then 5 min easy.",
+      "exercises": [
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 5,
+            "seconds": 120,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Rowing Machine",
+          "muscleGroup": "Other",
+          "sets": [
+            {
+              "seconds": 300,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Child's Pose",
+          "muscleGroup": "Back",
+          "sets": [
+            {
+              "seconds": 45,
+              "restSeconds": 0
+            }
+          ]
+        },
+        {
+          "name": "Seated Forward Fold",
+          "muscleGroup": "Legs",
+          "sets": [
+            {
+              "seconds": 45,
+              "restSeconds": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

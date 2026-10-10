@@ -1,0 +1,176 @@
+{
+  "id": "home-dumbbell-fat-loss",
+  "title": "Home Dumbbell Fat Loss",
+  "summary": "For beginners who want to lose fat at home with light dumbbells. Two full-body circuits alternate over four days a week, moving quickly between exercises with short rests.",
+  "goal": "fat-loss",
+  "level": "beginner",
+  "equipment": [
+    "dumbbells"
+  ],
+  "weeks": 6,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Circuit A"
+    },
+    {
+      "weekday": 2,
+      "routine": "Circuit B"
+    },
+    {
+      "weekday": 4,
+      "routine": "Circuit A"
+    },
+    {
+      "weekday": 5,
+      "routine": "Circuit B"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Circuit A",
+      "exercises": [
+        {
+          "name": "Goblet Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 8,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Incline Push-Up",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Bent-Over Dumbbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 6,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Reverse Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 4,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Dumbbell Shoulder Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 5,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Jumping Jacks",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Circuit B",
+      "exercises": [
+        {
+          "name": "Dumbbell Romanian Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 8,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Dumbbell Floor Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 6,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Step Ups",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 4,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Single-Arm Dumbbell Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 8,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Glute Bridge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Mountain Climbers",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Dead Bug",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "restSeconds": 45
+          }
+        }
+      ]
+    }
+  ]
+}

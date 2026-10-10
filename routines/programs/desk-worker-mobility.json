@@ -1,0 +1,175 @@
+{
+  "id": "desk-worker-mobility",
+  "title": "Desk Worker Mobility",
+  "summary": "For people who sit most of the day. Three sessions a week open up the hips, upper back, neck and shoulders and strengthen the muscles that support good posture.",
+  "goal": "mobility",
+  "level": "beginner",
+  "equipment": [
+    "bodyweight"
+  ],
+  "weeks": 4,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Hips & Upper Back"
+    },
+    {
+      "weekday": 3,
+      "routine": "Neck & Shoulders"
+    },
+    {
+      "weekday": 5,
+      "routine": "Hips & Upper Back"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Hips & Upper Back",
+      "notes": "Two-set stretches: one set per side.",
+      "exercises": [
+        {
+          "name": "Cat-Cow",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Kneeling Hip Flexor Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Thread the Needle",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Glute Bridge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "reps": 12,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Pigeon Stretch",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Doorway Chest Stretch",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Seated Spinal Twist",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 20
+          }
+        }
+      ]
+    },
+    {
+      "name": "Neck & Shoulders",
+      "notes": "Gentle on the neck: ease into each stretch and stop well short of pain. Two-set stretches: one set per side.",
+      "exercises": [
+        {
+          "name": "Chin Tuck Hold",
+          "muscleGroup": "Other",
+          "sets": {
+            "count": 3,
+            "seconds": 10,
+            "restSeconds": 15
+          }
+        },
+        {
+          "name": "Neck Side Stretch",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Cross-Body Shoulder Stretch",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 2,
+            "seconds": 30,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Puppy Pose",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Superman",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 2,
+            "reps": 10,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Thoracic Bridge",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 2,
+            "reps": 6,
+            "restSeconds": 30
+          }
+        },
+        {
+          "name": "Half-Kneeling Hip Flexor Rock",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "seconds": 45,
+            "restSeconds": 20
+          }
+        },
+        {
+          "name": "Child's Pose",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 1,
+            "seconds": 60,
+            "restSeconds": 15
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "id": "push-pull-legs-3-day",
+  "title": "Push Pull Legs 3-Day",
+  "summary": "A beginner-friendly way to start building muscle. One push, one pull and one leg day a week, each with a main lift and a few simple accessories.",
+  "goal": "muscle",
+  "level": "beginner",
+  "equipment": [
+    "gym"
+  ],
+  "weeks": 8,
+  "pattern": [
+    {
+      "weekday": 1,
+      "routine": "Push"
+    },
+    {
+      "weekday": 3,
+      "routine": "Pull"
+    },
+    {
+      "weekday": 5,
+      "routine": "Legs"
+    }
+  ],
+  "unit": "kg",
+  "templates": [
+    {
+      "name": "Push",
+      "exercises": [
+        {
+          "name": "Barbell Bench Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 30,
+            "restSeconds": 120
+          }
+        },
+        {
+          "name": "Seated Dumbbell Shoulder Press",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 10,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Incline Dumbbell Press",
+          "muscleGroup": "Chest",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 12,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 5,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Cable Tricep Pushdown",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 15,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pull",
+      "exercises": [
+        {
+          "name": "Barbell Deadlift",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 5,
+            "weight": 40,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Lat Pulldown",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 30,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Seated Cable Row",
+          "muscleGroup": "Back",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 30,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Cable Face Pull",
+          "muscleGroup": "Shoulders",
+          "sets": {
+            "count": 3,
+            "reps": 15,
+            "weight": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Dumbbell Bicep Curl",
+          "muscleGroup": "Arms",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 6,
+            "restSeconds": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Legs",
+      "exercises": [
+        {
+          "name": "Barbell Back Squat",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 8,
+            "weight": 20,
+            "restSeconds": 150
+          }
+        },
+        {
+          "name": "Leg Press",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 10,
+            "weight": 50,
+            "restSeconds": 90
+          }
+        },
+        {
+          "name": "Lying Leg Curl",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 20,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Walking Lunge",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 2,
+            "reps": 10,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Standing Calf Raise",
+          "muscleGroup": "Legs",
+          "sets": {
+            "count": 3,
+            "reps": 12,
+            "weight": 20,
+            "restSeconds": 60
+          }
+        },
+        {
+          "name": "Plank",
+          "muscleGroup": "Core",
+          "sets": {
+            "count": 3,
+            "seconds": 30,
+            "restSeconds": 60
+          }
+        }
+      ]
+    }
+  ]
+}

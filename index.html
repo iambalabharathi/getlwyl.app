@@ -10,7 +10,7 @@
   <meta property="og:image" content="https://getlwyl.app/assets/icon-256.png">
   <link rel="icon" href="/assets/apple-touch-icon.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/styles.css?v=15">
+  <link rel="stylesheet" href="/assets/styles.css?v=16">
 </head>
 <body>
   <header class="wrap top">
@@ -26,42 +26,37 @@
       <p class="lead">Log sets in a tap, plan routines, schedule your week and keep everything in Apple Health. No account, no ads — your workouts stay on your phone.</p>
     </section>
 
-    <!-- Light / dark screenshots: one switch, the knob's sun turns into a moon. -->
+    <!-- Light / dark screenshots: one switch; the ink pill slides between sun and moon. -->
     <div class="switch-row">
-      <button type="button" class="theme-switch" id="screens" role="switch" aria-checked="false" aria-label="Dark screenshots" hidden>
-        <span class="switch-track" aria-hidden="true"><span class="star"></span><span class="star"></span><span class="star"></span></span>
-        <span class="switch-knob" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="18" height="18">
-            <mask id="moon-bite"><rect width="24" height="24" fill="#fff"/><circle class="bite" cx="17.5" cy="6.5" r="6" fill="#000"/></mask>
-            <circle class="orb" cx="12" cy="12" r="5" fill="currentColor" mask="url(#moon-bite)"/>
-            <g class="rays" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></g>
-          </svg>
-        </span>
+      <button type="button" class="shots-toggle" id="screens" role="switch" aria-checked="false" aria-label="Dark screenshots" hidden>
+        <span class="toggle-thumb" aria-hidden="true"></span>
+        <span class="toggle-icon" data-mode="light" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></g></svg></span>
+        <span class="toggle-icon" data-mode="dark" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z" fill="currentColor"/></svg></span>
       </button>
     </div>
 
     <section class="shots" data-mode="auto" aria-label="Screenshots">
-      <figure class="shot" style="--i: 0">
+      <figure class="shot">
         <img class="light" src="/assets/shot-home-light.webp?v=2" alt="Home: workouts this week and the next scheduled routine" loading="lazy" width="700" height="1451">
         <img class="dark" src="/assets/shot-home-dark.webp?v=2" alt="" loading="lazy" width="700" height="1451">
         <figcaption>A workout log without the clutter.</figcaption>
       </figure>
-      <figure class="shot" style="--i: 1">
+      <figure class="shot">
         <img class="light" src="/assets/shot-workouts-light.webp?v=2" alt="Workouts: scheduled and past workouts with photos" loading="lazy" width="700" height="1451">
         <img class="dark" src="/assets/shot-workouts-dark.webp?v=2" alt="" loading="lazy" width="700" height="1451">
         <figcaption>Every workout, in one place.</figcaption>
       </figure>
-      <figure class="shot" style="--i: 2">
+      <figure class="shot">
         <img class="light" src="/assets/shot-routines-light.webp?v=2" alt="Routines: saved workouts with their exercises" loading="lazy" width="700" height="1451">
         <img class="dark" src="/assets/shot-routines-dark.webp?v=2" alt="" loading="lazy" width="700" height="1451">
         <figcaption>Routines you can repeat.</figcaption>
       </figure>
-      <figure class="shot" style="--i: 3">
+      <figure class="shot">
         <img class="light" src="/assets/shot-metrics-light.webp?v=2" alt="Metrics: body measurements on a muscle figure, and weight trend" loading="lazy" width="700" height="1451">
         <img class="dark" src="/assets/shot-metrics-dark.webp?v=2" alt="" loading="lazy" width="700" height="1451">
         <figcaption>See your body change.</figcaption>
       </figure>
-      <figure class="shot" style="--i: 4">
+      <figure class="shot">
         <img class="light" src="/assets/shot-trends-light.webp?v=2" alt="Weight and body fat trends with weekly averages" loading="lazy" width="700" height="1451">
         <img class="dark" src="/assets/shot-trends-dark.webp?v=2" alt="" loading="lazy" width="700" height="1451">
         <figcaption>Progress, week by week.</figcaption>
@@ -70,10 +65,8 @@
 
     <script>
       // Light / dark screenshots, starting from the visitor's own setting.
-      // Tap, drag or keyboard; the new set sweeps in the knob's direction.
       (function () {
         var sw = document.getElementById('screens');
-        var knob = sw.querySelector('.switch-knob');
         var shots = document.querySelector('.shots');
         var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         function show(on) {
@@ -83,50 +76,14 @@
         }
         show(dark);
         sw.hidden = false;
-        // Fetch the other set once the page is in, so the first sweep has
+        sw.addEventListener('click', function () { show(!dark); });
+        // Fetch the other set once the page is in, so the first fade has
         // something to show (they're lazy, and hidden ones never load).
         function preload() {
           shots.querySelectorAll('img').forEach(function (img) { img.loading = 'eager'; });
         }
         if (document.readyState === 'complete') preload(); else window.addEventListener('load', preload);
-        sw.addEventListener('pointerenter', preload, { once: true });
-        requestAnimationFrame(function () { requestAnimationFrame(function () {
-          sw.classList.add('ready');
-          shots.classList.add('ready');
-        }); });
-
-        // Drag the knob; a short move counts as a tap.
-        var startX = null, moved = false, travel = 30;
-        sw.addEventListener('pointerdown', function (e) {
-          startX = e.clientX; moved = false;
-          sw.setPointerCapture(e.pointerId);
-        });
-        sw.addEventListener('pointermove', function (e) {
-          if (startX === null) return;
-          var dx = e.clientX - startX;
-          if (Math.abs(dx) > 4) moved = true;
-          if (!moved) return;
-          var x = Math.max(0, Math.min(travel, (dark ? travel : 0) + dx));
-          knob.style.transition = 'none';
-          knob.style.transform = 'translateX(' + x + 'px)';
-        });
-        function end(e) {
-          if (startX === null) return;
-          var dx = e.clientX - startX;
-          startX = null;
-          knob.style.transition = '';
-          knob.style.transform = '';
-          if (moved) {
-            var x = (dark ? travel : 0) + dx;
-            show(x > travel / 2);
-          }
-        }
-        sw.addEventListener('pointerup', end);
-        sw.addEventListener('pointercancel', end);
-        sw.addEventListener('click', function (e) {
-          if (moved) { moved = false; return; }   // the drag already decided
-          show(!dark);
-        });
+        requestAnimationFrame(function () { requestAnimationFrame(function () { sw.classList.add('ready'); }); });
       })();
     </script>
 

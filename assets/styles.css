@@ -69,61 +69,33 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01e
 /* The App Store headline under each phone. */
 .shot figcaption { grid-row: 2; font: 500 17px/1.3 var(--serif); text-align: center; color: var(--ink);
                    margin-top: 12px; padding: 0 6px; }
-.shot img { grid-area: 1 / 1; display: block; width: 100%; height: auto; }
-/* Dark shots sit on top of the light ones and are wiped in and out with a
-   clip; which set shows: the switch's choice, else the visitor's own setting. */
-.shot .dark { clip-path: inset(0 100% 0 0); }
-.shots[data-mode="dark"] .shot .dark { clip-path: inset(0 0 0 0); }
+.shot img { grid-area: 1 / 1; display: block; width: 100%; height: auto; transition: opacity 0.45s ease; }
+/* Which set shows: the switch's choice, else the visitor's own setting. */
+.shot .dark, .shots[data-mode="light"] .shot .dark { opacity: 0; }
+.shot .light, .shots[data-mode="dark"] .shot .dark { opacity: 1; }
+.shots[data-mode="dark"] .shot .light { opacity: 0; }
 @media (prefers-color-scheme: dark) {
-  .shots[data-mode="auto"] .shot .dark { clip-path: inset(0 0 0 0); }
-}
-/* One sweep across the row: to dark left → right, back to light right → left. */
-.shots.ready .shot .dark { transition: clip-path 0.6s cubic-bezier(0.65, 0, 0.35, 1) calc((4 - var(--i, 0)) * 70ms); }
-.shots.ready[data-mode="dark"] .shot .dark { transition-delay: calc(var(--i, 0) * 70ms); }
-
-/* Light / dark switch above the screenshots. */
-.switch-row { display: flex; justify-content: flex-end; margin: 40px 0 0; }
-.theme-switch { position: relative; appearance: none; border: 0; padding: 0; background: none; cursor: pointer;
-                width: 64px; height: 34px; border-radius: 999px; touch-action: none; -webkit-tap-highlight-color: transparent; }
-.theme-switch[hidden] { display: none; }
-.theme-switch:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
-.switch-track { position: absolute; inset: 0; border-radius: inherit; overflow: hidden;
-                background: linear-gradient(135deg, #CFE4F8, #EEF5FC); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06); }
-.switch-track::after { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, #14162A, #2A2E4A);
-                       opacity: 0; transition: opacity 0.45s ease; }
-.theme-switch[aria-checked="true"] .switch-track::after { opacity: 1; }
-.star { position: absolute; z-index: 1; width: 3px; height: 3px; border-radius: 50%; background: #fff;
-        opacity: 0; transform: scale(0); transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
-.star:nth-child(1) { left: 12px; top: 9px; }
-.star:nth-child(2) { left: 22px; top: 18px; width: 2px; height: 2px; }
-.star:nth-child(3) { left: 9px; top: 22px; width: 2px; height: 2px; }
-.theme-switch[aria-checked="true"] .star { opacity: 0.9; transform: scale(1); }
-.theme-switch[aria-checked="true"] .star:nth-child(1) { transition-delay: 0.25s; }
-.theme-switch[aria-checked="true"] .star:nth-child(2) { transition-delay: 0.32s; }
-.theme-switch[aria-checked="true"] .star:nth-child(3) { transition-delay: 0.39s; }
-.switch-knob { position: absolute; z-index: 2; left: 3px; top: 3px; width: 28px; height: 28px; border-radius: 50%;
-               display: grid; place-items: center; background: #fff; color: #F2A31B;
-               box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18); }
-.theme-switch[aria-checked="true"] .switch-knob { transform: translateX(30px); background: #3A3F5E; color: #F4F1E6; }
-.switch-knob svg { overflow: visible; }
-.switch-knob .orb, .switch-knob .rays, .switch-knob .bite { transform-box: view-box; transform-origin: 12px 12px; }
-.switch-knob .bite { transform: translate(9px, -9px); }
-.theme-switch[aria-checked="true"] .switch-knob .bite { transform: none; }
-.theme-switch[aria-checked="true"] .switch-knob .orb { transform: scale(1.5); }
-.theme-switch[aria-checked="true"] .switch-knob .rays { transform: rotate(90deg) scale(0); opacity: 0; }
-.theme-switch.ready .switch-knob { transition: transform 0.5s cubic-bezier(0.34, 1.22, 0.64, 1), background 0.4s ease, color 0.4s ease; }
-.theme-switch.ready .switch-knob .orb, .theme-switch.ready .switch-knob .bite { transition: transform 0.5s cubic-bezier(0.34, 1.3, 0.64, 1); }
-.theme-switch.ready .switch-knob .rays { transition: transform 0.45s ease, opacity 0.3s ease; }
-
-/* Reduced motion: no sweep or slide, just a quick fade. */
-@media (prefers-reduced-motion: reduce) {
-  .shot .dark { clip-path: none !important; opacity: 0; }
-  .shots[data-mode="dark"] .shot .dark { opacity: 1; }
-  .shots.ready .shot .dark { transition: opacity 0.2s ease !important; }
-  .theme-switch.ready .switch-knob, .theme-switch.ready .switch-knob * , .star { transition-duration: 0.01s !important; transition-delay: 0s !important; }
-}
-@media (prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) {
   .shots[data-mode="auto"] .shot .dark { opacity: 1; }
+  .shots[data-mode="auto"] .shot .light { opacity: 0; }
+}
+
+/* Light / dark switch above the screenshots: the ink pill slides to the
+   chosen side. */
+.switch-row { display: flex; justify-content: flex-end; margin: 40px 0 0; }
+.shots-toggle { position: relative; display: flex; padding: 3px; gap: 2px; appearance: none; border: 0; cursor: pointer;
+                background: var(--tile); border-radius: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+                -webkit-tap-highlight-color: transparent; }
+.shots-toggle[hidden] { display: none; }
+.shots-toggle:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.toggle-thumb { position: absolute; left: 3px; top: 3px; width: 44px; height: 32px; border-radius: 9px; background: var(--ink); }
+.shots-toggle[aria-checked="true"] .toggle-thumb { transform: translateX(46px); }
+.toggle-icon { position: relative; width: 44px; height: 32px; display: grid; place-items: center; color: var(--ink-2); }
+.shots-toggle[aria-checked="false"] .toggle-icon[data-mode="light"],
+.shots-toggle[aria-checked="true"] .toggle-icon[data-mode="dark"] { color: var(--bg); }
+.shots-toggle.ready .toggle-thumb { transition: transform 0.3s cubic-bezier(0.3, 0.7, 0.3, 1); }
+.shots-toggle.ready .toggle-icon { transition: color 0.25s ease; }
+@media (prefers-reduced-motion: reduce) {
+  .shots-toggle.ready .toggle-thumb, .shot img { transition-duration: 0.01s; }
 }
 
 @media (max-width: 1000px) {

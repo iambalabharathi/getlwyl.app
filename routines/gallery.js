@@ -11,7 +11,6 @@
                  bands: 'Bands', 'pull-up-bar': 'Pull-up bar', 'cardio-machine': 'Cardio machine' }
   };
   var KEY_NAMES = { goal: 'Goal', level: 'Level', equipment: 'Equipment' };
-  var ALL = { goal: 'Any goal', level: 'Any level', equipment: 'Any equipment' };
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
   var state = { q: '', goal: null, level: null, equipment: null, exercise: null };
@@ -21,9 +20,9 @@
   var list = document.getElementById('programs');
   var input = document.getElementById('search-input');
   var box = document.getElementById('suggestions');
-  var bar = document.getElementById('filters');
   var count = document.getElementById('result-count');
   var clearButton = document.getElementById('clear');
+  var hint = document.getElementById('browse');
   var sheet = document.getElementById('details');
   var sheetBody = document.getElementById('details-body');
 
@@ -120,14 +119,91 @@
     return span;
   }
 
+  // ---- Filters: chips inside the search bar ---------------------------------
+  // Chosen filters, in the order they were added (Backspace removes the last).
+  var chosen = [];
+  var chipBox = document.getElementById('chips');
+  var field = document.getElementById('search-field');
+  var picks = document.getElementById('quick-picks');
+
+  function chipLabel(key) { return key === 'exercise' ? state.exercise : LABELS[key][state[key]]; }
+
+  function setFilter(key, value) {
+    state[key] = value;
+    chosen = chosen.filter(function (k) { return k !== key; });
+    if (value) chosen.push(key);
+    state.q = '';
+    input.value = '';
+    update();
+  }
+
+  function renderChips() {
+    chosen = chosen.filter(function (k) { return state[k]; });
+    ['goal', 'level', 'equipment', 'exercise'].forEach(function (k) { if (state[k] && chosen.indexOf(k) < 0) chosen.push(k); });
+    chipBox.innerHTML = '';
+    chosen.forEach(function (key) {
+      var chip = el('span', 'token');
+      chip.appendChild(el('span', null, chipLabel(key)));
+      var x = el('button', 'token-remove', '✕');
+      x.type = 'button';
+      x.setAttribute('aria-label', 'Remove ' + chipLabel(key));
+      x.addEventListener('mousedown', function (e) { e.preventDefault(); });
+      x.addEventListener('click', function (e) { e.stopPropagation(); setFilter(key, null); input.focus(); });
+      chip.appendChild(x);
+      chipBox.appendChild(chip);
+    });
+    input.placeholder = chosen.length ? 'Add more…' : 'Search programs or exercises';
+    field.classList.toggle('has-chips', chosen.length > 0);
+    clearButton.hidden = !(state.q || chosen.length);
+    // Quick picks: hide the ones already chosen.
+    picks.querySelectorAll('button').forEach(function (b) { b.hidden = state[b.dataset.key] === b.dataset.value; });
+    picks.hidden = !picks.querySelector('button:not([hidden])');
+  }
+
+  field.addEventListener('click', function (e) { if (e.target === field || e.target === chipBox) input.focus(); });
+  picks.querySelectorAll('button').forEach(function (b) {
+    b.addEventListener('click', function () { setFilter(b.dataset.key, b.dataset.value); });
+  });
+  clearButton.addEventListener('click', function () {
+    state = { q: '', goal: null, level: null, equipment: null, exercise: null };
+    chosen = [];
+    input.value = '';
+    update();
+  });
+
   // ---- Suggestions -----------------------------------------------------------
   var options = [];
   var active = -1;
 
+  // How many programs a filter would leave, with the other filters kept.
+  function countWith(key, value) {
+    var saved = state[key];
+    state[key] = value;
+    var n = programs.filter(matchesFilters).length;
+    state[key] = saved;
+    return n;
+  }
+
+  function filterItem(key, value, withKey) {
+    var n = countWith(key, value);
+    if (!n) return null;
+    return { label: (withKey ? KEY_NAMES[key] + ': ' : '') + LABELS[key][value], note: plural(n, 'program', 'programs'),
+             run: function () { setFilter(key, value); } };
+  }
+
   function suggestions() {
     var tokens = words(state.q);
     var groups = [];
-    if (!tokens.length) return groups;
+
+    // Empty box: every filter, to browse without typing.
+    if (!tokens.length) {
+      Object.keys(LABELS).forEach(function (key) {
+        var items = Object.keys(LABELS[key]).filter(function (v) { return state[key] !== v; })
+          .map(function (v) { return filterItem(key, v, false); }).filter(Boolean);
+        if (items.length) groups.push({ title: KEY_NAMES[key], items: items });
+      });
+      return groups;
+    }
 
     var progs = results().slice(0, 4);
     if (progs.length) groups.push({ title: 'Programs', items: progs.map(function (p) {
@@ -139,22 +215,20 @@
       Object.keys(LABELS[key]).forEach(function (value) {
         var ws = words(LABELS[key][value]);
         if (state[key] === value || !tokens.every(function (t) { return wordScore(t, ws) >= 0.5; })) return;
-        var n = programs.filter(function (p) { return key === 'equipment' ? p.equipment.indexOf(value) >= 0 : p[key] === value; }).length;
-        if (n) filters.push({ label: KEY_NAMES[key] + ': ' + LABELS[key][value], note: plural(n, 'program', 'programs'),
-          run: function () { state[key] = value; state.q = ''; input.value = ''; update(); } });
+        var item = filterItem(key, value, true);
+        if (item) filters.push(item);
       });
     });
     if (filters.length) groups.push({ title: 'Filters', items: filters.slice(0, 3) });
 
     var uses = {};
-    programs.forEach(function (p) { p.exercises.forEach(function (e) { uses[e] = (uses[e] || 0) + 1; }); });
+    programs.filter(matchesFilters).forEach(function (p) { p.exercises.forEach(function (e) { uses[e] = (uses[e] || 0) + 1; }); });
     var exercises = Object.keys(uses).filter(function (e) {
       var ws = words(e);
       return e !== state.exercise && tokens.every(function (t) { return wordScore(t, ws) >= 0.5; });
     }).sort(function (a, b) { return uses[b] - uses[a] || a.localeCompare(b); }).slice(0, 4);
     if (exercises.length) groups.push({ title: 'Exercises', items: exercises.map(function (e) {
-      return { label: e, note: plural(uses[e], 'program', 'programs'),
-        run: function () { state.exercise = e; state.q = ''; input.value = ''; update(); } };
+      return { label: e, note: plural(uses[e], 'program', 'programs'), run: function () { setFilter('exercise', e); } };
     }) });
     return groups;
   }
@@ -166,8 +240,9 @@
     options = [];
     active = -1;
     input.removeAttribute('aria-activedescendant');
-    if (!tokens.length || document.activeElement !== input) { hideSuggestions(); return; }
+    if (document.activeElement !== input) { hideSuggestions(); return; }
     if (!groups.length) {
+      if (!tokens.length) { hideSuggestions(); return; }
       box.appendChild(el('div', 'suggest-empty', 'No matches — try another word.'));
     }
     groups.forEach(function (g) {
@@ -211,6 +286,7 @@
     var item = options[i];
     hideSuggestions();
     if (item) item.run();
+    if (document.activeElement === input) showSuggestions();   // keep adding filters
   }
 
   input.addEventListener('input', function () {
@@ -219,7 +295,11 @@
     syncURL();
     showSuggestions();
   });
-  input.addEventListener('focus', showSuggestions);
+  input.addEventListener('focus', function () {
+    // Phones: lift the bar to the top so the keyboard doesn't hide the suggestions.
+    if (window.matchMedia('(max-width: 600px)').matches) field.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    showSuggestions();
+  });
   input.addEventListener('blur', function () { setTimeout(hideSuggestions, 0); });
   input.addEventListener('keydown', function (e) {
     var open = !box.hidden && options.length;
@@ -230,52 +310,15 @@
       if (open && active >= 0) choose(active);
       else { hideSuggestions(); input.blur(); }   // the cards below already show the results
     } else if (e.key === 'Escape') {
-      e.preventDefault();   // don't let the browser also clear the box
+      e.preventDefault();
       if (!box.hidden) hideSuggestions();
       else if (input.value) { input.value = ''; state.q = ''; update(); }
+    } else if (e.key === 'Backspace' && !input.value && chosen.length) {
+      e.preventDefault();
+      setFilter(chosen[chosen.length - 1], null);
+      showSuggestions();
     }
   });
-
-  // ---- Filters -------------------------------------------------------------
-  function buildFilters() {
-    bar.querySelectorAll('select').forEach(function (select) {
-      var key = select.dataset.key;
-      var present = {};
-      programs.forEach(function (p) {
-        (key === 'equipment' ? p.equipment : [p[key]]).forEach(function (v) { present[v] = true; });
-      });
-      select.appendChild(new Option(ALL[key], ''));
-      Object.keys(LABELS[key]).forEach(function (v) {
-        if (present[v]) select.appendChild(new Option(LABELS[key][v], v));
-      });
-      select.addEventListener('change', function () { state[key] = select.value || null; update(); });
-    });
-    clearButton.addEventListener('click', function () {
-      state = { q: '', goal: null, level: null, equipment: null, exercise: null };
-      input.value = '';
-      update();
-    });
-    bar.hidden = false;
-  }
-
-  function syncFilters() {
-    bar.querySelectorAll('select').forEach(function (select) {
-      var key = select.dataset.key;
-      select.value = state[key] || '';
-      select.classList.toggle('set', !!state[key]);
-    });
-    var pill = document.getElementById('exercise-pill');
-    if (pill) pill.remove();
-    if (state.exercise) {
-      pill = el('button', 'pill-filter', state.exercise + '  ✕');
-      pill.id = 'exercise-pill';
-      pill.type = 'button';
-      pill.setAttribute('aria-label', 'Remove exercise filter: ' + state.exercise);
-      pill.addEventListener('click', function () { state.exercise = null; update(); });
-      document.getElementById('filter-selects').appendChild(pill);
-    }
-    clearButton.hidden = !(state.q || state.goal || state.level || state.equipment || state.exercise);
-  }
 
   // ---- Cards -------------------------------------------------------------------
   function meta(p) {
@@ -295,7 +338,9 @@
     var tokens = words(state.q);
     list.innerHTML = '';
     count.textContent = plural(shown.length, 'program', 'programs');
-    syncFilters();
+    hint.textContent = !shown.length ? 'No programs match'
+      : (shown.length === programs.length ? 'Browse all ' : 'See ') + plural(shown.length, 'program', 'programs') + ' ↓';
+    renderChips();
     if (!shown.length) {
       list.appendChild(el('p', 'muted small', 'No programs match — try fewer words or clear the filters.'));
       return;
@@ -568,7 +613,6 @@
     programs = data.programs;
     programs.forEach(index);
     var program = readURL();
-    buildFilters();
     render();
     if (program) openDetails(program);
   }).catch(function () {

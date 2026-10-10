@@ -6,7 +6,7 @@
   <title>Routines &amp; Plans — LWYL</title>
   <meta name="description" content="Search 40 ready-made training programs for the gym, home and running, download one and open it in LWYL — or make your own plan with ChatGPT or Claude.">
   <link rel="icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/styles.css?v=12">
+  <link rel="stylesheet" href="/assets/styles.css?v=13">
 </head>
 <body>
   <header class="wrap top">
@@ -15,29 +15,36 @@
   </header>
 
   <main class="wrap narrow page">
-    <h1>Routines &amp; Plans</h1>
-    <p class="updated">40 ready-made programs for the gym, home and running. Download one and it opens in LWYL, planned from next Monday.</p>
+    <section class="hero">
+      <h1>Routines &amp; Plans</h1>
+      <p class="updated">40 ready-made programs for the gym, home and running. Download one and it opens in LWYL, planned from next Monday.</p>
 
-    <div class="search" id="search">
-      <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
-      <input id="search-input" type="search" placeholder="Search programs or exercises"
-             autocomplete="off" autocapitalize="off" spellcheck="false"
-             role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="suggestions" aria-label="Search programs">
-      <div class="suggestions" id="suggestions" role="listbox" aria-label="Suggestions" hidden></div>
-    </div>
-
-    <div class="filter-bar" id="filters" hidden>
-      <div class="filter-selects" id="filter-selects">
-        <label class="select"><span class="sr-only">Goal</span><select data-key="goal"></select></label>
-        <label class="select"><span class="sr-only">Level</span><select data-key="level"></select></label>
-        <label class="select"><span class="sr-only">Equipment</span><select data-key="equipment"></select></label>
+      <div class="search">
+        <div class="search-field" id="search-field">
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+          <span class="chips" id="chips"></span>
+          <input id="search-input" type="search" placeholder="Search programs or exercises"
+                 autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"
+                 role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="suggestions" aria-label="Search programs">
+        </div>
+        <div class="suggestions" id="suggestions" role="listbox" aria-label="Suggestions" hidden></div>
       </div>
-      <div class="filter-status">
-        <span class="result-count" id="result-count" aria-live="polite"></span>
-        <button type="button" class="clear" id="clear" hidden>Clear</button>
-      </div>
-    </div>
 
+      <div class="quick-picks" id="quick-picks">
+        <span class="muted">Try</span>
+        <button type="button" data-key="level" data-value="beginner">Beginner</button>
+        <button type="button" data-key="goal" data-value="running">Running</button>
+        <button type="button" data-key="equipment" data-value="dumbbells">Dumbbells</button>
+        <button type="button" data-key="equipment" data-value="bodyweight">No equipment</button>
+      </div>
+
+      <a class="browse" id="browse" href="#results">Browse all 40 programs ↓</a>
+    </section>
+
+    <div class="results-bar" id="results">
+      <span class="result-count" id="result-count" aria-live="polite"></span>
+      <button type="button" class="clear" id="clear" hidden>Clear</button>
+    </div>
     <div class="programs" id="programs"><p class="muted small">Loading…</p></div>
     <p class="muted small">On iPhone, tap Download, then tap the file in your browser’s downloads or in the Files app and it opens in LWYL. You see a preview first — nothing is added until you tap Import, and routines with a name you already have are added as a copy, like “Push Day (2)”.</p>
 
@@ -121,6 +128,6 @@ Rules:
     </div>
   </footer>
 
-  <script src="/routines/gallery.js?v=2"></script>
+  <script src="/routines/gallery.js?v=3"></script>
 </body>
 </html>

@@ -9,8 +9,18 @@
   --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, "Segoe UI", Roboto, sans-serif;
   color-scheme: light dark;
 }
+/* Dark: the header switch's choice (data-theme), else the visitor's setting. */
+:root[data-theme="dark"] {
+  --bg: #0E0E10;
+  --tile: #1A1A1E;
+  --ink: #F2F2F4;
+  --ink-2: #9A9AA3;
+  --line: rgba(242, 242, 244, 0.10);
+  color-scheme: dark;
+}
+:root[data-theme="light"] { color-scheme: light; }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #0E0E10;
     --tile: #1A1A1E;
     --ink: #F2F2F4;
@@ -57,9 +67,11 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01e
 .store { display: inline-block; line-height: 0; }
 .store img { height: 50px; width: auto; }
 .store .on-dark { display: none; }
+:root[data-theme="dark"] .store .on-light { display: none; }
+:root[data-theme="dark"] .store .on-dark { display: inline; }
 @media (prefers-color-scheme: dark) {
-  .store .on-light { display: none; }
-  .store .on-dark { display: inline; }
+  :root:not([data-theme="light"]) .store .on-light { display: none; }
+  :root:not([data-theme="light"]) .store .on-dark { display: inline; }
 }
 .soon { margin: 10px 0 0; font-size: 13px; color: var(--ink-2); }
 
@@ -70,32 +82,37 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01e
 .shot figcaption { grid-row: 2; font: 500 17px/1.3 var(--serif); text-align: center; color: var(--ink);
                    margin-top: 12px; padding: 0 6px; }
 .shot img { grid-area: 1 / 1; display: block; width: 100%; height: auto; transition: opacity 0.45s ease; }
-/* Which set shows: the switch's choice, else the visitor's own setting. */
-.shot .dark, .shots[data-mode="light"] .shot .dark { opacity: 0; }
-.shot .light, .shots[data-mode="dark"] .shot .dark { opacity: 1; }
-.shots[data-mode="dark"] .shot .light { opacity: 0; }
+/* Light or dark screenshots, with the site's theme. */
+.shot .dark { opacity: 0; }
+:root[data-theme="dark"] .shot .dark { opacity: 1; }
+:root[data-theme="dark"] .shot .light { opacity: 0; }
 @media (prefers-color-scheme: dark) {
-  .shots[data-mode="auto"] .shot .dark { opacity: 1; }
-  .shots[data-mode="auto"] .shot .light { opacity: 0; }
+  :root:not([data-theme="light"]) .shot .dark { opacity: 1; }
+  :root:not([data-theme="light"]) .shot .light { opacity: 0; }
 }
+body { transition: background-color 0.35s ease, color 0.35s ease; }
 
-/* Light / dark switch above the screenshots: the ink pill slides to the
-   chosen side. */
-.switch-row { display: flex; justify-content: flex-end; margin: 40px 0 0; }
-.shots-toggle { position: relative; display: flex; padding: 3px; gap: 2px; appearance: none; border: 0; cursor: pointer;
-                background: var(--tile); border-radius: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.06);
-                -webkit-tap-highlight-color: transparent; }
-.shots-toggle[hidden] { display: none; }
-.shots-toggle:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
-.toggle-thumb { position: absolute; left: 3px; top: 3px; width: 44px; height: 32px; border-radius: 9px; background: var(--ink); }
-.shots-toggle[aria-checked="true"] .toggle-thumb { transform: translateX(46px); }
-.toggle-icon { position: relative; width: 44px; height: 32px; display: grid; place-items: center; color: var(--ink-2); }
-.shots-toggle[aria-checked="false"] .toggle-icon[data-mode="light"],
-.shots-toggle[aria-checked="true"] .toggle-icon[data-mode="dark"] { color: var(--bg); }
-.shots-toggle.ready .toggle-thumb { transition: transform 0.3s cubic-bezier(0.3, 0.7, 0.3, 1); }
-.shots-toggle.ready .toggle-icon { transition: color 0.25s ease; }
+/* Theme switch in the header: the ink pill slides to the chosen side. */
+.top-right { display: flex; align-items: center; gap: 14px; }
+.theme-toggle { position: relative; display: flex; padding: 2px; gap: 2px; appearance: none; border: 0; cursor: pointer;
+                background: var(--tile); border-radius: 10px; box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+                -webkit-tap-highlight-color: transparent; flex: none; }
+.theme-toggle[hidden] { display: none; }
+.theme-toggle:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.toggle-thumb { position: absolute; left: 2px; top: 2px; width: 32px; height: 26px; border-radius: 8px; background: var(--ink); }
+.theme-toggle[aria-checked="true"] .toggle-thumb { transform: translateX(34px); }
+.toggle-icon { position: relative; width: 32px; height: 26px; display: grid; place-items: center; color: var(--ink-2); }
+.theme-toggle[aria-checked="false"] .toggle-icon[data-mode="light"],
+.theme-toggle[aria-checked="true"] .toggle-icon[data-mode="dark"] { color: var(--bg); }
+.theme-toggle.ready .toggle-thumb { transition: transform 0.3s cubic-bezier(0.3, 0.7, 0.3, 1); }
+.theme-toggle.ready .toggle-icon { transition: color 0.25s ease; }
 @media (prefers-reduced-motion: reduce) {
-  .shots-toggle.ready .toggle-thumb, .shot img { transition-duration: 0.01s; }
+  .theme-toggle.ready .toggle-thumb, .shot img, body { transition-duration: 0.01s; }
+}
+@media (max-width: 480px) {
+  .brand span { display: none; }   /* logo only, so the links and switch fit */
+  .top nav a { margin-left: 14px; }
+  .top-right { gap: 12px; }
 }
 
 @media (max-width: 1000px) {
@@ -135,7 +152,6 @@ details p { margin: 10px 0 0; color: var(--ink-2); }
   .hero .icon { width: 64px; height: 64px; border-radius: 15px; margin-bottom: 12px; }
   .hero h1 { font-size: 40px; }
   .hero p.lead { font-size: 16px; line-height: 1.45; margin-top: 10px; }
-  .switch-row { margin-top: 18px; }
   /* Two phones side by side, the third peeking in: whole phones on the first screen. */
   .shots { grid-auto-columns: 46%; gap: 12px; margin-top: 12px; }
   .shot figcaption { font-size: 14px; margin-top: 8px; }

@@ -4,18 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LWYL — Workout Log</title>
+  <script src="/assets/theme.js?v=1"></script>
   <meta name="description" content="LWYL is a simple, private workout log for iPhone: log sets fast, bring a training plan from ChatGPT, Claude or 40 free programs, schedule your week and keep it all in Apple Health.">
   <meta property="og:title" content="LWYL — Log Every Move">
   <meta property="og:description" content="A simple, private workout log for iPhone.">
   <meta property="og:image" content="https://getlwyl.app/assets/icon-256.png">
   <link rel="icon" href="/assets/apple-touch-icon.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/styles.css?v=17">
+  <link rel="stylesheet" href="/assets/styles.css?v=18">
 </head>
 <body>
   <header class="wrap top">
-    <a class="brand" href="/"><img src="/assets/apple-touch-icon.png" alt="">LWYL</a>
-    <nav><a href="/routines/">Routines</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav>
+    <a class="brand" href="/"><img src="/assets/apple-touch-icon.png" alt=""><span>LWYL</span></a>
+    <div class="top-right">
+      <nav><a href="/routines/">Routines</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav>
+      <button type="button" class="theme-toggle" id="theme" role="switch" aria-checked="false" aria-label="Dark mode" hidden>
+        <span class="toggle-thumb" aria-hidden="true"></span>
+        <span class="toggle-icon" data-mode="light" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></g></svg></span>
+        <span class="toggle-icon" data-mode="dark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z" fill="currentColor"/></svg></span>
+      </button>
+    </div>
   </header>
 
   <main class="wrap">
@@ -26,16 +34,7 @@
       <p class="lead">Log sets in a tap, follow a plan from ChatGPT, Claude or our free library, and keep everything in Apple Health. No account, no ads — your workouts stay on your phone.</p>
     </section>
 
-    <!-- Light / dark screenshots: one switch; the ink pill slides between sun and moon. -->
-    <div class="switch-row">
-      <button type="button" class="shots-toggle" id="screens" role="switch" aria-checked="false" aria-label="Dark screenshots" hidden>
-        <span class="toggle-thumb" aria-hidden="true"></span>
-        <span class="toggle-icon" data-mode="light" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></g></svg></span>
-        <span class="toggle-icon" data-mode="dark" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z" fill="currentColor"/></svg></span>
-      </button>
-    </div>
-
-    <section class="shots" data-mode="auto" aria-label="Screenshots">
+    <section class="shots" aria-label="Screenshots">
       <figure class="shot">
         <img class="light" src="/assets/shot-home-light.webp?v=2" alt="Home: workouts this week and the next scheduled routine" loading="lazy" width="700" height="1451">
         <img class="dark" src="/assets/shot-home-dark.webp?v=2" alt="" loading="lazy" width="700" height="1451">
@@ -64,27 +63,11 @@
     </section>
 
     <script>
-      // Light / dark screenshots, starting from the visitor's own setting.
-      (function () {
-        var sw = document.getElementById('screens');
-        var shots = document.querySelector('.shots');
-        var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        function show(on) {
-          dark = on;
-          sw.setAttribute('aria-checked', on ? 'true' : 'false');
-          shots.dataset.mode = on ? 'dark' : 'light';
-        }
-        show(dark);
-        sw.hidden = false;
-        sw.addEventListener('click', function () { show(!dark); });
-        // Fetch the other set once the page is in, so the first fade has
-        // something to show (they're lazy, and hidden ones never load).
-        function preload() {
-          shots.querySelectorAll('img').forEach(function (img) { img.loading = 'eager'; });
-        }
-        if (document.readyState === 'complete') preload(); else window.addEventListener('load', preload);
-        requestAnimationFrame(function () { requestAnimationFrame(function () { sw.classList.add('ready'); }); });
-      })();
+      // Load the other set of screenshots once the page is in, so switching
+      // the theme fades straight to it (hidden ones are lazy and never load).
+      window.addEventListener('load', function () {
+        document.querySelectorAll('.shots img').forEach(function (img) { img.loading = 'eager'; });
+      });
     </script>
 
     <div class="get">

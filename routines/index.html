@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Routines &amp; Plans — LWYL</title>
-  <meta name="description" content="Download ready-made LWYL routines, a 2-week training plan, or make your own plan with ChatGPT or Claude and open it in LWYL.">
+  <meta name="description" content="Search 40 ready-made training programs for the gym, home and running, download one and open it in LWYL — or make your own plan with ChatGPT or Claude.">
   <link rel="icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/styles.css?v=11">
+  <link rel="stylesheet" href="/assets/styles.css?v=12">
 </head>
 <body>
   <header class="wrap top">
@@ -16,25 +16,43 @@
 
   <main class="wrap narrow page">
     <h1>Routines &amp; Plans</h1>
-    <p class="updated">A library of ready-made training plans, or your own plan made with AI — open any of them in LWYL.</p>
+    <p class="updated">40 ready-made programs for the gym, home and running. Download one and it opens in LWYL, planned from next Monday.</p>
 
-    <h2>Library</h2>
-    <p>40 programs for the gym, home and running — pick one and tap Download. It's planned from next Monday, so it's ready to start.</p>
-    <div class="filters" id="filters" hidden>
-      <div class="filter-row" data-key="goal"></div>
-      <div class="filter-row" data-key="level"></div>
-      <div class="filter-row" data-key="equipment"></div>
+    <div class="search" id="search">
+      <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+      <input id="search-input" type="search" placeholder="Search programs or exercises"
+             autocomplete="off" autocapitalize="off" spellcheck="false"
+             role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="suggestions" aria-label="Search programs">
+      <div class="suggestions" id="suggestions" role="listbox" aria-label="Suggestions" hidden></div>
     </div>
-    <div class="programs" id="programs"><p class="muted small">Loading…</p></div>
-    <p class="muted small">On iPhone, tap Download, then open the file and choose LWYL. LWYL shows a preview first — nothing is added until you tap Import. Routines with a name you already have are added as a copy, like “Push Day (2)”.</p>
 
-    <h2>Make a plan with AI</h2>
+    <div class="filter-bar" id="filters" hidden>
+      <div class="filter-selects" id="filter-selects">
+        <label class="select"><span class="sr-only">Goal</span><select data-key="goal"></select></label>
+        <label class="select"><span class="sr-only">Level</span><select data-key="level"></select></label>
+        <label class="select"><span class="sr-only">Equipment</span><select data-key="equipment"></select></label>
+      </div>
+      <div class="filter-status">
+        <span class="result-count" id="result-count" aria-live="polite"></span>
+        <button type="button" class="clear" id="clear" hidden>Clear</button>
+      </div>
+    </div>
+
+    <div class="programs" id="programs"><p class="muted small">Loading…</p></div>
+    <p class="muted small">On iPhone, tap Download, then tap the file in your browser’s downloads or in the Files app and it opens in LWYL. You see a preview first — nothing is added until you tap Import, and routines with a name you already have are added as a copy, like “Push Day (2)”.</p>
+
+    <dialog class="sheet" id="details" aria-labelledby="details-title">
+      <div class="sheet-body" id="details-body" tabindex="-1"></div>
+    </dialog>
+
+    <h2 class="section-break">Make your own</h2>
+    <h3>With AI</h3>
     <p>Ask ChatGPT, Claude or any AI assistant for a plan that fits you, then open it in LWYL.</p>
     <ol class="steps">
       <li>Copy the prompt below and fill in the parts in [brackets].</li>
       <li>Paste it into the AI and send.</li>
       <li>Save its answer as a file called <code>plan.lwyl</code> (ask the AI to “give it to me as a file”, or paste it into a note and share it as a file).</li>
-      <li>Open the file on your iPhone and choose LWYL.</li>
+      <li>Tap the file on your iPhone and it opens in LWYL.</li>
     </ol>
     <div class="prompt">
       <button type="button" class="copy" id="copy-prompt">Copy</button>
@@ -75,7 +93,7 @@ Rules:
 - Reply with only the JSON, no explanation.</pre>
     </div>
 
-    <h2>The format</h2>
+    <h3>The format</h3>
     <p>A routines file is plain JSON saved as <code>.lwyl</code> (or <code>.json</code>, imported from Routines › Import). One file can hold many routines.</p>
     <details>
       <summary>Routines and exercises</summary>
@@ -103,6 +121,6 @@ Rules:
     </div>
   </footer>
 
-  <script src="/routines/gallery.js?v=1"></script>
+  <script src="/routines/gallery.js?v=2"></script>
 </body>
 </html>

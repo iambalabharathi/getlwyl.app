@@ -12,7 +12,21 @@
    ],
    "weeks": 12,
    "daysPerWeek": 3,
-   "routines": 2
+   "routines": 2,
+   "routineNames": [
+    "Workout A",
+    "Workout B"
+   ],
+   "exercises": [
+    "Barbell Back Squat",
+    "Barbell Bench Press",
+    "Bent-Over Barbell Row",
+    "Plank",
+    "Barbell Overhead Press",
+    "Barbell Deadlift",
+    "Chin-Ups",
+    "Hanging Knee Raise"
+   ]
   },
   {
    "id": "push-pull-legs-3-day",
@@ -25,7 +39,30 @@
    ],
    "weeks": 8,
    "daysPerWeek": 3,
-   "routines": 3
+   "routines": 3,
+   "routineNames": [
+    "Push",
+    "Pull",
+    "Legs"
+   ],
+   "exercises": [
+    "Barbell Bench Press",
+    "Seated Dumbbell Shoulder Press",
+    "Incline Dumbbell Press",
+    "Dumbbell Lateral Raise",
+    "Cable Tricep Pushdown",
+    "Barbell Deadlift",
+    "Lat Pulldown",
+    "Seated Cable Row",
+    "Cable Face Pull",
+    "Dumbbell Bicep Curl",
+    "Barbell Back Squat",
+    "Leg Press",
+    "Lying Leg Curl",
+    "Walking Lunge",
+    "Standing Calf Raise",
+    "Plank"
+   ]
   },
   {
    "id": "fat-loss-gym-circuits",
@@ -38,7 +75,31 @@
    ],
    "weeks": 6,
    "daysPerWeek": 4,
-   "routines": 4
+   "routines": 4,
+   "routineNames": [
+    "Circuit A",
+    "Incline Walk",
+    "Circuit B",
+    "Bike Intervals"
+   ],
+   "exercises": [
+    "Rowing Machine",
+    "Goblet Squat",
+    "Machine Chest Press",
+    "Seated Cable Row",
+    "Dumbbell Romanian Deadlift",
+    "Plank",
+    "Stationary Bike",
+    "Incline Treadmill Walk",
+    "Standing Calf Stretch",
+    "Standing Quad Stretch",
+    "Elliptical Trainer",
+    "Leg Press",
+    "Lat Pulldown",
+    "Dumbbell Shoulder Press",
+    "Step Ups",
+    "Dead Bug"
+   ]
   },
   {
    "id": "home-dumbbell-fat-loss",
@@ -51,7 +112,27 @@
    ],
    "weeks": 6,
    "daysPerWeek": 4,
-   "routines": 2
+   "routines": 2,
+   "routineNames": [
+    "Circuit A",
+    "Circuit B"
+   ],
+   "exercises": [
+    "Goblet Squat",
+    "Incline Push-Up",
+    "Bent-Over Dumbbell Row",
+    "Reverse Lunge",
+    "Dumbbell Shoulder Press",
+    "Jumping Jacks",
+    "Plank",
+    "Dumbbell Romanian Deadlift",
+    "Dumbbell Floor Press",
+    "Step Ups",
+    "Single-Arm Dumbbell Row",
+    "Glute Bridge",
+    "Mountain Climbers",
+    "Dead Bug"
+   ]
   },
   {
    "id": "beginner-full-body-gym",
@@ -64,7 +145,25 @@
    ],
    "weeks": 8,
    "daysPerWeek": 3,
-   "routines": 2
+   "routines": 2,
+   "routineNames": [
+    "Workout A",
+    "Workout B"
+   ],
+   "exercises": [
+    "Barbell Back Squat",
+    "Barbell Bench Press",
+    "Lat Pulldown",
+    "Dumbbell Romanian Deadlift",
+    "Dumbbell Lateral Raise",
+    "Plank",
+    "Barbell Deadlift",
+    "Barbell Overhead Press",
+    "Seated Cable Row",
+    "Leg Press",
+    "Dumbbell Bicep Curl",
+    "Cable Tricep Pushdown"
+   ]
   },
   {
    "id": "bodyweight-beginner",
@@ -77,7 +176,33 @@
    ],
    "weeks": 6,
    "daysPerWeek": 3,
-   "routines": 4
+   "routines": 4,
+   "routineNames": [
+    "Foundation A",
+    "Foundation B",
+    "Build A",
+    "Build B"
+   ],
+   "exercises": [
+    "Bodyweight Squat",
+    "Incline Push-Up",
+    "Glute Bridge",
+    "Bodyweight Reverse Lunge",
+    "Bird-Dog",
+    "Plank",
+    "Step Ups",
+    "Knee Push Ups",
+    "Superman",
+    "Wall Sit",
+    "Bodyweight Calf Raise",
+    "Dead Bug",
+    "Push-Up",
+    "Single Leg Glute Bridge",
+    "Reverse Lunge",
+    "Split Squat",
+    "Single Leg Calf Raise",
+    "Side Plank"
+   ]
   },
   {
    "id": "core-strength-beginner",
@@ -90,7 +215,33 @@
    ],
    "weeks": 6,
    "daysPerWeek": 3,
-   "routines": 4
+   "routines": 4,
+   "routineNames": [
+    "Core A",
+    "Core B",
+    "Core A+",
+    "Core B+"
+   ],
+   "exercises": [
+    "Dead Bug",
+    "Bird-Dog",
+    "Glute Bridge",
+    "Plank",
+    "Side Plank",
+    "Reverse Crunches",
+    "Crunches",
+    "Heel Touches",
+    "Superman",
+    "Dead Bug Hold",
+    "Bear Plank Hold",
+    "Flutter Kicks",
+    "Single Leg Glute Bridge",
+    "Lying Leg Raise",
+    "Bicycle Crunch",
+    "Russian Twist",
+    "Hollow Body Hold",
+    "Plank Knee Tuck"
+   ]
   },
   {
    "id": "dumbbell-full-body-beginner",
@@ -103,7 +254,25 @@
    ],
    "weeks": 8,
    "daysPerWeek": 3,
-   "routines": 2
+   "routines": 2,
+   "routineNames": [
+    "Full Body A",
+    "Full Body B"
+   ],
+   "exercises": [
+    "Goblet Squat",
+    "Dumbbell Floor Press",
+    "Bent-Over Dumbbell Row",
+    "Dumbbell Shoulder Press",
+    "Glute Bridge",
+    "Plank",
+    "Dumbbell Romanian Deadlift",
+    "Reverse Lunge",
+    "Incline Push-Up",
+    "Single-Arm Dumbbell Row",
+    "Dumbbell Lateral Raise",
+    "Dead Bug"
+   ]
   },
   {
    "id": "full-body-2-day",
@@ -116,7 +285,25 @@
    ],
    "weeks": 8,
    "daysPerWeek": 2,
-   "routines": 2
+   "routines": 2,
+   "routineNames": [
+    "Workout A",
+    "Workout B"
+   ],
+   "exercises": [
+    "Barbell Back Squat",
+    "Barbell Bench Press",
+    "Lat Pulldown",
+    "Lying Leg Curl",
+    "Dumbbell Lateral Raise",
+    "Plank",
+    "Barbell Deadlift",
+    "Incline Dumbbell Press",
+    "Seated Cable Row",
+    "Goblet Squat",
+    "Dumbbell Bicep Curl",
+    "Cable Tricep Pushdown"
+   ]
   },
   {
    "id": "indoor-cycling",
@@ -129,7 +316,22 @@
    ],
    "weeks": 6,
    "daysPerWeek": 3,
-   "routines": 9
+   "routines": 9,
+   "routineNames": [
+    "Endurance Ride · Weeks 1–2",
+    "Bike Intervals · Weeks 1–2",
+    "Air Bike Sprints · Weeks 1–2",
+    "Endurance Ride · Weeks 3–4",
+    "Bike Intervals · Weeks 3–4",
+    "Air Bike Sprints · Weeks 3–4",
+    "Endurance Ride · Weeks 5–6",
+    "Bike Intervals · Weeks 5–6",
+    "Air Bike Sprints · Weeks 5–6"
+   ],
+   "exercises": [
+    "Stationary Bike",
+    "Air Bike"
+   ]
   },
   {
    "id": "kettlebell-beginner",
@@ -142,7 +344,24 @@
    ],
    "weeks": 6,
    "daysPerWeek": 3,
-   "routines": 2
+   "routines": 2,
+   "routineNames": [
+    "Kettlebell A",
+    "Kettlebell B"
+   ],
+   "exercises": [
+    "Goblet Squat",
+    "Kettlebell Deadlift",
+    "One Arm Kettlebell Row",
+    "One Arm Kettlebell Shoulder Press",
+    "Kettlebell Swing",
+    "Plank",
+    "Kettlebell Reverse Lunge",
+    "Kettlebell Sumo Deadlift",
+    "One Arm Kettlebell Floor Press",
+    "Kettlebell Halo",
+    "Dead Bug"
+   ]
   },
   {
    "id": "resistance-band-full-body",
@@ -155,7 +374,25 @@
    ],
    "weeks": 6,
    "daysPerWeek": 3,
-   "routines": 2
+   "routines": 2,
+   "routineNames": [
+    "Band Full Body A",
+    "Band Full Body B"
+   ],
+   "exercises": [
+    "Banded Squat",
+    "Knee Push Ups",
+    "Band Pull Apart",
+    "Banded Romanian Deadlift",
+    "Banded Lateral Walk",
+    "Dead Bug",
+    "Banded Hip Thrust",
+    "Incline Push-Up",
+    "Banded Good Morning",
+    "Banded Standing Leg Curl",
+    "Banded Clamshell",
+    "Side Plank"
+   ]
   },
   {
    "id": "rowing-machine-plan",
@@ -168,7 +405,20 @@
    ],
    "weeks": 6,
    "daysPerWeek": 3,
-   "routines": 6
+   "routines": 6,
+   "routineNames": [
+    "Steady Row · Weeks 1–2",
+    "Row Intervals · Weeks 1–2",
+    "Steady Row · Weeks 3–4",
+    "Row Intervals · Weeks 3–4",
+    "Steady Row · Weeks 5–6",
+    "Row Intervals · Weeks 5–6"
+   ],
+   "exercises": [
+    "Rowing Machine",
+    "Child's Pose",
+    "Seated Forward Fold"
+   ]
   },
   {
    "id": "walking-plan",
@@ -181,7 +431,20 @@
    ],
    "weeks": 6,
    "daysPerWeek": 5,
-   "routines": 6
+   "routines": 6,
+   "routineNames": [
+    "Walk · 20 min",
+    "Walk · 25 min",
+    "Walk · 30 min",
+    "Walk · 35 min",
+    "Walk · 40 min",
+    "Walk · 45 min"
+   ],
+   "exercises": [
+    "Walking",
+    "Standing Calf Stretch",
+    "Standing Quad Stretch"
+   ]
   },
   {
    "id": "run-walk-to-5k",
@@ -194,7 +457,19 @@
    ],
    "weeks": 8,
    "daysPerWeek": 3,
-   "routines": 4
+   "routines": 4,
+   "routineNames": [
+    "Weeks 1–2 · Run/Walk",
+    "Weeks 3–4 · Run/Walk",
+    "Weeks 5–6 · Run/Walk",
+    "Weeks 7–8 · Continuous Run"
+   ],
+   "exercises": [
+    "Walking",
+    "Running",
+    "Standing Calf Stretch",
+    "Standing Quad Stretch"
+   ]
   },
   {
    "id": "daily-mobility",
@@ -207,7 +482,29 @@
    ],
    "weeks": 4,
    "daysPerWeek": 5,
-   "routines": 2
+   "routines": 2,
+   "routineNames": [
+    "Mobility A",
+    "Mobility B"
+   ],
+   "exercises": [
+    "Cat-Cow",
+    "Low Lunge",
+    "Pigeon Stretch",
+    "Thread the Needle",
+    "Deep Squat Hold",
+    "Seated Forward Fold",
+    "Supine Spinal Twist",
+    "Child's Pose",
+    "Downward-Facing Dog",
+    "Kneeling Hip Flexor Stretch",
+    "Lizard Stretch",
+    "Front-to-Back Leg Swing",
+    "Cross-Body Shoulder Stretch",
+    "Thread the Needle Flow",
+    "Butterfly Stretch",
+    "Happy Baby Pose"
+   ]
   },
   {
    "id": "desk-worker-mobility",
@@ -220,7 +517,28 @@
    ],
    "weeks": 4,
    "daysPerWeek": 3,
-   "routines": 2
+   "routines": 2,
+   "routineNames": [
+    "Hips & Upper Back",
+    "Neck & Shoulders"
+   ],
+   "exercises": [
+    "Cat-Cow",
+    "Kneeling Hip Flexor Stretch",
+    "Thread the Needle",
+    "Glute Bridge",
+    "Pigeon Stretch",
+    "Doorway Chest Stretch",
+    "Seated Spinal Twist",
+    "Chin Tuck Hold",
+    "Neck Side Stretch",
+    "Cross-Body Shoulder Stretch",
+    "Puppy Pose",
+    "Superman",
+    "Thoracic Bridge",
+    "Half-Kneeling Hip Flexor Rock",
+    "Child's Pose"
+   ]
   },
   {
    "id": "bench-press-focus",
@@ -233,7 +551,30 @@
    ],
    "weeks": 8,
    "daysPerWeek": 3,
-   "routines": 3
+   "routines": 3,
+   "routineNames": [
+    "Heavy Bench",
+    "Volume Bench",
+    "Paused Bench"
+   ],
+   "exercises": [
+    "Barbell Bench Press",
+    "Barbell Back Squat",
+    "Bent-Over Barbell Row",
+    "Cable Tricep Pushdown",
+    "Cable Face Pull",
+    "Barbell Overhead Press",
+    "Romanian Deadlift",
+    "Pull-Up",
+    "Incline Dumbbell Press",
+    "Skull Crusher",
+    "Paused Bench Press",
+    "Close-Grip Bench Press",
+    "Barbell Deadlift",
+    "Lat Pulldown",
+    "Chest Dips",
+    "Rear Delt Fly"
+   ]
   },
   {
    "id": "calisthenics-intermediate",
@@ -247,7 +588,38 @@
    ],
    "weeks": 8,
    "daysPerWeek": 4,
-   "routines": 4
+   "routines": 4,
+   "routineNames": [
+    "Upper A",
+    "Lower A",
+    "Upper B",
+    "Lower B"
+   ],
+   "exercises": [
+    "Pull-Up",
+    "Decline Push-Up",
+    "Chin-Ups",
+    "Pike Push Ups",
+    "Hanging Knee Raise",
+    "Hollow Body Hold",
+    "Bulgarian Split Squat",
+    "Jump Squat",
+    "Single Leg Glute Bridge",
+    "Cossack Squat",
+    "Single Leg Calf Raise",
+    "Side Plank",
+    "Archer Push Ups",
+    "Wide Grip Pull Ups",
+    "Diamond Push Ups",
+    "Hanging Leg Raise",
+    "Dead Hang",
+    "Reverse Lunge",
+    "Nordic Hamstring Curl",
+    "Step Ups",
+    "Wall Sit",
+    "Lying Leg Raise",
+    "Plank"
+   ]
   },
   {
    "id": "kettlebell-strength",
@@ -260,7 +632,29 @@
    ],
    "weeks": 8,
    "daysPerWeek": 3,
-   "routines": 3
+   "routines": 3,
+   "routineNames": [
+    "Squat & Press",
+    "Hinge & Pull",
+    "Full Body Strength"
+   ],
+   "exercises": [
+    "Double Kettlebell Clean",
+    "Double Kettlebell Overhead Press",
+    "Goblet Squat",
+    "Double Kettlebell Row",
+    "Kettlebell Turkish Get Ups",
+    "Kettlebell Swing",
+    "Kettlebell Single Leg Deadlift",
+    "One Arm Kettlebell Row",
+    "One Arm Kettlebell Floor Press",
+    "Kettlebell Windmills",
+    "Double Kettlebell Clean and Press",
+    "Kettlebell Bulgarian Split Squat",
+    "Kettlebell Sumo Deadlift",
+    "Double Kettlebell Push Press",
+    "Hollow Body Hold"
+   ]
   },
   {
    "id": "posterior-chain-strength",
@@ -273,7 +667,31 @@
    ],
    "weeks": 8,
    "daysPerWeek": 3,
-   "routines": 3
+   "routines": 3,
+   "routineNames": [
+    "Deadlift Day",
+    "Squat Day",
+    "Hinge Day"
+   ],
+   "exercises": [
+    "Barbell Deadlift",
+    "Barbell Hip Thrust",
+    "Bent-Over Barbell Row",
+    "Back Extension",
+    "Hanging Leg Raise",
+    "Barbell Back Squat",
+    "Barbell Bench Press",
+    "Good Morning",
+    "Pull-Up",
+    "Lying Leg Curl",
+    "Plank",
+    "Pause Deadlift",
+    "Romanian Deadlift",
+    "Barbell Overhead Press",
+    "Seated Cable Row",
+    "Nordic Hamstring Curl",
+    "Kettlebell Swing"
+   ]
   },
   {
    "id": "classic-split-5-day",
@@ -286,7 +704,46 @@
    ],
    "weeks": 8,
    "daysPerWeek": 5,
-   "routines": 5
+   "routines": 5,
+   "routineNames": [
+    "Chest",
+    "Back",
+    "Legs",
+    "Shoulders",
+    "Arms"
+   ],
+   "exercises": [
+    "Barbell Bench Press",
+    "Incline Dumbbell Press",
+    "Chest Dips",
+    "Cable Fly",
+    "Pec Deck",
+    "Barbell Deadlift",
+    "Pull-Up",
+    "Bent-Over Barbell Row",
+    "Lat Pulldown",
+    "Seated Cable Row",
+    "Straight-Arm Pulldown",
+    "Barbell Back Squat",
+    "Romanian Deadlift",
+    "Leg Press",
+    "Leg Extension",
+    "Lying Leg Curl",
+    "Standing Calf Raise",
+    "Barbell Overhead Press",
+    "Arnold Press",
+    "Dumbbell Lateral Raise",
+    "Rear Delt Fly",
+    "Cable Face Pull",
+    "Barbell Shrug",
+    "Close-Grip Bench Press",
+    "Barbell Curl",
+    "Skull Crusher",
+    "Incline Dumbbell Curl",
+    "Cable Tricep Pushdown",
+    "Dumbbell Hammer Curl",
+    "Hanging Leg Raise"
+   ]
   },
   {
    "id": "dumbbell-arms-shoulders",
@@ -299,7 +756,26 @@
    ],
    "weeks": 6,
    "daysPerWeek": 2,
-   "routines": 2
+   "routines": 2,
+   "routineNames": [
+    "Arms & Shoulders A",
+    "Arms & Shoulders B"
+   ],
+   "exercises": [
+    "Seated Dumbbell Shoulder Press",
+    "Dumbbell Lateral Raise",
+    "Dumbbell Bicep Curl",
+    "Overhead Tricep Extension",
+    "Dumbbell Hammer Curl",
+    "Dumbbell Tricep Kickback",
+    "Arnold Press",
+    "Dumbbell Reverse Fly",
+    "Side-Lying Lateral Raise",
+    "Close-Grip Dumbbell Bench Press",
+    "Incline Dumbbell Curl",
+    "Dumbbell Skull Crusher",
+    "Concentration Curl"
+   ]
   },
   {
    "id": "dumbbell-glutes-legs",
@@ -312,7 +788,30 @@
    ],
    "weeks": 8,
    "daysPerWeek": 3,
-   "routines": 3
+   "routines": 3,
+   "routineNames": [
+    "Glutes & Hamstrings",
+    "Quads & Calves",
+    "Single-Leg & Glutes"
+   ],
+   "exercises": [
+    "Dumbbell Hip Thrust",
+    "Dumbbell Romanian Deadlift",
+    "Dumbbell Sumo Squat",
+    "Single Leg Glute Bridge",
+    "Side Plank",
+    "Goblet Squat",
+    "Bulgarian Split Squat",
+    "Step Ups",
+    "Dumbbell Squat",
+    "Dumbbell Calf Raise",
+    "Wall Sit",
+    "Reverse Lunge",
+    "Single Leg Romanian Deadlift",
+    "Side Lunge",
+    "Single Leg Calf Raise",
+    "Glute Bridge Hold"
+   ]
   },
   {
    "id": "dumbbell-push-pull-legs",
@@ -325,7 +824,32 @@
    ],
    "weeks": 8,
    "daysPerWeek": 3,
-   "routines": 3
+   "routines": 3,
+   "routineNames": [
+    "Push",
+    "Pull",
+    "Legs"
+   ],
+   "exercises": [
+    "Dumbbell Bench Press",
+    "Seated Dumbbell Shoulder Press",
+    "Incline Dumbbell Fly",
+    "Dumbbell Lateral Raise",
+    "Overhead Tricep Extension",
+    "Dumbbell Tricep Kickback",
+    "Bent-Over Dumbbell Row",
+    "Single-Arm Dumbbell Row",
+    "Dumbbell Pullover",
+    "Dumbbell Reverse Fly",
+    "Dumbbell Bicep Curl",
+    "Dumbbell Hammer Curl",
+    "Goblet Squat",
+    "Dumbbell Romanian Deadlift",
+    "Walking Lunge",
+    "Dumbbell Hip Thrust",
+    "Dumbbell Calf Raise",
+    "Hollow Body Hold"
+   ]
   },
   {
    "id": "dumbbell-upper-lower",
@@ -338,7 +862,37 @@
    ],
    "weeks": 8,
    "daysPerWeek": 4,
-   "routines": 4
+   "routines": 4,
+   "routineNames": [
+    "Upper A",
+    "Lower A",
+    "Upper B",
+    "Lower B"
+   ],
+   "exercises": [
+    "Dumbbell Bench Press",
+    "Bent-Over Dumbbell Row",
+    "Seated Dumbbell Shoulder Press",
+    "Chest-Supported Dumbbell Row",
+    "Dumbbell Bicep Curl",
+    "Dumbbell Skull Crusher",
+    "Goblet Squat",
+    "Dumbbell Romanian Deadlift",
+    "Bulgarian Split Squat",
+    "Dumbbell Calf Raise",
+    "Plank",
+    "Incline Dumbbell Press",
+    "Single-Arm Dumbbell Row",
+    "Arnold Press",
+    "Dumbbell Lateral Raise",
+    "Dumbbell Hammer Curl",
+    "Overhead Tricep Extension",
+    "Dumbbell Front Squat",
+    "Dumbbell Hip Thrust",
+    "Reverse Lunge",
+    "Single Leg Romanian Deadlift",
+    "Dead Bug"
+   ]
   },
   {
    "id": "push-pull-legs-6-day",
@@ -351,7 +905,54 @@
    ],
    "weeks": 8,
    "daysPerWeek": 6,
-   "routines": 6
+   "routines": 6,
+   "routineNames": [
+    "Push A",
+    "Pull A",
+    "Legs A",
+    "Push B",
+    "Pull B",
+    "Legs B"
+   ],
+   "exercises": [
+    "Barbell Bench Press",
+    "Barbell Overhead Press",
+    "Incline Dumbbell Press",
+    "Dumbbell Lateral Raise",
+    "Cable Tricep Pushdown",
+    "Overhead Tricep Extension",
+    "Barbell Deadlift",
+    "Pull-Up",
+    "Seated Cable Row",
+    "Cable Face Pull",
+    "Barbell Curl",
+    "Dumbbell Hammer Curl",
+    "Barbell Back Squat",
+    "Romanian Deadlift",
+    "Leg Press",
+    "Lying Leg Curl",
+    "Standing Calf Raise",
+    "Plank",
+    "Incline Barbell Bench Press",
+    "Seated Dumbbell Shoulder Press",
+    "Chest Dips",
+    "Cable Fly",
+    "Cable Lateral Raise",
+    "Skull Crusher",
+    "Bent-Over Barbell Row",
+    "Lat Pulldown",
+    "Chest-Supported Dumbbell Row",
+    "Rear Delt Fly",
+    "Incline Dumbbell Curl",
+    "Preacher Curl",
+    "Front Squat",
+    "Barbell Hip Thrust",
+    "Bulgarian Split Squat",
+    "Leg Extension",
+    "Seated Leg Curl",
+    "Seated Calf Raise",
+    "Hanging Leg Raise"
+   ]
   },
   {
    "id": "upper-lower-4-day",
@@ -364,7 +965,40 @@
    ],
    "weeks": 10,
    "daysPerWeek": 4,
-   "routines": 4
+   "routines": 4,
+   "routineNames": [
+    "Upper 1",
+    "Lower 1",
+    "Upper 2",
+    "Lower 2"
+   ],
+   "exercises": [
+    "Barbell Bench Press",
+    "Bent-Over Barbell Row",
+    "Barbell Overhead Press",
+    "Lat Pulldown",
+    "Barbell Curl",
+    "Skull Crusher",
+    "Barbell Back Squat",
+    "Romanian Deadlift",
+    "Leg Press",
+    "Lying Leg Curl",
+    "Standing Calf Raise",
+    "Hanging Leg Raise",
+    "Incline Dumbbell Press",
+    "Seated Cable Row",
+    "Seated Dumbbell Shoulder Press",
+    "Pull-Up",
+    "Dumbbell Lateral Raise",
+    "Dumbbell Hammer Curl",
+    "Cable Tricep Pushdown",
+    "Barbell Deadlift",
+    "Front Squat",
+    "Bulgarian Split Squat",
+    "Leg Extension",
+    "Seated Calf Raise",
+    "Cable Crunch"
+   ]
   },
   {
    "id": "hiit-conditioning",
@@ -377,7 +1011,31 @@
    ],
    "weeks": 6,
    "daysPerWeek": 3,
-   "routines": 6
+   "routines": 6,
+   "routineNames": [
+    "HIIT A · Weeks 1–3",
+    "HIIT B · Weeks 1–3",
+    "HIIT C · Weeks 1–3",
+    "HIIT A · Weeks 4–6",
+    "HIIT B · Weeks 4–6",
+    "HIIT C · Weeks 4–6"
+   ],
+   "exercises": [
+    "Jumping Jacks",
+    "Bodyweight Squat",
+    "Burpees",
+    "Jump Squat",
+    "Mountain Climbers",
+    "Push-Up",
+    "Plank",
+    "Standing Quad Stretch",
+    "Child's Pose",
+    "High Knees",
+    "Bodyweight Reverse Lunge",
+    "Knee Push Ups",
+    "Bicycle Crunch",
+    "Plyo Lunge"
+   ]
   },
   {
    "id": "kettlebell-conditioning",
@@ -390,7 +1048,28 @@
    ],
    "weeks": 6,
    "daysPerWeek": 3,
-   "routines": 3
+   "routines": 3,
+   "routineNames": [
+    "Swing Intervals",
+    "Kettlebell Complex",
+    "Conditioning Circuit"
+   ],
+   "exercises": [
+    "Kettlebell Swing",
+    "Goblet Squat",
+    "Push-Up",
+    "Mountain Climbers",
+    "Plank",
+    "Kettlebell Swing Clean",
+    "One Arm Kettlebell Push Press",
+    "Kettlebell Reverse Lunge",
+    "One Arm Kettlebell Row",
+    "Burpees",
+    "Kettlebell Goblet Lunge",
+    "Kettlebell Sumo High Pull",
+    "Kettlebell Russian Twist",
+    "Jumping Jacks"
+   ]
   },
   {
    "id": "hotel-room-workout",
@@ -403,7 +1082,35 @@
    ],
    "weeks": 4,
    "daysPerWeek": 3,
-   "routines": 3
+   "routines": 3,
+   "routineNames": [
+    "Lower Body",
+    "Upper Body",
+    "Conditioning"
+   ],
+   "exercises": [
+    "Bulgarian Split Squat",
+    "Jump Squat",
+    "Single Leg Glute Bridge",
+    "Reverse Lunge",
+    "Wall Sit",
+    "Single Leg Calf Raise",
+    "Side Plank",
+    "Push-Up",
+    "Bench Dips",
+    "Pike Push Ups",
+    "Decline Push-Up",
+    "Diamond Push Ups",
+    "Superman",
+    "Plank",
+    "Burpees",
+    "Mountain Climbers",
+    "Plyo Lunge",
+    "Spiderman Push-Up",
+    "High Knees",
+    "Bear Crawl",
+    "Bicycle Crunch"
+   ]
   },
   {
    "id": "hybrid-strength-run",
@@ -416,7 +1123,31 @@
    ],
    "weeks": 8,
    "daysPerWeek": 4,
-   "routines": 6
+   "routines": 6,
+   "routineNames": [
+    "Strength A",
+    "Strength B",
+    "Run Intervals · Weeks 1–4",
+    "Run Intervals · Weeks 5–8",
+    "Long Run · 6 km",
+    "Long Run · 8 km"
+   ],
+   "exercises": [
+    "Barbell Back Squat",
+    "Barbell Bench Press",
+    "Bent-Over Barbell Row",
+    "Walking Lunge",
+    "Plank",
+    "Barbell Deadlift",
+    "Barbell Overhead Press",
+    "Lat Pulldown",
+    "Bulgarian Split Squat",
+    "Hanging Knee Raise",
+    "Walking",
+    "Running",
+    "Standing Calf Stretch",
+    "Standing Quad Stretch"
+   ]
   },
   {
    "id": "10k-plan",
@@ -429,7 +1160,25 @@
    ],
    "weeks": 10,
    "daysPerWeek": 4,
-   "routines": 10
+   "routines": 10,
+   "routineNames": [
+    "Easy Run",
+    "Intervals",
+    "Tempo Run",
+    "Long Run · 8 km",
+    "Long Run · 9 km",
+    "Long Run · 7 km",
+    "Long Run · 10 km",
+    "Long Run · 11 km",
+    "Long Run · 12 km",
+    "10K Time Trial"
+   ],
+   "exercises": [
+    "Running",
+    "Standing Calf Stretch",
+    "Standing Quad Stretch",
+    "Walking"
+   ]
   },
   {
    "id": "5k-improver",
@@ -442,7 +1191,22 @@
    ],
    "weeks": 6,
    "daysPerWeek": 4,
-   "routines": 7
+   "routines": 7,
+   "routineNames": [
+    "Easy Run",
+    "Intervals · Weeks 1–3",
+    "Intervals · Weeks 4–6",
+    "Tempo Run · Weeks 1–3",
+    "Tempo Run · Weeks 4–6",
+    "Long Run · 7 km",
+    "Long Run · 8 km"
+   ],
+   "exercises": [
+    "Running",
+    "Standing Calf Stretch",
+    "Standing Quad Stretch",
+    "Walking"
+   ]
   },
   {
    "id": "half-marathon-base",
@@ -455,7 +1219,27 @@
    ],
    "weeks": 12,
    "daysPerWeek": 4,
-   "routines": 12
+   "routines": 12,
+   "routineNames": [
+    "Easy Run",
+    "Intervals",
+    "Tempo Run",
+    "Long Run · 10 km",
+    "Long Run · 11 km",
+    "Long Run · 12 km",
+    "Long Run · 13 km",
+    "Long Run · 14 km",
+    "Long Run · 15 km",
+    "Long Run · 16 km",
+    "Long Run · 18 km",
+    "Half Marathon"
+   ],
+   "exercises": [
+    "Running",
+    "Standing Calf Stretch",
+    "Standing Quad Stretch",
+    "Walking"
+   ]
   },
   {
    "id": "yoga-strength-flow",
@@ -468,7 +1252,40 @@
    ],
    "weeks": 6,
    "daysPerWeek": 3,
-   "routines": 6
+   "routines": 6,
+   "routineNames": [
+    "Standing Strength 1",
+    "Balance & Core 1",
+    "Hips & Backbends 1",
+    "Standing Strength 2",
+    "Balance & Core 2",
+    "Hips & Backbends 2"
+   ],
+   "exercises": [
+    "Chair Pose",
+    "Warrior I",
+    "Warrior II",
+    "Extended Side Angle Pose",
+    "Crescent Lunge",
+    "Triangle Pose",
+    "Downward-Facing Dog",
+    "Garland Pose",
+    "Tree Pose",
+    "Warrior III",
+    "Half Moon Pose",
+    "Boat Pose",
+    "Dolphin Pose",
+    "Side Plank",
+    "High Plank",
+    "Low Lunge",
+    "Revolved Chair Pose",
+    "Locust Pose",
+    "Bow Pose",
+    "Camel Pose",
+    "Pigeon Stretch",
+    "Corpse Pose",
+    "Crow Pose"
+   ]
   },
   {
    "id": "calisthenics-skills",
@@ -482,7 +1299,43 @@
    ],
    "weeks": 10,
    "daysPerWeek": 4,
-   "routines": 8
+   "routines": 8,
+   "routineNames": [
+    "Handstand & Push 1",
+    "Front Lever & Pull 1",
+    "L-Sit & Legs 1",
+    "Back Lever & Pull 1",
+    "Handstand & Push 2",
+    "Front Lever & Pull 2",
+    "L-Sit & Legs 2",
+    "Back Lever & Pull 2"
+   ],
+   "exercises": [
+    "Handstand Hold",
+    "Planche",
+    "Handstand Push Ups",
+    "Pseudo Planche Push Ups",
+    "Archer Push Ups",
+    "Hollow Body Hold",
+    "Front Lever",
+    "Scapular Pull Ups",
+    "Pull-Up",
+    "Archer Pull Ups",
+    "Toes to Bar",
+    "Dragon Flag",
+    "L Sit",
+    "Hanging L-Sit",
+    "Pistol Squat",
+    "Nordic Hamstring Curl",
+    "V Ups",
+    "Single Leg Calf Raise",
+    "Back Lever",
+    "Chin-Ups",
+    "Commando Pull-Up",
+    "Hanging Leg Raise",
+    "Pike Push Ups",
+    "Muscle Ups"
+   ]
   },
   {
    "id": "powerbuilding-4-day",
@@ -495,7 +1348,40 @@
    ],
    "weeks": 12,
    "daysPerWeek": 4,
-   "routines": 4
+   "routines": 4,
+   "routineNames": [
+    "Squat Day",
+    "Bench Day",
+    "Deadlift Day",
+    "Press Day"
+   ],
+   "exercises": [
+    "Barbell Back Squat",
+    "Pause Squat",
+    "Romanian Deadlift",
+    "Leg Press",
+    "Lying Leg Curl",
+    "Hanging Leg Raise",
+    "Barbell Bench Press",
+    "Close-Grip Bench Press",
+    "Weighted Pull-Up",
+    "Incline Dumbbell Press",
+    "Dumbbell Lateral Raise",
+    "Cable Tricep Pushdown",
+    "Barbell Deadlift",
+    "Front Squat",
+    "Barbell Hip Thrust",
+    "Bent-Over Barbell Row",
+    "Standing Calf Raise",
+    "Cable Crunch",
+    "Barbell Overhead Press",
+    "Paused Bench Press",
+    "Pendlay Row",
+    "Lat Pulldown",
+    "Cable Face Pull",
+    "Barbell Curl",
+    "EZ-Bar Lying Triceps Extension"
+   ]
   },
   {
    "id": "dumbbell-hypertrophy-5-day",
@@ -508,7 +1394,44 @@
    ],
    "weeks": 8,
    "daysPerWeek": 5,
-   "routines": 5
+   "routines": 5,
+   "routineNames": [
+    "Upper",
+    "Lower",
+    "Push",
+    "Pull",
+    "Legs"
+   ],
+   "exercises": [
+    "Dumbbell Bench Press",
+    "Bent-Over Dumbbell Row",
+    "Dumbbell Shoulder Press",
+    "Chest-Supported Dumbbell Row",
+    "Dumbbell Bicep Curl",
+    "Dumbbell Skull Crusher",
+    "Dumbbell Front Squat",
+    "Dumbbell Romanian Deadlift",
+    "Bulgarian Split Squat",
+    "Dumbbell Hip Thrust",
+    "Dumbbell Calf Raise",
+    "Incline Dumbbell Press",
+    "Dumbbell Fly",
+    "Arnold Press",
+    "Dumbbell Lateral Raise",
+    "Overhead Tricep Extension",
+    "Dumbbell Tricep Kickback",
+    "Single-Arm Dumbbell Row",
+    "Dumbbell Pullover",
+    "Dumbbell Reverse Fly",
+    "Dumbbell Shrug",
+    "Incline Dumbbell Curl",
+    "Dumbbell Hammer Curl",
+    "Goblet Squat",
+    "Single Leg Romanian Deadlift",
+    "Walking Lunge",
+    "Dumbbell Sumo Squat",
+    "Bicycle Crunch"
+   ]
   },
   {
    "id": "core-advanced",
@@ -522,7 +1445,32 @@
    ],
    "weeks": 6,
    "daysPerWeek": 3,
-   "routines": 3
+   "routines": 3,
+   "routineNames": [
+    "Front Line",
+    "Rotation & Lateral",
+    "Hanging Core"
+   ],
+   "exercises": [
+    "Dragon Flag",
+    "Hollow Body Hold",
+    "V Ups",
+    "Jackknife Sit-Up",
+    "Six Inch Hold",
+    "Plank",
+    "Supine Windshield Wipers",
+    "Side Plank with Leg Lift",
+    "Russian Twist",
+    "Cross-Body Crunch",
+    "Side Plank",
+    "Bear Plank Hold",
+    "Toes to Bar",
+    "Hanging L-Sit",
+    "Hanging Pike",
+    "Hanging Leg Raise",
+    "L Sit",
+    "Dead Bug"
+   ]
   }
  ]
 }

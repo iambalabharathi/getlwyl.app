@@ -61,7 +61,12 @@ footer a:hover { color: var(--ink); }
 .eyebrow { font: 600 12px var(--sans); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 8px; }
 h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01em; }
 .hero h1 { font-size: clamp(44px, 9vw, 72px); line-height: 1.02; margin: 0; }
-.hero p.lead { font-size: 19px; color: var(--ink-2); max-width: 520px; margin: 18px auto 0; }
+.hero p.lead { font: 500 clamp(22px, 3.4vw, 28px)/1.25 var(--serif); color: var(--ink); max-width: 620px; margin: 18px auto 0; }
+.hero .sublead { font-size: 17px; color: var(--ink-2); max-width: 540px; margin: 10px auto 0; }
+.usps { list-style: none; padding: 0; margin: 20px auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 720px; }
+.usps li { display: inline-flex; align-items: center; gap: 7px; padding: 8px 14px; border-radius: 999px; background: var(--tile);
+           font: 500 14px var(--sans); color: var(--ink); }
+.usps svg { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
 /* App Store badge: Apple's artwork as is — black on light, white on dark. */
 .get { text-align: center; margin-top: 40px; }
 .store { display: inline-block; line-height: 0; }
@@ -159,7 +164,10 @@ details p { margin: 10px 0 0; color: var(--ink-2); }
   .hero { padding-top: 16px; }
   .hero .icon { width: 64px; height: 64px; border-radius: 15px; margin-bottom: 12px; }
   .hero h1 { font-size: 40px; }
-  .hero p.lead { font-size: 16px; line-height: 1.45; margin-top: 10px; }
+  .hero p.lead { font-size: 19px; margin-top: 10px; text-wrap: balance; }
+  .hero .sublead { font-size: 15px; line-height: 1.45; margin-top: 6px; }
+  .usps { margin-top: 12px; gap: 6px; }
+  .usps li { padding: 6px 11px; font-size: 13px; }
   /* Two phones side by side, the third peeking in: whole phones on the first screen. */
   .shots-wrap { grid-auto-columns: 46%; gap: 12px; margin-top: 12px; }
   .shot figcaption { font-size: 14px; margin-top: 8px; }

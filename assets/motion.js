@@ -15,6 +15,17 @@
       el.style.transitionDelay = (after + i * step) + 'ms';
     });
   });
+  // The first touch or scroll settles the phones at once, so a quick swipe
+  // right after loading never catches them mid-slide.
+  function settle() {
+    root.classList.add('motion-settled');
+    document.querySelectorAll('.shot[data-reveal]').forEach(function (el) { el.style.transitionDelay = '0ms'; });
+    removeEventListener('touchstart', settle);
+    removeEventListener('wheel', settle);
+  }
+  addEventListener('touchstart', settle, { passive: true, once: true });
+  addEventListener('wheel', settle, { passive: true, once: true });
+
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
       if (!e.isIntersecting) return;

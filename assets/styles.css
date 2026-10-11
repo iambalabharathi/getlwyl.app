@@ -423,3 +423,9 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
   [data-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
   .shot:hover img { transform: none; }
 }
+
+/* The slogan's language tour (home hero). */
+.slogan { position: relative; }
+.slogan-text { display: inline-block; white-space: nowrap; transform-origin: center;
+               transition: opacity 0.18s ease, filter 0.18s ease; }
+.slogan-text.out { opacity: 0; filter: blur(4px); }

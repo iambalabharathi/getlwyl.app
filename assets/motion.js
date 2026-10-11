@@ -34,4 +34,33 @@
     });
   }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
   document.querySelectorAll('[data-reveal]').forEach(function (el) { io.observe(el); });
+
+  // The title says the slogan in a few of the app's languages, once per
+  // visit: English first, a short tour, back to English. Same size all the
+  // way (longer ones are scaled to fit), never read out by screen readers.
+  (function slogan() {
+    var h1 = document.querySelector('.slogan'), text = h1 && h1.querySelector('.slogan-text');
+    if (!text) return;
+    try { if (sessionStorage.getItem('lwyl-slogan')) return; sessionStorage.setItem('lwyl-slogan', '1'); } catch (e) {}
+    var lines = ['Jede Bewegung zählt.', 'Chaque effort compte.', 'Registra cada movimiento.',
+                 'Κάθε κίνηση μετράει.', 'Записуй кожен рух.', 'Log Every Move.'];
+    var english = text.textContent;
+    h1.style.height = h1.offsetHeight + 'px';
+    function show(line) {
+      text.classList.add('out');
+      setTimeout(function () {
+        text.textContent = line;
+        text.style.transform = '';
+        var over = text.scrollWidth / h1.clientWidth;
+        if (over > 1) text.style.transform = 'scale(' + (1 / over).toFixed(3) + ')';
+        text.classList.remove('out');
+      }, 180);
+    }
+    var i = 0;
+    setTimeout(function next() {
+      if (i >= lines.length) { h1.style.height = ''; text.textContent = english; return; }
+      show(lines[i++]);
+      setTimeout(next, i === lines.length ? 400 : 620);
+    }, 1400);
+  })();
 })();

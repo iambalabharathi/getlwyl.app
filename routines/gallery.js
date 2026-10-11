@@ -345,7 +345,7 @@
       list.appendChild(el('p', 'muted small', 'Try fewer words, or clear the filters.'));
       return;
     }
-    shown.forEach(function (p) {
+    shown.forEach(function (p, i) {
       var card = el('article', 'program');
       card.tabIndex = 0;
       card.setAttribute('aria-label', p.title + ', ' + LABELS.level[p.level] + ' ' + LABELS.goal[p.goal] + '. Show details');
@@ -363,6 +363,8 @@
       card.addEventListener('keydown', function (e) {
         if (e.target === card && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); openDetails(p.id); }
       });
+      // Cards ease in on every update (search, filters) instead of jumping.
+      card.style.animationDelay = Math.min(i, 12) * 30 + 'ms';
       list.appendChild(card);
     });
   }

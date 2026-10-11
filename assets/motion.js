@@ -35,32 +35,49 @@
   }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
   document.querySelectorAll('[data-reveal]').forEach(function (el) { io.observe(el); });
 
-  // The title says the slogan in a few of the app's languages, once per
-  // visit: English first, a short tour, back to English. Same size all the
-  // way (longer ones are scaled to fit), never read out by screen readers.
+  // The title rolls through the slogan in a few of the app's languages,
+  // once per visit: English, a short tour, back to English. Each line slides
+  // up out of a clipped window while the next slides in; all at full size
+  // (phones get languages that fit). Never read out by screen readers.
   (function slogan() {
     var h1 = document.querySelector('.slogan'), text = h1 && h1.querySelector('.slogan-text');
     if (!text) return;
     try { if (sessionStorage.getItem('lwyl-slogan')) return; sessionStorage.setItem('lwyl-slogan', '1'); } catch (e) {}
-    var lines = ['Jede Bewegung zählt.', 'Chaque effort compte.', 'Registra cada movimiento.',
-                 'Κάθε κίνηση μετράει.', 'Записуй кожен рух.', 'Log Every Move.'];
+    var narrow = window.matchMedia('(max-width: 640px)').matches;
+    var tour = narrow
+      ? ['Elke beweging telt.', 'Logga varje rörelse.', 'Zapisuj każdy ruch.', 'Записуй кожен рух.']
+      : ['Jede Bewegung zählt.', 'Chaque effort compte.', 'Registra cada movimiento.', 'Κάθε κίνηση μετράει.', 'Записуй кожен рух.'];
     var english = text.textContent;
-    h1.style.height = h1.offsetHeight + 'px';
-    function show(line) {
-      text.classList.add('out');
-      setTimeout(function () {
-        text.textContent = line;
-        text.style.transform = '';
-        var over = text.scrollWidth / h1.clientWidth;
-        if (over > 1) text.style.transform = 'scale(' + (1 / over).toFixed(3) + ')';
-        text.classList.remove('out');
-      }, 180);
+    // Leave out any line that wouldn't fit at full size on this screen.
+    var probe = text.cloneNode(true);
+    probe.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap';
+    h1.appendChild(probe);
+    tour = tour.filter(function (line) { probe.textContent = line; return probe.scrollWidth <= h1.clientWidth; });
+    h1.removeChild(probe);
+    if (!tour.length) return;
+    tour.push(english);
+
+    text.classList.add('rolling');
+    var current = document.createElement('span');
+    current.className = 'slogan-line';
+    current.textContent = english;
+    text.textContent = '';
+    text.appendChild(current);
+
+    function roll(line, done) {
+      var next = document.createElement('span');
+      next.className = 'slogan-line from-below';
+      next.textContent = line;
+      text.appendChild(next);
+      next.getBoundingClientRect();   // start below, then animate
+      current.classList.add('to-above');
+      next.classList.remove('from-below');
+      setTimeout(function () { text.removeChild(current); current = next; done(); }, 650);
     }
     var i = 0;
-    setTimeout(function next() {
-      if (i >= lines.length) { h1.style.height = ''; text.textContent = english; return; }
-      show(lines[i++]);
-      setTimeout(next, i === lines.length ? 400 : 620);
-    }, 1400);
+    setTimeout(function step() {
+      if (i >= tour.length) { text.classList.remove('rolling'); text.textContent = english; return; }
+      roll(tour[i++], function () { setTimeout(step, i === tour.length ? 0 : 500); });
+    }, 1500);
   })();
 })();

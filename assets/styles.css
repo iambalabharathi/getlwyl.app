@@ -424,8 +424,11 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
   .shot:hover img { transform: none; }
 }
 
-/* The slogan's language tour (home hero). */
+/* The slogan's language roll (home hero): a clipped window, lines slide up. */
 .slogan { position: relative; }
-.slogan-text { display: inline-block; white-space: nowrap; transform-origin: center;
-               transition: opacity 0.18s ease, filter 0.18s ease; }
-.slogan-text.out { opacity: 0; filter: blur(4px); }
+.slogan-text { display: inline-block; white-space: nowrap; vertical-align: top; }
+.slogan-text.rolling { display: inline-grid; overflow: hidden; padding: 0 0.1em 0.12em; margin: 0 -0.1em -0.12em; }
+.slogan-line { grid-area: 1 / 1; justify-self: center;
+               transition: transform 0.65s cubic-bezier(0.7, 0, 0.2, 1), opacity 0.65s ease; }
+.slogan-line.from-below { transform: translateY(105%); opacity: 0; transition: none; }
+.slogan-line.to-above { transform: translateY(-105%); opacity: 0; }

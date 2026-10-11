@@ -1,0 +1,26 @@
+// Fade-up on scroll, once: elements with data-reveal get .in when they come
+// into view; siblings in a data-stagger group follow each other (70 ms).
+(function () {
+  var root = document.documentElement;
+  if (!root.classList.contains('motion') || !('IntersectionObserver' in window)) {
+    document.querySelectorAll('[data-reveal]').forEach(function (el) { el.classList.add('in'); });
+    return;
+  }
+  document.querySelectorAll('[data-stagger]').forEach(function (group) {
+    var step = parseInt(group.getAttribute('data-stagger'), 10) || 70;
+    // A group on screen at load waits for the hero (data-after, in ms).
+    var after = window.scrollY < 10 && group.getBoundingClientRect().top < window.innerHeight
+      ? parseInt(group.getAttribute('data-after') || '0', 10) : 0;
+    Array.prototype.forEach.call(group.querySelectorAll('[data-reveal]'), function (el, i) {
+      el.style.transitionDelay = (after + i * step) + 'ms';
+    });
+  });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      io.unobserve(e.target);
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+  document.querySelectorAll('[data-reveal]').forEach(function (el) { io.observe(el); });
+})();

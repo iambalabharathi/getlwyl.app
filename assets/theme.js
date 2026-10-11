@@ -3,6 +3,15 @@
 // is remembered. Loaded in <head> so the page never flashes the wrong theme.
 (function () {
   var root = document.documentElement;
+  // Entrance motion: only with JS and without Reduce Motion. Set here, in
+  // <head>, so nothing flashes before it hides; if motion.js never runs,
+  // everything is revealed after 2.5 s anyway.
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    root.classList.add('motion');
+    setTimeout(function () {
+      document.querySelectorAll('[data-reveal]:not(.in)').forEach(function (el) { el.classList.add('in'); });
+    }, 2500);
+  }
   var key = 'lwyl-theme';
   var saved = null;
   try { saved = localStorage.getItem(key); } catch (e) {}

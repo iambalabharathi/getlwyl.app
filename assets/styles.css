@@ -152,6 +152,37 @@ body { transition: background-color 0.35s ease, color 0.35s ease; }
 .feature { background: var(--tile); border-radius: 22px; padding: 22px; }
 .feature-icon { display: grid; place-items: center; width: 44px; height: 44px; margin-bottom: 14px; border-radius: 14px;
                 background: var(--bg); color: var(--ink); }
+/* Each feature tile has its own colour: the icon, on a soft tint of it. */
+.features .feature:nth-child(1) .feature-icon { --fc: #D9890B; }
+:root[data-theme="dark"] .features .feature:nth-child(1) .feature-icon { --fc: #F2B544; }
+.features .feature:nth-child(2) .feature-icon { --fc: #E0663A; }
+:root[data-theme="dark"] .features .feature:nth-child(2) .feature-icon { --fc: #F28A62; }
+.features .feature:nth-child(3) .feature-icon { --fc: #E0475F; }
+:root[data-theme="dark"] .features .feature:nth-child(3) .feature-icon { --fc: #F27387; }
+.features .feature:nth-child(4) .feature-icon { --fc: #C2559F; }
+:root[data-theme="dark"] .features .feature:nth-child(4) .feature-icon { --fc: #E07EC0; }
+.features .feature:nth-child(5) .feature-icon { --fc: #0F9DA8; }
+:root[data-theme="dark"] .features .feature:nth-child(5) .feature-icon { --fc: #4CC6CF; }
+.features .feature:nth-child(6) .feature-icon { --fc: #8A5CE6; }
+:root[data-theme="dark"] .features .feature:nth-child(6) .feature-icon { --fc: #B193F5; }
+.features .feature:nth-child(7) .feature-icon { --fc: #2F7FE0; }
+:root[data-theme="dark"] .features .feature:nth-child(7) .feature-icon { --fc: #6AA8F5; }
+.features .feature:nth-child(8) .feature-icon { --fc: #1E9E5A; }
+:root[data-theme="dark"] .features .feature:nth-child(8) .feature-icon { --fc: #4CC98A; }
+.features .feature:nth-child(9) .feature-icon { --fc: #5B6BE0; }
+:root[data-theme="dark"] .features .feature:nth-child(9) .feature-icon { --fc: #8D99F2; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .features .feature:nth-child(1) .feature-icon { --fc: #F2B544; }
+  :root:not([data-theme="light"]) .features .feature:nth-child(2) .feature-icon { --fc: #F28A62; }
+  :root:not([data-theme="light"]) .features .feature:nth-child(3) .feature-icon { --fc: #F27387; }
+  :root:not([data-theme="light"]) .features .feature:nth-child(4) .feature-icon { --fc: #E07EC0; }
+  :root:not([data-theme="light"]) .features .feature:nth-child(5) .feature-icon { --fc: #4CC6CF; }
+  :root:not([data-theme="light"]) .features .feature:nth-child(6) .feature-icon { --fc: #B193F5; }
+  :root:not([data-theme="light"]) .features .feature:nth-child(7) .feature-icon { --fc: #6AA8F5; }
+  :root:not([data-theme="light"]) .features .feature:nth-child(8) .feature-icon { --fc: #4CC98A; }
+  :root:not([data-theme="light"]) .features .feature:nth-child(9) .feature-icon { --fc: #8D99F2; }
+}
+.features .feature-icon { color: var(--fc, var(--ink)); background: color-mix(in srgb, var(--fc, var(--ink)) 13%, var(--tile)); }
 .feature-icon svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8;
                     stroke-linecap: round; stroke-linejoin: round; }
 .feature h3 { margin: 0 0 6px; font-size: 21px; }

@@ -102,20 +102,19 @@ body { transition: background-color 0.35s ease, color 0.35s ease; }
 
 /* Theme switch in the header: the ink pill slides to the chosen side. */
 .top-right { display: flex; align-items: center; gap: 14px; }
-.theme-toggle { position: relative; display: flex; padding: 2px; gap: 2px; appearance: none; border: 0; cursor: pointer;
-                background: var(--tile); border-radius: 10px; box-shadow: 0 1px 2px rgba(0,0,0,0.06);
-                -webkit-tap-highlight-color: transparent; flex: none; }
-.theme-toggle[hidden] { display: none; }
-.theme-toggle:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
-.toggle-thumb { position: absolute; left: 2px; top: 2px; width: 32px; height: 26px; border-radius: 8px; background: var(--ink); }
-.theme-toggle[aria-checked="true"] .toggle-thumb { transform: translateX(34px); }
-.toggle-icon { position: relative; width: 32px; height: 26px; display: grid; place-items: center; color: var(--ink-2); }
-.theme-toggle[aria-checked="false"] .toggle-icon[data-mode="light"],
-.theme-toggle[aria-checked="true"] .toggle-icon[data-mode="dark"] { color: var(--bg); }
-.theme-toggle.ready .toggle-thumb { transition: transform 0.3s cubic-bezier(0.3, 0.7, 0.3, 1); }
-.theme-toggle.ready .toggle-icon { transition: color 0.25s ease; }
+/* One round button: a moon in light mode, a sun in dark (the theme it switches to). */
+.theme-button { appearance: none; border: 0; cursor: pointer; flex: none; width: 36px; height: 36px; border-radius: 50%;
+                display: grid; place-items: center; background: var(--tile); color: var(--ink);
+                box-shadow: 0 1px 2px rgba(0,0,0,0.06); -webkit-tap-highlight-color: transparent; }
+.theme-button[hidden] { display: none; }
+.theme-button:hover { color: var(--ink); background: var(--line); }
+.theme-button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.theme-button svg { grid-area: 1 / 1; }
+.theme-button .sun, .theme-button[aria-checked="true"] .moon { opacity: 0; transform: rotate(-90deg) scale(0.6); }
+.theme-button[aria-checked="true"] .sun { opacity: 1; transform: none; }
+.theme-button.ready svg { transition: opacity 0.25s ease, transform 0.35s cubic-bezier(0.3, 0.7, 0.3, 1); }
 @media (prefers-reduced-motion: reduce) {
-  .theme-toggle.ready .toggle-thumb, .shot img, body { transition-duration: 0.01s; }
+  .theme-button.ready svg, .shot img, body { transition-duration: 0.01s; }
 }
 @media (max-width: 480px) {
   .brand span { display: none; }   /* logo only, so the links and switch fit */

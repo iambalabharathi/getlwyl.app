@@ -67,18 +67,15 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01e
 .usps li { display: inline-flex; align-items: center; gap: 7px; padding: 8px 14px; border-radius: 999px; background: var(--tile);
            font: 500 14px var(--sans); color: var(--ink); }
 .usps li:nth-child(1) svg { color: #D9890B; }   /* any plan: amber */
-.usps li:nth-child(2) svg { color: #1E9E5A; }   /* progress: green */
-.usps li:nth-child(3) svg { color: #2F7FE0; }   /* iCloud: blue */
-.usps li:nth-child(4) svg { color: #8A5CE6; }   /* private: violet */
+.usps li:nth-child(2) svg { color: #2F7FE0; }   /* iCloud: blue */
+.usps li:nth-child(3) svg { color: #8A5CE6; }   /* private: violet */
 :root[data-theme="dark"] .usps li:nth-child(1) svg { color: #F2B544; }
-:root[data-theme="dark"] .usps li:nth-child(2) svg { color: #4CC98A; }
-:root[data-theme="dark"] .usps li:nth-child(3) svg { color: #6AA8F5; }
-:root[data-theme="dark"] .usps li:nth-child(4) svg { color: #B193F5; }
+:root[data-theme="dark"] .usps li:nth-child(2) svg { color: #6AA8F5; }
+:root[data-theme="dark"] .usps li:nth-child(3) svg { color: #B193F5; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .usps li:nth-child(1) svg { color: #F2B544; }
-  :root:not([data-theme="light"]) .usps li:nth-child(2) svg { color: #4CC98A; }
-  :root:not([data-theme="light"]) .usps li:nth-child(3) svg { color: #6AA8F5; }
-  :root:not([data-theme="light"]) .usps li:nth-child(4) svg { color: #B193F5; }
+  :root:not([data-theme="light"]) .usps li:nth-child(2) svg { color: #6AA8F5; }
+  :root:not([data-theme="light"]) .usps li:nth-child(3) svg { color: #B193F5; }
 }
 .usps .short { display: none; }
 @media (max-width: 640px) { .usps .short { display: inline; } }
@@ -187,7 +184,7 @@ details p { margin: 10px 0 0; color: var(--ink-2); }
   .hero .sublead { font-size: 15px; line-height: 1.45; margin-top: 6px; }
   /* Phones: the pitch and four short points in a 2×2 grid; the long line waits for the page. */
   .hero .sublead { display: none; }
-  .usps { margin-top: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 6px; max-width: 340px; }
+  .usps { margin-top: 14px; gap: 6px; max-width: 360px; }
   .usps li { justify-content: center; padding: 7px 8px; font-size: 13px; }
   .usps .long { display: none; }
   /* Two phones side by side, the third peeking in: whole phones on the first screen. */
@@ -358,7 +355,6 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
 .motion .hero .usps li:nth-child(1) { animation-delay: 0.42s; }
 .motion .hero .usps li:nth-child(2) { animation-delay: 0.50s; }
 .motion .hero .usps li:nth-child(3) { animation-delay: 0.58s; }
-.motion .hero .usps li:nth-child(4) { animation-delay: 0.66s; }
 .motion [data-reveal] { opacity: 0; transform: translateY(16px);
                         transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out); }
 .motion [data-reveal].in { opacity: 1; transform: none; }

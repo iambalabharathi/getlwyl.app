@@ -363,6 +363,8 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
 .button { display: inline-flex; align-items: center; height: 46px; padding: 0 22px; border-radius: 999px; text-decoration: none;
           font: 600 16px var(--sans); background: var(--ink); color: var(--bg); }
 .button.secondary { background: var(--tile); color: var(--ink); }
+.byo-switch { margin: 22px auto 0; max-width: 560px; font-size: 15px; color: var(--ink-2); }
+.byo-switch strong { color: var(--ink); font-weight: 600; }
 .byo-note { margin: 14px 0 0; font-size: 13px; color: var(--ink-2); }
 .byo + .features { margin-top: 72px; }
 #ai { scroll-margin-top: 16px; }

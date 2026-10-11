@@ -321,3 +321,5 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
   .byo-lead { font-size: 17px; }
   .byo-steps { grid-template-columns: none; }
 }
+
+.more-coming { text-align: center; color: var(--ink-2); font-size: 14px; margin: 18px 0 8px; }

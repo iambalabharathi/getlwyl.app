@@ -339,7 +339,7 @@
     list.innerHTML = '';
     count.textContent = plural(shown.length, 'program', 'programs');
     hint.textContent = !shown.length ? 'No programs match'
-      : (shown.length === programs.length ? 'Browse all ' : 'See ') + plural(shown.length, 'program', 'programs') + ' ↓';
+      : shown.length === programs.length ? 'Browse the library ↓' : 'See ' + plural(shown.length, 'program', 'programs') + ' ↓';
     renderChips();
     if (!shown.length) {
       list.appendChild(el('p', 'muted small', 'Try fewer words, or clear the filters.'));

@@ -141,7 +141,11 @@ body { transition: background-color 0.35s ease, color 0.35s ease; }
   .shots-wrap { display: grid; grid-auto-flow: column; grid-auto-columns: min(64%, 300px); gap: 16px; margin-top: 20px; }
   .shots-wrap > .shots { display: contents; }
   .shots-wrap { overflow-x: auto;
-           scroll-snap-type: x mandatory; padding-bottom: 8px; margin-left: -16px; margin-right: -16px;
+           /* Only clearly sideways swipes move the strip: proximity snapping
+              doesn't grab diagonal flicks, up/down passes to the page, and the
+              strip doesn't bounce the page sideways at its ends. */
+           scroll-snap-type: x proximity; touch-action: pan-x pan-y; overscroll-behavior-x: contain;
+           padding-bottom: 8px; margin-left: -16px; margin-right: -16px;
            padding-left: 16px; padding-right: 16px; scrollbar-width: none; }
   .shots-wrap::-webkit-scrollbar { display: none; }
   .shot { scroll-snap-align: center; }

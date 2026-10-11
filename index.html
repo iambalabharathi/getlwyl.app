@@ -11,7 +11,7 @@
   <meta property="og:image" content="https://getlwyl.app/assets/icon-256.png">
   <link rel="icon" href="/assets/apple-touch-icon.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/styles.css?v=19">
+  <link rel="stylesheet" href="/assets/styles.css?v=20">
 </head>
 <body>
   <header class="wrap top">
@@ -62,11 +62,44 @@
       </figure>
     </section>
 
+    <section class="shots shots-more" aria-label="More screenshots">
+      <figure class="shot">
+        <img class="light" src="/assets/shot-progress-light.webp?v=1" alt="Workout card: Bench Press 97.5 kg × 8, last time 95 kg × 8, plus 2.5 kg" loading="lazy" width="700" height="1451">
+        <img class="dark" src="/assets/shot-progress-dark.webp?v=1" alt="" loading="lazy" width="700" height="1451">
+        <figcaption>Every set, a step up.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="light" src="/assets/shot-rest-light.webp?v=1" alt="Rest screen: a large countdown and the next set" loading="lazy" width="700" height="1451">
+        <img class="dark" src="/assets/shot-rest-dark.webp?v=1" alt="" loading="lazy" width="700" height="1451">
+        <figcaption>Rest that counts down for you.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="light" src="/assets/shot-records-light.webp?v=1" alt="Finished workout: summary and the exercises that set records" loading="lazy" width="700" height="1451">
+        <img class="dark" src="/assets/shot-records-dark.webp?v=1" alt="" loading="lazy" width="700" height="1451">
+        <figcaption>Records, celebrated.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="light" src="/assets/shot-import-light.webp?v=1" alt="Importing a training plan: routines and their planned days" loading="lazy" width="700" height="1451">
+        <img class="dark" src="/assets/shot-import-dark.webp?v=1" alt="" loading="lazy" width="700" height="1451">
+        <figcaption>Bring any plan. Ready from Monday.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="light" src="/assets/shot-share-light.webp?v=1" alt="Share card with the photo, stats and records" loading="lazy" width="700" height="1451">
+        <img class="dark" src="/assets/shot-share-dark.webp?v=1" alt="" loading="lazy" width="700" height="1451">
+        <figcaption>Share the good days.</figcaption>
+      </figure>
+    </section>
+
     <script>
-      // Load the other set of screenshots once the page is in, so switching
-      // the theme fades straight to it (hidden ones are lazy and never load).
-      window.addEventListener('load', function () {
-        document.querySelectorAll('.shots img').forEach(function (img) { img.loading = 'eager'; });
+      // Once a screenshot has loaded, fetch its other-theme twin too, so
+      // switching the theme fades straight to it (hidden ones are lazy and
+      // would never load). Rows further down stay lazy until reached.
+      document.querySelectorAll('.shot').forEach(function (fig) {
+        var imgs = fig.querySelectorAll('img');
+        imgs.forEach(function (img) {
+          function twin() { imgs.forEach(function (other) { other.loading = 'eager'; }); }
+          if (img.complete && img.naturalWidth) twin(); else img.addEventListener('load', twin, { once: true });
+        });
       });
     </script>
 

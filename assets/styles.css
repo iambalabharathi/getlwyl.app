@@ -117,10 +117,13 @@ body { transition: background-color 0.35s ease, color 0.35s ease; }
 }
 
 @media (max-width: 1000px) {
-  .shots { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: min(64%, 300px); overflow-x: auto;
+  /* Narrow screens: all ten phones on one swipeable line. */
+  .shots-wrap { display: grid; grid-auto-flow: column; grid-auto-columns: min(64%, 300px); gap: 16px; margin-top: 20px; }
+  .shots-wrap > .shots { display: contents; }
+  .shots-wrap { overflow-x: auto;
            scroll-snap-type: x mandatory; padding-bottom: 8px; margin-left: -16px; margin-right: -16px;
            padding-left: 16px; padding-right: 16px; scrollbar-width: none; }
-  .shots::-webkit-scrollbar { display: none; }
+  .shots-wrap::-webkit-scrollbar { display: none; }
   .shot { scroll-snap-align: center; }
 }
 
@@ -158,7 +161,7 @@ details p { margin: 10px 0 0; color: var(--ink-2); }
   .hero h1 { font-size: 40px; }
   .hero p.lead { font-size: 16px; line-height: 1.45; margin-top: 10px; }
   /* Two phones side by side, the third peeking in: whole phones on the first screen. */
-  .shots { grid-auto-columns: 46%; gap: 12px; margin-top: 12px; }
+  .shots-wrap { grid-auto-columns: 46%; gap: 12px; margin-top: 12px; }
   .shot figcaption { font-size: 14px; margin-top: 8px; }
 }
 

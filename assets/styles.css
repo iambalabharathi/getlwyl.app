@@ -62,8 +62,8 @@ footer a:hover { color: var(--ink); }
 h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01em; }
 .hero h1 { font-size: clamp(44px, 9vw, 72px); line-height: 1.02; margin: 0; }
 .hero p.lead { font: 500 clamp(22px, 3.4vw, 28px)/1.25 var(--serif); color: var(--ink); max-width: 620px; margin: 18px auto 0; }
-.hero .sublead { font-size: 17px; color: var(--ink-2); max-width: 540px; margin: 10px auto 0; }
-.usps { list-style: none; padding: 0; margin: 20px auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 720px; }
+.hero .sublead { font-size: 17px; color: var(--ink-2); max-width: 600px; margin: 10px auto 0; text-wrap: balance; }
+.usps { list-style: none; padding: 0; margin: 20px auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 920px; }
 .usps li { display: inline-flex; align-items: center; gap: 7px; padding: 8px 14px; border-radius: 999px; background: var(--tile);
            font: 500 14px var(--sans); color: var(--ink); }
 .usps .short { display: none; }

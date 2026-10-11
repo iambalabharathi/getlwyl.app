@@ -66,6 +66,15 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01e
 .usps { list-style: none; padding: 0; margin: 20px auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 920px; }
 .usps li { display: inline-flex; align-items: center; gap: 7px; padding: 8px 14px; border-radius: 999px; background: var(--tile);
            font: 500 14px var(--sans); color: var(--ink); }
+/* A soft rainbow outline running through the row: each pill fades from its
+   colour into the next one's, so together they read as one gradient. */
+.usps li { --c1: #F0B44C; --c2: #4CC98A; border: 1.5px solid transparent;
+           background: linear-gradient(var(--tile), var(--tile)) padding-box,
+                       linear-gradient(90deg, var(--c1), var(--c2)) border-box; }
+.usps li:nth-child(1) { --c1: #F0A24C; --c2: #E7C44A; }
+.usps li:nth-child(2) { --c1: #8FCF6A; --c2: #4CC98A; }
+.usps li:nth-child(3) { --c1: #4FB8D8; --c2: #5C8FEF; }
+.usps li:nth-child(4) { --c1: #8A7BF0; --c2: #C27CE8; }
 .usps li:nth-child(1) svg { color: #D9890B; }   /* any plan: amber */
 .usps li:nth-child(2) svg { color: #1E9E5A; }   /* progress: green */
 .usps li:nth-child(3) svg { color: #2F7FE0; }   /* iCloud: blue */

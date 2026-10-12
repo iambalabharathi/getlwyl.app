@@ -566,35 +566,36 @@
   sheet.addEventListener('close', function () { openId = null; syncURL(); });
   sheet.addEventListener('click', function (e) { if (e.target === sheet) sheet.close(); });   // tap outside
 
-  // ---- Download: weekly pattern → dates from next Monday -------------------
-  function nextMonday() {
-    var d = new Date(); d.setHours(0, 0, 0, 0);
-    d.setDate(d.getDate() + ((8 - d.getDay()) % 7 || 7));
-    return d;
-  }
-  function iso(d) {
-    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
-  }
+  // ---- Download: weekly pattern → the plan's workouts in order -------------
+  // No dates: LWYL asks for a start day and the days you train when the file
+  // is opened, and spreads the workouts over them.
+  var DAY_NAMES = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
   function download(id, button) {
     button.disabled = true;
     loadProgram(id).then(function (p) {
-      var monday = nextMonday();
-      var days = {};
+      var workouts = [];
+      var weekdays = {};
       for (var w = 1; w <= p.weeks; w++) {
-        p.pattern.forEach(function (entry) {
-          if (entry.weeks && entry.weeks.indexOf(w) < 0) return;
-          var d = new Date(monday);
-          d.setDate(d.getDate() + (w - 1) * 7 + (entry.weekday - 1));
-          (days[entry.routine] = days[entry.routine] || []).push(iso(d));
-        });
+        p.pattern
+          .filter(function (entry) { return !entry.weeks || entry.weeks.indexOf(w) >= 0; })
+          .sort(function (a, b) { return a.weekday - b.weekday; })
+          .forEach(function (entry) {
+            workouts.push(entry.routine);
+            weekdays[entry.weekday] = true;
+          });
       }
       var file = {
         version: 1,
         unit: p.unit,
+        plan: {
+          name: p.title,
+          days: Object.keys(weekdays).map(Number).sort().map(function (d) { return DAY_NAMES[d - 1]; }),
+          workouts: workouts
+        },
         templates: p.templates.map(function (t) {
           var copy = JSON.parse(JSON.stringify(t));
-          copy.schedule = (days[t.name] || []).sort();
+          delete copy.schedule;
           return copy;
         })
       };

@@ -24,7 +24,7 @@
   <main class="wrap narrow page">
     <section class="search-hero">
       <h1>Plans</h1>
-      <p class="updated">A free library of ready-made programs for the gym, home and running, with more on the way. Download one and it opens in LWYL, planned from next Monday.</p>
+      <p class="updated">A free library of ready-made programs for the gym, home and running, with more on the way. Download one, open it in LWYL, and choose your start day and the days you train.</p>
 
       <div class="search">
         <div class="search-field" id="search-field">
@@ -77,16 +77,20 @@ About me:
 - Days per week: [3]
 - Equipment: [full gym / dumbbells and a bench / bodyweight only]
 - Experience: [beginner / intermediate / advanced]
-- Start date: [YYYY-MM-DD], plan length: [4 weeks]
+- Plan length: [4 weeks]
 
 Use exactly this format:
 {
   "unit": "kg",
+  "plan": {
+    "name": "My 4-week plan",
+    "days": ["Mon", "Wed", "Fri"],
+    "workouts": ["Push Day", "Pull Day", "Legs", "Push Day", "…"]
+  },
   "templates": [
     {
       "name": "Push Day",
       "notes": "optional",
-      "schedule": ["YYYY-MM-DD", { "date": "YYYY-MM-DD", "note": "Deload" }],
       "exercises": [
         { "name": "Barbell Bench Press", "muscleGroup": "Chest",
           "sets": [ { "reps": 8, "weight": 60, "restSeconds": 120 } ] },
@@ -100,7 +104,8 @@ Use exactly this format:
 }
 
 Rules:
-- One entry in "templates" per different workout; list every day it's planned on in its "schedule" (dates only, no times).
+- One entry in "templates" per different workout.
+- In "plan", list every workout of the whole plan in order in "workouts" (routine names, one per training day), and the days of the week it's made for in "days". No dates: LWYL asks me when to start.
 - muscleGroup is one of: Chest, Back, Legs, Shoulders, Arms, Core, Other.
 - Use common exercise names (e.g. "Romanian Deadlift", "Pull-Up", "Dumbbell Bicep Curl").
 - Weights in kg. Timed sets use "seconds", distance uses "km".
@@ -118,8 +123,8 @@ Rules:
       <p>Either a list — <code>[{ "reps": 8, "weight": 80 }, …]</code> — or a short form — <code>{ "count": 3, "reps": 12, "weight": 10 }</code>. Timed sets use <code>seconds</code>, distance uses <code>km</code>. <code>restSeconds</code> is optional; without it, LWYL uses your Rest Timer settings.</p>
     </details>
     <details>
-      <summary>Schedule</summary>
-      <p><code>schedule</code> lists the days a routine is planned for: <code>"2026-10-19"</code>, or <code>{ "date": "…", "note": "Heavy" }</code> to add a note. Dates are local and day only; LWYL reminds you at your morning reminder time. Past dates are skipped.</p>
+      <summary>Plan</summary>
+      <p><code>plan</code> makes the routines a plan: <code>workouts</code> lists every workout in order by routine name, and <code>days</code> the days of the week it’s made for (<code>"Mon"</code> … <code>"Sun"</code>). There are no dates — when you open the file, LWYL asks for a start day and the days you can train, and spreads the workouts over them, with a reminder on each day. A routine can still list fixed days in <code>schedule</code> (<code>"2026-10-19"</code> or <code>{ "date": "…", "note": "Heavy" }</code>); past dates are skipped.</p>
     </details>
     <details>
       <summary>Units and names</summary>
@@ -135,6 +140,6 @@ Rules:
     </div>
   </footer>
 
-  <script src="/routines/gallery.js?v=6"></script>
+  <script src="/routines/gallery.js?v=7"></script>
 </body>
 </html>

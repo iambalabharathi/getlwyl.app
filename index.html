@@ -11,7 +11,7 @@
   <meta property="og:image" content="https://getlwyl.app/assets/icon-256.png">
   <link rel="icon" href="/assets/apple-touch-icon.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/styles.css?v=40">
+  <link rel="stylesheet" href="/assets/styles.css?v=41">
 </head>
 <body>
   <header class="wrap top">
@@ -116,14 +116,14 @@
         <img class="on-dark" src="/assets/appstore-badge-white.svg" alt="Download on the App Store" width="150" height="50">
       </a>
       <p class="soon">Available soon · in English and 24 more languages</p>
-      <!-- Launch waiting list (Buttondown, double opt-in; opens their confirmation page in a new tab). -->
-      <form class="notify" action="https://buttondown.com/api/emails/embed-subscribe/jaylwyl" method="post" target="_blank">
+      <!-- Launch waiting list (Buttondown, confirmed by email; sent in place by notify.js). -->
+      <form class="notify" action="https://buttondown.com/api/emails/embed-subscribe/jaylwyl" method="post">
         <label class="sr-only" for="notify-email">Email address</label>
         <input id="notify-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
         <input type="hidden" name="embed" value="1">
         <button class="button" type="submit">Notify me</button>
       </form>
-      <p class="notify-note">One email when LWYL launches. Confirm it from your inbox; unsubscribe any time. <a href="/privacy/#launch-email">Privacy</a></p>
+      <p class="notify-note" aria-live="polite">One email when LWYL launches. Confirm it from your inbox; unsubscribe any time. <a href="/privacy/#launch-email">Privacy</a></p>
     </div>
 
     <!-- The import USP: any AI, or the free library, then LWYL runs the plan. -->
@@ -159,13 +159,13 @@
     <section class="notify-end" data-reveal aria-labelledby="notify-title">
       <h2 id="notify-title">Be there on day one.</h2>
       <p class="notify-lead">LWYL is almost ready. Leave your email and we'll tell you when it's on the App Store.</p>
-      <form class="notify" action="https://buttondown.com/api/emails/embed-subscribe/jaylwyl" method="post" target="_blank">
+      <form class="notify" action="https://buttondown.com/api/emails/embed-subscribe/jaylwyl" method="post">
         <label class="sr-only" for="notify-email-2">Email address</label>
         <input id="notify-email-2" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
         <input type="hidden" name="embed" value="1">
         <button class="button" type="submit">Notify me</button>
       </form>
-      <p class="notify-note">One email when LWYL launches. Confirm it from your inbox; unsubscribe any time. <a href="/privacy/#launch-email">Privacy</a></p>
+      <p class="notify-note" aria-live="polite">One email when LWYL launches. Confirm it from your inbox; unsubscribe any time. <a href="/privacy/#launch-email">Privacy</a></p>
     </section>
 
   </main>
@@ -177,5 +177,6 @@
     </div>
   </footer>
   <script src="/assets/motion.js?v=5" defer></script>
+  <script src="/assets/notify.js?v=1" defer></script>
 </body>
 </html>

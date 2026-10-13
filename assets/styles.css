@@ -448,3 +448,6 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
 .notify-end { text-align: center; margin: 72px auto 24px; max-width: 640px; }
 .notify-end h2 { margin: 0; }
 .notify-lead { margin: 12px auto 0; max-width: 480px; color: var(--ink-2); }
+.notify.is-sending .button { opacity: 0.6; }
+.notify-note.is-done { color: var(--ink); font-size: 15px; }
+.notify-note.is-error { color: #C0392B; }

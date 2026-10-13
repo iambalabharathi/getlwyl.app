@@ -434,3 +434,17 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
                transition: transform 0.65s cubic-bezier(0.7, 0, 0.2, 1), opacity 0.65s ease; }
 .slogan-line.from-below { transform: translateY(105%); opacity: 0; transition: none; }
 .slogan-line.to-above { transform: translateY(-105%); opacity: 0; }
+
+/* Launch waiting list: an email field and Notify me, in a pill. */
+.notify { display: flex; gap: 8px; max-width: 420px; margin: 22px auto 0; padding: 5px; border-radius: 999px;
+          background: var(--tile); box-shadow: 0 0 0 1px var(--line); }
+.notify input[type="email"] { flex: 1; min-width: 0; height: 46px; padding: 0 16px; border: 0; border-radius: 999px;
+          background: transparent; color: var(--ink); font: 16px var(--sans); outline: none; }
+.notify input[type="email"]::placeholder { color: var(--ink-2); }
+.notify:focus-within { box-shadow: 0 0 0 2px var(--ink); }
+.notify .button { border: 0; cursor: pointer; flex: none; }
+.notify-note { margin: 10px auto 0; max-width: 420px; font-size: 13px; color: var(--ink-2); }
+.notify-note a { color: inherit; }
+.notify-end { text-align: center; margin: 72px auto 24px; max-width: 640px; }
+.notify-end h2 { margin: 0; }
+.notify-lead { margin: 12px auto 0; max-width: 480px; color: var(--ink-2); }

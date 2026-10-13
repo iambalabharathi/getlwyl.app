@@ -447,16 +447,19 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
 .notify.is-sending .button { opacity: 0.6; }
 .notify-note.is-done { color: var(--ink); font-size: 15px; }
 .notify-note.is-error { color: #C0392B; }
-/* Plans page: the three steps, smaller, between the intro and the search. */
-.plan-steps { margin: 24px 0 28px; gap: 10px; }
-.plan-steps li { padding: 18px; border-radius: 18px; }
-.plan-steps h3 { font-size: 18px; }
-.plan-steps p { font-size: 14px; }
-.plan-steps a { color: inherit; }
+/* Plans page: the three steps as a horizontal timeline — a dot each on one line. */
+.plan-timeline { list-style: none; padding: 0; margin: 26px 0 30px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; text-align: center; }
+.plan-timeline li { position: relative; padding-top: 22px; }
+.plan-timeline li::before { content: ""; position: absolute; top: 0; left: 50%; width: 10px; height: 10px; margin-left: -5px;
+                            border-radius: 50%; background: var(--ink); }
+/* The line: from each dot to the next one. */
+.plan-timeline li + li::after { content: ""; position: absolute; top: 4.5px; right: calc(50% + 11px); width: calc(100% + 12px - 22px);
+                                height: 1.5px; background: var(--ink); opacity: 0.2; }
+.plan-timeline h3 { margin: 0 0 4px; font-size: 17px; }
+.plan-timeline p { margin: 0; font-size: 14px; line-height: 1.4; color: var(--ink-2); }
+.plan-timeline a { color: inherit; }
 @media (max-width: 640px) {
-  /* Phones: number beside the title, so the search stays near the top. */
-  .plan-steps { gap: 8px; margin: 20px 0 22px; }
-  .plan-steps li { display: grid; grid-template-columns: 30px 1fr; column-gap: 12px; padding: 14px 16px; }
-  .plan-steps .byo-num { grid-row: span 2; margin: 0; }
-  .plan-steps h3 { margin: 4px 0 2px; font-size: 17px; }
+  .plan-timeline { gap: 8px; margin: 22px 0 24px; }
+  .plan-timeline h3 { font-size: 15px; }
+  .plan-timeline p { font-size: 13px; }
 }

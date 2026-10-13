@@ -440,6 +440,7 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
 .notify input[type="email"]::placeholder { color: var(--ink-2); }
 .notify:focus-within { box-shadow: 0 0 0 2px var(--ink); }
 .notify .button { border: 0; cursor: pointer; flex: none; }
+.get .notify { margin-top: 30px; }
 .notify-note { margin: 10px auto 0; max-width: 420px; font-size: 13px; color: var(--ink-2); }
 .notify-note a { color: inherit; }
 .notify-end { text-align: center; margin: 72px auto 24px; max-width: 640px; }

@@ -283,10 +283,6 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
 .suggest[aria-selected="true"], .suggest:hover { background: var(--line); }
 .suggest-empty { padding: 10px 12px; color: var(--ink-2); font-size: 15px; }
 
-.quick-picks { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; margin-top: 16px; font-size: 14px; }
-.quick-picks button { appearance: none; border: 0; cursor: pointer; font: 500 14px var(--sans); color: var(--ink);
-                      background: var(--tile); height: 34px; padding: 0 14px; border-radius: 999px; }
-.quick-picks button[hidden] { display: none; }
 .browse-row { display: flex; align-items: center; gap: 14px; margin: 28px 0 14px; }
 .browse { margin: 0; font: 600 15px var(--sans); color: var(--ink-2); text-decoration: none; }
 .browse:hover { color: var(--ink); }
@@ -417,8 +413,8 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
 .motion .program { animation: card-in 0.35s var(--ease-out) both; }
 
 /* Buttons press in a little. */
-.button, .program-download, .theme-button, .chip, .quick-picks button { transition: transform 0.12s ease; }
-.button:active, .program-download:active, .theme-button:active, .quick-picks button:active { transform: scale(0.97); }
+.button, .program-download, .theme-button, .chip { transition: transform 0.12s ease; }
+.button:active, .program-download:active, .theme-button:active { transform: scale(0.97); }
 
 @media (prefers-reduced-motion: reduce) {
   .hero *, .usps *, .program, .shot img { animation: none !important; }

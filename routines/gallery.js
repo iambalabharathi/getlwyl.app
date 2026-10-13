@@ -124,7 +124,6 @@
   var chosen = [];
   var chipBox = document.getElementById('chips');
   var field = document.getElementById('search-field');
-  var picks = document.getElementById('quick-picks');
 
   function chipLabel(key) { return key === 'exercise' ? state.exercise : LABELS[key][state[key]]; }
 
@@ -155,15 +154,9 @@
     input.placeholder = chosen.length ? 'Add more…' : 'Search programs or exercises';
     field.classList.toggle('has-chips', chosen.length > 0);
     clearButton.hidden = !(state.q || chosen.length);
-    // Quick picks: hide the ones already chosen.
-    picks.querySelectorAll('button').forEach(function (b) { b.hidden = state[b.dataset.key] === b.dataset.value; });
-    picks.hidden = !picks.querySelector('button:not([hidden])');
   }
 
   field.addEventListener('click', function (e) { if (e.target === field || e.target === chipBox) input.focus(); });
-  picks.querySelectorAll('button').forEach(function (b) {
-    b.addEventListener('click', function () { setFilter(b.dataset.key, b.dataset.value); });
-  });
   clearButton.addEventListener('click', function () {
     state = { q: '', goal: null, level: null, equipment: null, exercise: null };
     chosen = [];

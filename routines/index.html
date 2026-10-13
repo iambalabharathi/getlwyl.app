@@ -7,7 +7,7 @@
   <script src="/assets/theme.js?v=2"></script>
   <meta name="description" content="Search our free library of training programs for the gym, home and running, download one and open it in LWYL — or make your own plan with ChatGPT or Claude.">
   <link rel="icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/styles.css?v=41">
+  <link rel="stylesheet" href="/assets/styles.css?v=43">
 </head>
 <body>
   <header class="wrap top">
@@ -25,6 +25,12 @@
     <section class="search-hero">
       <h1>Plans</h1>
       <p class="updated">A free library of ready-made programs for the gym, home and running, with more on the way. Download one, open it in LWYL, and choose your start day and the days you train.</p>
+
+      <ol class="byo-steps plan-steps" aria-label="How it works">
+        <li><span class="byo-num">1</span><h3>Get a plan</h3><p>Pick a program below, or ask any AI with our <a href="#ai">ready-made prompt</a>.</p></li>
+        <li><span class="byo-num">2</span><h3>Download it</h3><p>The plan is one small file. No dates: you choose when to start.</p></li>
+        <li><span class="byo-num">3</span><h3>Open it in LWYL</h3><p>Pick your start day and the days you train, then tap Import plan. Your workouts are spread over those days, with a reminder on each.</p></li>
+      </ol>
 
       <div class="search">
         <div class="search-field" id="search-field">
@@ -68,6 +74,7 @@
       <li>Save its answer as a file called <code>plan.lwyl</code> (ask the AI to “give it to me as a file”, or paste it into a note and share it as a file).</li>
       <li>Tap the file on your iPhone and it opens in LWYL.</li>
     </ol>
+    <p class="muted small">AI plans aren’t checked by us — start light and listen to your body.</p>
     <div class="prompt">
       <button type="button" class="copy" id="copy-prompt">Copy</button>
       <pre id="prompt-text">Create a workout plan for the LWYL app as one JSON file (I'll save it as plan.lwyl).

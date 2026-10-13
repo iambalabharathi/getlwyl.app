@@ -451,3 +451,16 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
 .notify.is-sending .button { opacity: 0.6; }
 .notify-note.is-done { color: var(--ink); font-size: 15px; }
 .notify-note.is-error { color: #C0392B; }
+/* Plans page: the three steps, smaller, between the intro and the search. */
+.plan-steps { margin: 24px 0 28px; gap: 10px; }
+.plan-steps li { padding: 18px; border-radius: 18px; }
+.plan-steps h3 { font-size: 18px; }
+.plan-steps p { font-size: 14px; }
+.plan-steps a { color: inherit; }
+@media (max-width: 640px) {
+  /* Phones: number beside the title, so the search stays near the top. */
+  .plan-steps { gap: 8px; margin: 20px 0 22px; }
+  .plan-steps li { display: grid; grid-template-columns: 30px 1fr; column-gap: 12px; padding: 14px 16px; }
+  .plan-steps .byo-num { grid-row: span 2; margin: 0; }
+  .plan-steps h3 { margin: 4px 0 2px; font-size: 17px; }
+}

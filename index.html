@@ -11,7 +11,7 @@
   <meta property="og:image" content="https://getlwyl.app/assets/icon-256.png">
   <link rel="icon" href="/assets/apple-touch-icon.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/styles.css?v=47">
+  <link rel="stylesheet" href="/assets/styles.css?v=48">
 </head>
 <body>
   <header class="wrap top">
@@ -117,13 +117,16 @@
       </a>
       <p class="soon">Available soon · in English and 24 more languages</p>
       <!-- Launch waiting list (Buttondown, confirmed by email; sent in place by notify.js). -->
-      <form class="notify" action="https://buttondown.com/api/emails/embed-subscribe/lwyl-app" method="post">
-        <label class="sr-only" for="notify-email">Email address</label>
-        <input id="notify-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
-        <input type="hidden" name="embed" value="1">
-        <button class="button" type="submit">Notify me</button>
-      </form>
-      <p class="notify-note" aria-live="polite">One email when LWYL launches. Confirm it from your inbox; unsubscribe any time. <a href="/privacy/#launch-email">Privacy</a></p>
+      <div class="notify-card">
+        <h3>Get notified at launch</h3>
+        <form class="notify" action="https://buttondown.com/api/emails/embed-subscribe/lwyl-app" method="post">
+          <label class="sr-only" for="notify-email">Email address</label>
+          <input id="notify-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          <input type="hidden" name="embed" value="1">
+          <button class="button" type="submit">Notify me</button>
+        </form>
+        <p class="notify-note" aria-live="polite">One email when LWYL launches. Confirm it from your inbox; unsubscribe any time. <a href="/privacy/#launch-email">Privacy</a></p>
+      </div>
     </div>
 
     <!-- The import USP: any AI, or the free library, then LWYL runs the plan. -->
@@ -149,7 +152,7 @@
       <div class="feature" data-reveal><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.2-3.6-8.5S9.6 5.9 12 3.5z"/></svg></span><h3>Your language</h3><p>LWYL speaks English and 24 more European languages, exercise library included.</p></div>
     </section>
 
-    <section class="notify-end" data-reveal aria-labelledby="notify-title">
+    <section class="notify-end notify-card" data-reveal aria-labelledby="notify-title">
       <h2 id="notify-title">Be there on day one.</h2>
       <p class="notify-lead">LWYL is almost ready. Leave your email and we'll tell you when it's on the App Store.</p>
       <form class="notify" action="https://buttondown.com/api/emails/embed-subscribe/lwyl-app" method="post">

@@ -440,7 +440,6 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
 .notify input[type="email"]::placeholder { color: var(--ink-2); }
 .notify:focus-within { box-shadow: 0 0 0 2px var(--ink); }
 .notify .button { border: 0; cursor: pointer; flex: none; }
-.get .notify { margin-top: 30px; }
 .notify-note { margin: 10px auto 0; max-width: 420px; font-size: 13px; color: var(--ink-2); }
 .notify-note a { color: inherit; }
 .notify-end { text-align: center; margin: 72px auto 24px; max-width: 640px; }
@@ -464,4 +463,15 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
   .plan-timeline { gap: 8px; margin: 22px 0 24px; }
   .plan-timeline h3 { font-size: 15px; }
   .plan-timeline p { font-size: 13px; }
+}
+/* Signups in a card, like the feature tiles; the field sits on the page colour inside it. */
+.notify-card { max-width: 480px; margin: 30px auto 0; padding: 24px 22px 20px; border-radius: 22px; background: var(--tile); text-align: center; }
+.notify-card h3 { margin: 0; font-size: 21px; }
+.notify-card .notify { margin-top: 16px; background: var(--bg); box-shadow: none; }
+.notify-card .notify:focus-within { box-shadow: 0 0 0 2px var(--ink); }
+.notify-card .notify-note { margin-top: 12px; }
+.notify-end.notify-card { max-width: 560px; margin: 72px auto 24px; padding: 36px 26px 26px; }
+@media (max-width: 640px) {
+  .notify-card { padding: 20px 16px 18px; }
+  .notify-end.notify-card { padding: 30px 18px 22px; }
 }

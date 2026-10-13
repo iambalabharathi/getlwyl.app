@@ -562,6 +562,17 @@
   sheet.addEventListener('close', function () { openId = null; syncURL(); });
   sheet.addEventListener('click', function (e) { if (e.target === sheet) sheet.close(); });   // tap outside
 
+  // After a download, where to find the file (on iPhone nothing visible
+  // happens): under the card's buttons, or under the sheet's Download.
+  function showOpenHint(button) {
+    var after = button.parentElement.classList.contains('program-actions') ? button.parentElement : button;
+    var next = after.nextElementSibling;
+    if (next && next.classList.contains('download-hint')) return;
+    var hint = el('p', 'download-hint', 'Open it from your browser’s downloads, or Files › Downloads — it opens in LWYL.');
+    hint.setAttribute('role', 'status');
+    after.insertAdjacentElement('afterend', hint);
+  }
+
   // ---- Download: weekly pattern → the plan's workouts in order -------------
   // No dates: LWYL asks for a start day and the days you train when the file
   // is opened, and spreads the workouts over them.
@@ -601,7 +612,9 @@
       a.download = id + '.lwyl';
       document.body.appendChild(a); a.click(); a.remove();
       setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
-      button.textContent = 'Download';
+      button.textContent = 'Downloaded ✓';
+      setTimeout(function () { button.textContent = 'Download'; }, 2500);
+      showOpenHint(button);
     }).catch(function () {
       button.textContent = 'Try again';
     }).finally(function () { button.disabled = false; });

@@ -331,9 +331,12 @@
     var tokens = words(state.q);
     list.innerHTML = '';
     count.textContent = plural(shown.length, 'program', 'programs');
-    hint.textContent = !shown.length ? 'No programs match'
-      : shown.length === programs.length ? 'Browse the library ↓' : 'See ' + plural(shown.length, 'program', 'programs') + ' ↓';
+    // Only while filtering: how many match (the full library needs no pointer).
+    var all = shown.length === programs.length;
+    hint.textContent = !shown.length ? 'No programs match' : all ? '' : 'See ' + plural(shown.length, 'program', 'programs') + ' ↓';
+    hint.hidden = all;
     renderChips();
+    hint.parentElement.hidden = all && clearButton.hidden;
     if (!shown.length) {
       list.appendChild(el('p', 'muted small', 'Try fewer words, or clear the filters.'));
       return;

@@ -283,6 +283,7 @@ code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--
 .suggest[aria-selected="true"], .suggest:hover { background: var(--line); }
 .suggest-empty { padding: 10px 12px; color: var(--ink-2); font-size: 15px; }
 
+.browse-row[hidden], .browse[hidden] { display: none; }
 .browse-row { display: flex; align-items: center; gap: 14px; margin: 28px 0 14px; }
 .browse { margin: 0; font: 600 15px var(--sans); color: var(--ink-2); text-decoration: none; }
 .browse:hover { color: var(--ink); }
